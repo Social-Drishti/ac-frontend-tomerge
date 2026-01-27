@@ -1,0 +1,35 @@
+export default function WhyAstrology() {
+  return (
+    <section className="py-20 md:py-28 bg-gray-50">
+      <div className="mx-auto max-w-5xl px-6 text-center lg:px-8">
+        {/* <span className="inline-block rounded-full bg-indigo-100 px-4 py-1.5 text-sm font-medium text-indigo-800 mb-4">
+          Advantages
+        </span> */}
+
+        <h2 className="text-4xl font-bold tracking-tight md:text-5xl">
+          Why astrology matters
+        </h2>
+
+        <p className="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">
+          Gain insight into yourself and make decisions aligned with your true nature.
+          The cosmos offers wisdom that transcends the ordinary.
+        </p>
+
+        <div className="mt-10 flex flex-wrap justify-center gap-4">
+          <button className="rounded-lg bg-indigo-600 px-8 py-3 text-white hover:bg-indigo-700">
+            Discover
+          </button>
+          <button className="rounded-lg border border-gray-300 px-8 py-3 hover:bg-gray-100">
+            Learn more
+          </button>
+        </div>
+
+        <div className="mt-16 flex flex-wrap justify-center gap-10 text-sm font-medium text-gray-500">
+          <div>Self awareness</div>
+          <div>Relationships</div>
+          <div>Life direction</div>
+        </div>
+      </div>
+    </section>
+  )
+}
