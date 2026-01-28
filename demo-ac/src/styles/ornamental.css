@@ -58,7 +58,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><defs><pattern id="grain" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.5" fill="%238B6F47" opacity="0.03"/></pattern></defs><rect width="200" height="200" fill="url(%23grain)"/></svg>');
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JhaW4iIHg9IjAiIHk9IjAiIHdpZHRoPSI0IiBoZWlnaHQ9IjQiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPjxjaXJjbGUgY3g9IjEiIGN5PSIxIiByPSIwLjUiIGZpbGw9IiM1ZjZiM2EiIG9wYWNpdHk9IjAuMDMiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSJ1cmwoI2dyYWluKSIvPjwvc3ZnPg==");
   pointer-events: none;
   opacity: 0.5;
 }
@@ -122,7 +122,7 @@
 
 /* Subtle mandala background */
 .mandala-bg {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><radialGradient id="mandalaGrad"><stop offset="0%25" stop-color="%23D4AF6A" stop-opacity="0.15"/><stop offset="100%25" stop-color="%23D4AF6A" stop-opacity="0"/></radialGradient></defs><circle cx="100" cy="100" r="80" fill="none" stroke="url(%23mandalaGrad)" stroke-width="0.5"/><circle cx="100" cy="100" r="60" fill="none" stroke="url(%23mandalaGrad)" stroke-width="0.5"/><circle cx="100" cy="100" r="40" fill="none" stroke="url(%23mandalaGrad)" stroke-width="0.5"/><path d="M 100 20 L 100 40 M 100 160 L 100 180 M 20 100 L 40 100 M 160 100 L 180 100" stroke="%238B6F47" stroke-width="0.5" opacity="0.3"/></svg>');
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj48ZGVmcz48cmFkaWFsR3JhZGllbnQgaWQ9Im1hbmRhbGFHcmFkIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNWY2YjNhIiBzdG9wLW9wYWNpdHk9IjAuMTUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1ZjZiM2EiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxjaXJjbGUgY3g9IjEwMCIgY3k9IjEwMCIgcj0iODAiIGZpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNtYW5kYWxhR3JhZCkiIHN0cm9rZS13aWR0aD0iMC41Ii8+PC9zdmc+');
   background-size: 400px 400px;
   background-position: center;
   background-repeat: no-repeat;
@@ -130,11 +130,11 @@
 
 /* Embossed card effect */
 .embossed-card {
-  background: linear-gradient(145deg, #e8dcc8, #d4c4b0);
+  background: #FAF7F2;
   box-shadow:
-    inset 2px 2px 5px rgba(255, 255, 255, 0.5),
-    inset -2px -2px 5px rgba(139, 111, 71, 0.2),
-    4px 4px 10px rgba(61, 47, 31, 0.1);
+    inset 2px 2px 5px rgba(255, 255, 255, 0.8),
+    inset -2px -2px 5px rgba(95, 107, 58, 0.1),
+    4px 4px 10px rgba(95, 107, 58, 0.1);
   border-radius: var(--border-radius-lg);
   padding: var(--spacing-xl);
 }

@@ -1,10 +1,10 @@
 .custom-navbar {
-  background: linear-gradient(135deg, #a87d5f 0%, #b8977a 100%);
+  background: #faf7f2;
   position: sticky;
   top: 0;
   z-index: 1000;
   padding: 0;
-  box-shadow: 0 2px 8px rgba(61, 47, 31, 0.12);
+  box-shadow: 0 2px 8px rgba(95, 107, 58, 0.12);
 }
 
 /* CATEGORY ROW (TOP) */
@@ -270,16 +270,16 @@
 
 .navbar-auth-link:hover {
   transform: translateY(-2px);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(95, 107, 58, 0.1);
 }
 
 .navbar-auth-signup {
   color: #5f6b3a;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(95, 107, 58, 0.1);
   border: 1px solid #5f6b3a;
 }
 
 .navbar-auth-signup:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(95, 107, 58, 0.2);
   border-color: #5f6b3a;
 }

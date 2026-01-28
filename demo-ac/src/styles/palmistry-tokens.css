@@ -1,36 +1,34 @@
-
 :root {
-
   /* Backgrounds - Warm Parchment Theme */
-  --palm-parchment: #ffffff; /* Main background - white */
-  --palm-paper: #ffffff; /* Card background - white */
-  --palm-paper-hover: #ffffff; /* Card hover state */
+  --palm-parchment: #faf7f2; /* Main background - cream */
+  --palm-paper: #faf7f2; /* Card background - cream */
+  --palm-paper-hover: #faf7f2; /* Card hover state */
 
   /* Text Colors - Brown Ink */
-  --palm-ink: #800000; /* Primary text - maroon */
-  --palm-ink-muted: #800000; /* Secondary text - maroon */
-  --palm-ink-subtle: #800000; /* Tertiary text - maroon */
+  --palm-ink: #5f6b3a; /* Primary text - olive green */
+  --palm-ink-muted: #5f6b3a; /* Secondary text - olive green */
+  --palm-ink-subtle: #5f6b3a; /* Tertiary text - olive green */
 
   /* Borders & Dividers */
-  --palm-border: #ffffff; /* Dividers and borders */
-  --palm-border-hover: #d4c4a8; /* Interactive borders */
-  --palm-border-focus: #c4b498; /* Focus borders */
+  --palm-border: #5f6b3a; /* Dividers and borders */
+  --palm-border-hover: #5f6b3a; /* Interactive borders */
+  --palm-border-focus: #5f6b3a; /* Focus borders */
 
   /* Accent Colors - Saddle Brown */
-  --palm-accent: #8b4513; /* Primary actions */
-  --palm-accent-hover: #6b3410; /* Hover state */
-  --palm-accent-subtle: #ffffff; /* Accent backgrounds */
-  --palm-accent-light: #ffffff; /* Very light accent */
+  --palm-accent: #5f6b3a; /* Primary actions */
+  --palm-accent-hover: #5f6b3a; /* Hover state */
+  --palm-accent-subtle: #faf7f2; /* Accent backgrounds */
+  --palm-accent-light: #faf7f2; /* Very light accent */
 
   /* Semantic Colors */
-  --palm-success: #4a7c59; /* Success states */
-  --palm-success-bg: #ffffff; /* Success background */
-  --palm-warning: #c17817; /* Warning states */
-  --palm-warning-bg: #ffffff; /* Warning background */
-  --palm-error: #a0423d; /* Error states */
-  --palm-error-bg: #ffffff; /* Error background */
-  --palm-info: #5b7c8d; /* Info states */
-  --palm-info-bg: #ffffff; /* Info background */
+  --palm-success: #5f6b3a; /* Success states */
+  --palm-success-bg: #faf7f2; /* Success background */
+  --palm-warning: #5f6b3a; /* Warning states */
+  --palm-warning-bg: #faf7f2; /* Warning background */
+  --palm-error: #5f6b3a; /* Error states */
+  --palm-error-bg: #faf7f2; /* Error background */
+  --palm-info: #5f6b3a; /* Info states */
+  --palm-info-bg: #faf7f2; /* Info background */
 
   /* ============ TYPOGRAPHY ============ */
 

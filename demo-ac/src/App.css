@@ -81,7 +81,7 @@ body {
 }
 
 .navbar-links a:hover {
-  color: #4a542e;
+  color: #5f6b3a;
 }
 
 .dropdown {
@@ -104,7 +104,7 @@ body {
 }
 
 .navbar-auth a:hover {
-  color: #4a542e;
+  color: #5f6b3a;
 }
 
 .navbar-logo {
@@ -121,7 +121,7 @@ body {
 }
 
 .navbar-bottom a:hover {
-  color: #4a542e;
+  color: #5f6b3a;
 }
 
 /* Updated Hero Section Styles */
@@ -181,8 +181,8 @@ body {
 }
 
 .primary-btn:hover {
-  background: #4a542e;
-  border-color: #4a542e;
+  background: #5f6b3a;
+  border-color: #5f6b3a;
 }
 
 .secondary-btn {

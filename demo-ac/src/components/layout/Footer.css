@@ -1,29 +1,29 @@
 .footer-logo img {
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 2px 4px rgba(95, 107, 58, 0.3));
 }
 
 .footer-text {
-  color: #800000;
+  color: #5f6b3a;
 }
 
 .footer-map-container {
-  border-color: rgba(212, 175, 106, 0.3);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-color: rgba(95, 107, 58, 0.3);
+  box-shadow: 0 4px 12px rgba(95, 107, 58, 0.3);
 }
 
 .footer-section-title {
-  color: #800000;
+  color: #5f6b3a;
 }
 
 .footer-list {
-  color: #800000;
+  color: #5f6b3a;
 }
 
 .footer-copyright {
-  border-top: 1px solid rgba(212, 175, 106, 0.2);
-  color: #800000;
+  border-top: 1px solid rgba(95, 107, 58, 0.2);
+  color: #5f6b3a;
 }
 
 .footer-link {
-  color: #800000;
+  color: #5f6b3a;
 }

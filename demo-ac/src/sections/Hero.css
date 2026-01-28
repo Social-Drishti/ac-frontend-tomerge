@@ -1,5 +1,5 @@
 .custom-hero {
-  background: #ffffff;
+  background: #faf7f2;
   background-attachment: fixed;
   background-size: cover;
   border-top-left-radius: 120px;
@@ -9,14 +9,14 @@
   max-width: 1200px;
   min-height: 340px;
   box-shadow:
-    0 8px 32px rgba(61, 47, 31, 0.12),
+    0 8px 32px rgba(95, 107, 58, 0.12),
     inset 0 1px 0 rgba(255, 255, 255, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   z-index: 10;
-  border: 1px solid rgba(139, 111, 71, 0.15);
+  border: 1px solid rgba(95, 107, 58, 0.15);
 }
 
 /* Decorative border pattern */
@@ -30,10 +30,10 @@
   border-radius: inherit;
   background: linear-gradient(
     135deg,
-    rgba(212, 175, 106, 0.3) 0%,
+    rgba(95, 107, 58, 0.3) 0%,
     transparent 20%,
     transparent 80%,
-    rgba(168, 125, 95, 0.3) 100%
+    rgba(95, 107, 58, 0.3) 100%
   );
   pointer-events: none;
   z-index: -1;
@@ -50,14 +50,14 @@
 .hero-content h1 {
   font-size: 2.6rem;
   font-weight: 700;
-  color: #800000;
+  color: #5f6b3a;
   margin-bottom: 1rem;
-  text-shadow: 0 2px 4px rgba(61, 47, 31, 0.1);
+  text-shadow: 0 2px 4px rgba(95, 107, 58, 0.1);
 }
 
 .hero-content p {
   font-size: 1.2rem;
-  color: #800000;
+  color: #5f6b3a;
   margin-bottom: 2rem;
   max-width: 600px;
 }
@@ -68,8 +68,8 @@
 }
 
 .primary-btn {
-  background: linear-gradient(135deg, #a87d5f 0%, #8b6f47 100%);
-  color: #fff;
+  background: #5f6b3a;
+  color: #faf7f2;
   border: none;
   padding: 0.9rem 2.2rem;
   border-radius: 8px;
@@ -77,19 +77,19 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(139, 111, 71, 0.25);
+  box-shadow: 0 4px 12px rgba(95, 107, 58, 0.25);
 }
 
 .primary-btn:hover {
-  background: linear-gradient(135deg, #8b6f47 0%, #6b5437 100%);
-  box-shadow: 0 6px 16px rgba(139, 111, 71, 0.35);
+  background: #5f6b3a;
+  box-shadow: 0 6px 16px rgba(95, 107, 58, 0.35);
   transform: translateY(-2px);
 }
 
 .secondary-btn {
-  background: #ffffff;
-  color: #800000;
-  border: 2px solid #a87d5f;
+  background: #faf7f2;
+  color: #5f6b3a;
+  border: 2px solid #5f6b3a;
   padding: 0.9rem 2.2rem;
   border-radius: 8px;
   font-size: 1.08rem;

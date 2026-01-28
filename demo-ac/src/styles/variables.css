@@ -7,41 +7,41 @@
   /* ============ COLOR PALETTE ============ */
 
   /* Primary Brand Colors - Terracotta & Clay Theme */
-  --color-primary: #5f6b3a; /* Maroon */
-  --color-primary-hover: #600000; /* Darker maroon */
-  --color-primary-light: #5f6b3a; /* Maroon */
+  --color-primary: #5f6b3a; /* Olive Green */
+  --color-primary-hover: #5f6b3a; /* Olive Green */
+  --color-primary-light: #5f6b3a; /* Olive Green */
 
   /* Background Colors - Warm Stone & Sand */
   --color-background: #faf7f2; /* Cream background */
   --color-background-light: #faf7f2; /* Cream background */
-  --color-background-accent: #a87d5f; /* Terracotta accent */
+  --color-background-accent: #5f6b3a; /* Olive Green */
   --color-background-paper: #faf7f2; /* Cream background */
 
   /* Traditional Heritage Colors */
-  --color-terracotta: #a87d5f; /* Traditional clay */
-  --color-sandstone: #c9b8a3; /* Carved stone */
-  --color-bronze: #8b6f47; /* Ancient bronze */
-  --color-copper: #b8856a; /* Copper ornament */
-  --color-gold: #d4af6a; /* Golden accent */
+  --color-terracotta: #5f6b3a; /* Olive Green */
+  --color-sandstone: #faf7f2; /* Cream */
+  --color-bronze: #5f6b3a; /* Olive Green */
+  --color-copper: #5f6b3a; /* Olive Green */
+  --color-gold: #5f6b3a; /* Olive Green */
 
   /* Neutral Colors - Earthy Tones */
-  --color-neutral-tan: #d4c4b0; /* Warm tan */
-  --color-neutral-brown: #8b6f47; /* Medium brown */
-  --color-neutral-camel: #b8977a; /* Camel */
-  --color-accent-orange: #d4956a; /* Warm terracotta */
-  --color-accent-peach: #e8c4a8; /* Soft peach */
+  --color-neutral-tan: #faf7f2; /* Cream */
+  --color-neutral-brown: #5f6b3a; /* Olive Green */
+  --color-neutral-camel: #5f6b3a; /* Olive Green */
+  --color-accent-orange: #5f6b3a; /* Olive Green */
+  --color-accent-peach: #faf7f2; /* Cream */
 
   /* Text Colors - Natural Ink */
-  --color-text-dark: #5f6b3a; /* Maroon text */
-  --color-text-medium: #5f6b3a; /* Maroon text */
-  --color-text-light: #5f6b3a; /* Maroon text */
+  --color-text-dark: #5f6b3a; /* Olive Green */
+  --color-text-medium: #5f6b3a; /* Olive Green */
+  --color-text-light: #5f6b3a; /* Olive Green */
 
   /* Grayscale - Warm Neutrals */
   --color-gray-300: #5f6b3a;
   --color-gray-600: #5f6b3a;
   --color-gray-700: #5f6b3a;
   --color-gray-900: #5f6b3a;
-  --color-white: #ffffff;
+  --color-white: #faf7f2;
 
   /* ============ SPACING ============ */
   --spacing-xs: 0.25rem; /* 4px */

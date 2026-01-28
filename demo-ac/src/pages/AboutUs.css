@@ -4,24 +4,24 @@
 
 .aboutus-container {
   min-height: 100vh;
-  background: #ffffff;
+  background: #faf7f2;
 }
 
 .aboutus-section {
   padding: 4rem 2rem;
-  background: #ffffff;
+  background: #faf7f2;
 }
 
 .aboutus-why-section {
-  background: #f9f9f9;
+  background: #faf7f2;
 }
 
 .aboutus-astrologer-section {
-  background: #f9f9f9;
+  background: #faf7f2;
 }
 
 .aboutus-contact-section {
-  background: #f5f5f5;
+  background: #faf7f2;
 }
 
 .aboutus-content {
@@ -33,7 +33,7 @@
 .aboutus-main-title {
   font-size: 3rem;
   font-weight: 700;
-  color: #800000;
+  color: #5f6b3a;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -41,14 +41,14 @@
 .aboutus-section-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #800000;
+  color: #5f6b3a;
   text-align: center;
   margin-bottom: 2rem;
 }
 
 .aboutus-text {
   font-size: 1.125rem;
-  color: #800000;
+  color: #5f6b3a;
   line-height: 1.8;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -63,11 +63,11 @@
 }
 
 .aboutus-box {
-  background: #ffffff;
+  background: #faf7f2;
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(128, 0, 0, 0.1);
-  border: 1px solid #800000;
+  box-shadow: 0 2px 8px rgba(95, 107, 58, 0.1);
+  border: 1px solid #5f6b3a;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -75,20 +75,20 @@
 
 .aboutus-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 16px rgba(128, 0, 0, 0.15);
+  box-shadow: 0 4px 16px rgba(95, 107, 58, 0.15);
 }
 
 .aboutus-box-title {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #800000;
+  color: #5f6b3a;
   margin-bottom: 1rem;
   text-align: center;
 }
 
 .aboutus-box-text {
   font-size: 1rem;
-  color: #800000;
+  color: #5f6b3a;
   line-height: 1.6;
   text-align: center;
 }
@@ -118,12 +118,12 @@
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background: #f0f0f0;
+  background: #faf7f2;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 5rem;
-  border: 3px solid #800000;
+  border: 3px solid #5f6b3a;
 }
 
 .aboutus-astrologer-info {
@@ -133,13 +133,13 @@
 .aboutus-astrologer-name {
   font-size: 2rem;
   font-weight: 700;
-  color: #800000;
+  color: #5f6b3a;
   margin-bottom: 0.5rem;
 }
 
 .aboutus-astrologer-credentials {
   font-size: 1rem;
-  color: #600000;
+  color: #5f6b3a;
   margin-bottom: 1.5rem;
   font-style: italic;
 }
@@ -147,14 +147,14 @@
 .aboutus-quote {
   margin-top: 2rem;
   padding: 1.5rem;
-  background: #f9f9f9;
-  border-left: 4px solid #800000;
+  background: #faf7f2;
+  border-left: 4px solid #5f6b3a;
   border-radius: 4px;
 }
 
 .aboutus-quote blockquote {
   font-size: 1.125rem;
-  color: #800000;
+  color: #5f6b3a;
   line-height: 1.7;
   font-style: italic;
   margin-bottom: 1rem;
@@ -162,7 +162,7 @@
 
 .aboutus-quote cite {
   font-size: 1rem;
-  color: #600000;
+  color: #5f6b3a;
   font-style: normal;
   font-weight: 600;
 }
@@ -176,17 +176,17 @@
 }
 
 .aboutus-benefit-box {
-  background: #ffffff;
+  background: #faf7f2;
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(128, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(95, 107, 58, 0.08);
   text-align: center;
   transition: transform 0.3s ease;
 }
 
 .aboutus-benefit-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(128, 0, 0, 0.12);
+  box-shadow: 0 4px 12px rgba(95, 107, 58, 0.12);
 }
 
 .aboutus-benefit-icon {
@@ -197,13 +197,13 @@
 .aboutus-benefit-title {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #800000;
+  color: #5f6b3a;
   margin-bottom: 0.75rem;
 }
 
 .aboutus-benefit-text {
   font-size: 1rem;
-  color: #800000;
+  color: #5f6b3a;
   line-height: 1.6;
 }
 
@@ -224,10 +224,10 @@
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  background: #ffffff;
+  background: #faf7f2;
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(128, 0, 0, 0.08);
+  box-shadow: 0 2px 6px rgba(95, 107, 58, 0.08);
 }
 
 .aboutus-contact-icon {
@@ -237,7 +237,7 @@
 .aboutus-contact-label {
   font-size: 0.875rem;
   font-weight: 600;
-  color: #600000;
+  color: #5f6b3a;
   margin-bottom: 0.25rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -245,7 +245,7 @@
 
 .aboutus-contact-value {
   font-size: 1.125rem;
-  color: #800000;
+  color: #5f6b3a;
   font-weight: 500;
 }
 
@@ -257,8 +257,8 @@
 }
 
 .aboutus-cta-button {
-  background: #800000;
-  color: #ffffff;
+  background: #5f6b3a;
+  color: #faf7f2;
   padding: 1rem 2.5rem;
   border: none;
   border-radius: 6px;
@@ -269,16 +269,16 @@
 }
 
 .aboutus-cta-button:hover {
-  background: #600000;
+  background: #5f6b3a;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(128, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(95, 107, 58, 0.2);
 }
 
 .aboutus-cta-button-secondary {
-  background: #ffffff;
-  color: #800000;
+  background: #faf7f2;
+  color: #5f6b3a;
   padding: 1rem 2.5rem;
-  border: 2px solid #800000;
+  border: 2px solid #5f6b3a;
   border-radius: 6px;
   font-size: 1.125rem;
   font-weight: 600;
@@ -287,7 +287,7 @@
 }
 
 .aboutus-cta-button-secondary:hover {
-  background: #800000;
-  color: #ffffff;
+  background: #5f6b3a;
+  color: #faf7f2;
   transform: translateY(-2px);
 }

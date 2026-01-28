@@ -3,16 +3,12 @@ export default function Testimonial() {
     <section className="py-20">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Left: Image placeholder */}
           <div className="aspect-square rounded-2xl overflow-hidden bg-gray-200 shadow-xl">
-            {/* Replace with real photo */}
-            {/* <img src={sarahImg} alt="Sarah Mitchell" className="object-cover w-full h-full" /> */}
+  
             <div className="w-full h-full flex items-center justify-center text-gray-400 text-2xl">
               Testimonial photo
             </div>
           </div>
-
-          {/* Right: Quote */}
           <div>
             <div className="text-4xl text-yellow-400 mb-6">★★★★★</div>
             <blockquote className="text-2xl font-medium italic leading-relaxed">
