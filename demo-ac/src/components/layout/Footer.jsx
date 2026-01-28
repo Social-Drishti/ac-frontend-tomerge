@@ -9,7 +9,7 @@ export default function Footer() {
             <div className="footer-logo">
               <a href="/">
                 <img
-                  src="/Astrochitra-color-logo.png"
+                  src="/Astrochitra-color-logo.svg"
                   alt="Astro Chitra Logo"
                 />
               </a>

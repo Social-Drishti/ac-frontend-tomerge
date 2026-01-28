@@ -1,21 +1,52 @@
+import { cn } from "../../lib/utils";
 
-import { cn } from "../../lib/utils"; 
+export default function Button({
+  children,
+  variant = "primary",
+  size = "md",
+  icon,
+  iconPosition = "right",
+  loading = false,
+  disabled = false,
+  block = false,
+  className,
+  ...props
+}) {
+  const baseClass = "btn";
 
-export default function Button({ children, variant = "primary", className, ...props }) {
-  const base = "inline-flex items-center justify-center rounded-lg px-6 py-3 text-base font-medium transition focus:outline-none focus:ring-2 focus:ring-offset-2";
-  
-  const variants = {
-    primary: "bg-indigo-600 text-white hover:bg-indigo-700 focus:ring-indigo-500",
-    secondary: "border border-gray-300 text-gray-700 hover:bg-gray-50 focus:ring-indigo-500",
-    outline: "border border-white/40 text-white hover:bg-white/10",
+  const sizeClasses = {
+    sm: "btn-sm",
+    md: "btn-md",
+    lg: "btn-lg",
+    xl: "btn-xl",
+  };
+
+  const variantClasses = {
+    primary: "btn-primary",
+    secondary: "btn-secondary",
+    ghost: "btn-ghost",
+    accent: "btn-accent",
+    light: "btn-light",
+    dark: "btn-dark",
   };
 
   return (
     <button
-      className={cn(base, variants[variant], className)}
+      className={cn(
+        baseClass,
+        sizeClasses[size],
+        variantClasses[variant],
+        icon && "btn-icon",
+        loading && "loading",
+        block && "btn-block",
+        className,
+      )}
+      disabled={disabled || loading}
       {...props}
     >
+      {icon && iconPosition === "left" && <span className="icon">{icon}</span>}
       {children}
+      {icon && iconPosition === "right" && <span className="icon">{icon}</span>}
     </button>
   );
 }

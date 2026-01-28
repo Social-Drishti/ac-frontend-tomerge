@@ -1,12 +1,82 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import "./Guruji.css";
+
+const journeyNavItems = [
+  { path: "/guruji/journey", label: "Journey" },
+  { path: "/guruji/education", label: "Education" },
+  { path: "/guruji/insights", label: "Insights" },
+  { path: "/guruji/events", label: "Events" },
+  { path: "/guruji/certifications", label: "Certifications" },
+  { path: "/guruji/consultation", label: "Consultation", isCta: true },
+];
+
+function JourneyNav() {
+  const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleNavClick = (e, path) => {
+    e.preventDefault();
+    navigate(path);
+    setIsOpen(false);
+  };
+
+  const isActive = (path) => location.pathname === path;
+
+  return (
+    <>
+      {/* Mobile Toggle Button */}
+      <button
+        className="journey-nav-toggle"
+        onClick={() => setIsOpen(!isOpen)}
+        aria-label="Toggle journey navigation"
+        aria-expanded={isOpen}
+      >
+        <span className="toggle-line"></span>
+        <span className="toggle-line"></span>
+        <span className="toggle-line"></span>
+      </button>
+
+      {/* Floating Navigation Panel */}
+      <nav
+        className={`journey-nav ${isOpen ? "journey-nav--open" : ""}`}
+        role="navigation"
+        aria-label="Journey chapters navigation"
+      >
+        <h3 className="journey-nav__title">Journey</h3>
+        <div className="journey-nav__guideline"></div>
+        <ul className="journey-nav__list">
+          {journeyNavItems.map((item) => (
+            <li
+              key={item.path}
+              className={`journey-nav__item ${
+                item.isCta ? "journey-nav__item--cta" : ""
+              } ${isActive(item.path) ? "journey-nav__item--active" : ""}`}
+            >
+              <a
+                href={item.path}
+                onClick={(e) => handleNavClick(e, item.path)}
+                aria-label={`Navigate to ${item.label} page`}
+                aria-current={isActive(item.path) ? "page" : undefined}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </>
+  );
+}
 
 export default function Guruji() {
   return (
     <div className="guruji-page">
       <Navbar />
+      <JourneyNav />
       <section className="guruji-hero">
         <div className="hero-overlay"></div>
         <div className="hero-content">
@@ -183,19 +253,22 @@ export default function Guruji() {
       </section>
 
       {/* Chapter 4: Philosophy & Approach */}
-      <section className="guruji-chapter chapter-philosophy">
+      <section
+        className="guruji-chapter chapter-philosophy"
+        id="certifications"
+      >
         <div className="chapter-container">
           <span className="chapter-number">Chapter IV</span>
           <h2 className="chapter-title">Philosophy & Approach</h2>
 
           <div className="philosophy-grid">
-            <div className="philosophy-item">
+            {/* <div className="philosophy-item">
               <h3>Cosmic Patterns + Human Will</h3>
               <p>
                 The planets suggest rhythms, not chains. Your choices create the
                 melody within the cosmic scale.
               </p>
-            </div>
+            </div> */}
 
             <div className="philosophy-item">
               <h3>Astrology as Mirror</h3>

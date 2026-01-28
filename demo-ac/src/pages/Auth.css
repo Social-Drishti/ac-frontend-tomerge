@@ -7,12 +7,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #faf7f2;
+  background: rgba(250, 248, 243, 0.8);
   padding: 2rem;
 }
 
 .auth-form {
-  background: #faf7f2;
+  background: rgba(250, 248, 243, 0.8);
   padding: 3rem;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(95, 107, 58, 0.1);
@@ -24,13 +24,13 @@
 .auth-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #5f6b3a;
+  color: #654e12;
   text-align: center;
   margin-bottom: 2rem;
 }
 
 .auth-error {
-  color: #5f6b3a;
+  color: #654e12;
   background: #ffebee;
   padding: 0.75rem;
   border-radius: 4px;
@@ -46,7 +46,7 @@
 .auth-label {
   display: block;
   font-weight: 600;
-  color: #5f6b3a;
+  color: #654e12;
   margin-bottom: 0.5rem;
   font-size: 0.875rem;
 }
@@ -54,23 +54,23 @@
 .auth-input {
   width: 100%;
   padding: 0.75rem;
-  border: 1px solid #5f6b3a;
+  border: 1px solid #654e12;
   border-radius: 4px;
-  color: #5f6b3a;
-  background: #faf7f2;
+  color: #654e12;
+  background: rgba(250, 248, 243, 0.8);
   font-size: 1rem;
   transition: all 0.3s ease;
 }
 
 .auth-input:focus {
   outline: none;
-  border-color: #5f6b3a;
+  border-color: #654e12;
   box-shadow: 0 0 0 3px rgba(95, 107, 58, 0.1);
 }
 
 .auth-submit {
   width: 100%;
-  background: #5f6b3a;
+  background: #654e12;
   color: #faf7f2;
   padding: 0.875rem;
   border: none;
@@ -83,7 +83,7 @@
 }
 
 .auth-submit:hover {
-  background: #5f6b3a;
+  background: #654e12;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(95, 107, 58, 0.2);
 }
@@ -91,19 +91,19 @@
 .auth-link-text {
   text-align: center;
   margin-top: 1.5rem;
-  color: #5f6b3a;
+  color: #654e12;
   font-size: 0.875rem;
 }
 
 .auth-link {
-  color: #5f6b3a;
+  color: #654e12;
   font-weight: 600;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .auth-link:hover {
-  color: #5f6b3a;
+  color: #654e12;
   text-decoration: underline;
 }
 
@@ -127,13 +127,18 @@
 }
 
 .auth-modal-success {
-  color: #5f6b3a;
+  color: #654e12;
   font-weight: 700;
   font-size: 1.125rem;
   margin-bottom: 0.5rem;
 }
 
 .auth-modal-message {
-  color: #5f6b3a;
+  color: #654e12;
   font-size: 0.875rem;
 }
+
+
+
+
+

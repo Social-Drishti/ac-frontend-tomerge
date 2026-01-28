@@ -15,7 +15,7 @@ export default function Navbar() {
 
         <div className="navbar-logo">
           <a href="/">
-            <img src="/Astrochitra-color-logo.png" alt="Astro Chitra Logo" />
+            <img src="/Astrochitra-color-logo.svg" alt="Astro Chitra Logo" />
           </a>
         </div>
 
@@ -25,7 +25,16 @@ export default function Navbar() {
               className="accordion-header"
               onClick={() => setIsReadingOpen(!isReadingOpen)}
             >
-              Reading
+              <a
+                href="/reading"
+                className="accordion-main-link"
+                onClick={(e) => e.stopPropagation()}
+              >
+                Reading
+              </a>
+              <span className="accordion-arrow">
+                {isReadingOpen ? "▲" : "▼"}
+              </span>
             </div>
             {isReadingOpen && (
               <div className="accordion-content">

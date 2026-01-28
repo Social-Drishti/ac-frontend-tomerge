@@ -8,43 +8,164 @@ const AboutUs = () => {
     <>
       <Navbar />
       <div className="aboutus-container">
-        {/* 1. Who We Are */}
-        <section className="aboutus-section">
-          <div className="aboutus-content">
-            <h1 className="aboutus-main-title">Who We Are</h1>
-            <p className="aboutus-text">
-              Founded on the belief that astrology serves as a mirror to the
-              soul, we've created a space where ancient cosmic knowledge meets
-              contemporary psychological insight.
-            </p>
-            <p className="aboutus-text">
-              Our team of dedicated astrologers combines decades of expertise
-              with rigorous study of planetary movements, natal charts, and
-              transits. We're passionate about making astrology accessible,
-              practical, and transformative for everyone.
-            </p>
-            <p className="aboutus-text">
-              Every reading is personalized. Every insight is grounded in
-              precision. Every journey is unique.
+        {/* Hero Banner */}
+        <section className="aboutus-hero">
+          <div className="aboutus-hero-content">
+            <span className="aboutus-hero-label">✦ Discover Our Story</span>
+            <h1 className="aboutus-hero-title">About AstroChitra</h1>
+            <p className="aboutus-hero-subtitle">
+              Where ancient cosmic wisdom meets modern insight — guiding souls
+              toward their highest potential
             </p>
           </div>
         </section>
-        <section className="aboutus-section aboutus-why-section">
-          <div className="aboutus-content">
-            <h2 className="aboutus-section-title">Why Do We Exist?</h2>
-            <p className="aboutus-text">
-              In a world filled with uncertainty and rapid change, people are
-              searching for deeper meaning, clarity, and connection to something
-              greater than themselves. We exist to bridge the gap between
-              ancient wisdom and modern life, offering authentic astrological
-              guidance that empowers individuals to understand their unique
-              cosmic blueprint.
-            </p>
-            <p className="aboutus-text">
-              Our purpose is to illuminate the path of self-discovery, helping
-              you navigate life's challenges with awareness, confidence, and
-              alignment with your true purpose.
-            </p>
+
+        {/* 1. Who We Are - Image Left, Text Right */}
+        <section className="aboutus-section aboutus-zigzag">
+          <div className="aboutus-zigzag-container">
+            <div className="aboutus-zigzag-visual">
+              <div className="aboutus-visual-card">
+                <div className="aboutus-visual-icon">🌟</div>
+                <div className="aboutus-visual-orbits">
+                  <div className="orbit orbit-1"></div>
+                  <div className="orbit orbit-2"></div>
+                  <div className="orbit orbit-3"></div>
+                </div>
+              </div>
+              <div className="aboutus-visual-badge">Est. 2010</div>
+            </div>
+            <div className="aboutus-zigzag-content">
+              <span className="aboutus-section-label">Our Identity</span>
+              <h2 className="aboutus-section-title">Who We Are</h2>
+              <p className="aboutus-text">
+                Founded on the belief that astrology serves as a mirror to the
+                soul, we've created a space where ancient cosmic knowledge meets
+                contemporary psychological insight.
+              </p>
+              <p className="aboutus-text">
+                Our team of dedicated astrologers combines decades of expertise
+                with rigorous study of planetary movements, natal charts, and
+                transits. We're passionate about making astrology accessible,
+                practical, and transformative for everyone.
+              </p>
+              <div className="aboutus-highlight-box">
+                <p className="aboutus-highlight-text">
+                  ✨ Every reading is personalized. Every insight is grounded in
+                  precision. Every journey is unique.
+                </p>
+              </div>
+              <div className="aboutus-stats-row">
+                <div className="aboutus-stat">
+                  <span className="aboutus-stat-number">15+</span>
+                  <span className="aboutus-stat-label">Years Experience</span>
+                </div>
+                <div className="aboutus-stat">
+                  <span className="aboutus-stat-number">10K+</span>
+                  <span className="aboutus-stat-label">Readings Done</span>
+                </div>
+                <div className="aboutus-stat">
+                  <span className="aboutus-stat-number">98%</span>
+                  <span className="aboutus-stat-label">
+                    Client Satisfaction
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 2. Why Do We Exist - Text Left, Image Right */}
+        <section className="aboutus-section aboutus-zigzag aboutus-zigzag-reverse">
+          <div className="aboutus-zigzag-container">
+            <div className="aboutus-zigzag-content">
+              <span className="aboutus-section-label">Our Purpose</span>
+              <h2 className="aboutus-section-title">Why Do We Exist?</h2>
+              <p className="aboutus-text">
+                In a world filled with uncertainty and rapid change, people are
+                searching for deeper meaning, clarity, and connection to
+                something greater than themselves. We exist to bridge the gap
+                between ancient wisdom and modern life, offering authentic
+                astrological guidance that empowers individuals to understand
+                their unique cosmic blueprint.
+              </p>
+              <p className="aboutus-text">
+                Our purpose is to illuminate the path of self-discovery, helping
+                you navigate life's challenges with awareness, confidence, and
+                alignment with your true purpose.
+              </p>
+              <ul className="aboutus-purpose-list">
+                <li>
+                  <span className="purpose-icon">🔮</span>
+                  <span>Decode the language of the stars</span>
+                </li>
+                <li>
+                  <span className="purpose-icon">🧭</span>
+                  <span>Navigate life transitions with clarity</span>
+                </li>
+                <li>
+                  <span className="purpose-icon">💫</span>
+                  <span>Unlock your hidden potential</span>
+                </li>
+                <li>
+                  <span className="purpose-icon">🌙</span>
+                  <span>Find harmony with cosmic rhythms</span>
+                </li>
+              </ul>
+            </div>
+            <div className="aboutus-zigzag-visual">
+              <div className="aboutus-visual-card aboutus-visual-card-alt">
+                <div className="aboutus-visual-icon">🔮</div>
+                <div className="aboutus-visual-glow"></div>
+              </div>
+              <div className="aboutus-visual-quote">"As above, so below"</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 3. Our Approach - Image Left, Text Right */}
+        <section className="aboutus-section aboutus-zigzag">
+          <div className="aboutus-zigzag-container">
+            <div className="aboutus-zigzag-visual">
+              <div className="aboutus-visual-card">
+                <div className="aboutus-visual-icon">📜</div>
+                <div className="aboutus-visual-lines">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div className="aboutus-visual-badge">Vedic + Western</div>
+            </div>
+            <div className="aboutus-zigzag-content">
+              <span className="aboutus-section-label">Our Method</span>
+              <h2 className="aboutus-section-title">Our Approach</h2>
+              <p className="aboutus-text">
+                We blend the profound wisdom of Vedic astrology with Western
+                psychological insights, creating a holistic approach that honors
+                tradition while embracing modern understanding of human
+                consciousness.
+              </p>
+              <p className="aboutus-text">
+                Each consultation is a sacred dialogue — we listen deeply,
+                interpret carefully, and guide compassionately. We believe
+                astrology should empower, not limit; illuminate choices, not
+                dictate fate.
+              </p>
+              <div className="aboutus-approach-features">
+                <div className="approach-feature">
+                  <span className="approach-feature-icon">🎯</span>
+                  <h4>Precision Analysis</h4>
+                  <p>
+                    Exact planetary calculations using proven astronomical data
+                  </p>
+                </div>
+                <div className="approach-feature">
+                  <span className="approach-feature-icon">❤️</span>
+                  <h4>Compassionate Guidance</h4>
+                  <p>Insights delivered with empathy and understanding</p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 

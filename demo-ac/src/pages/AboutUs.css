@@ -1,54 +1,436 @@
-/* ============================================
-   ABOUT US PAGE STYLES
-   ============================================ */
-
 .aboutus-container {
   min-height: 100vh;
   background: #faf7f2;
 }
 
+/* ============================================
+   HERO SECTION
+   ============================================ */
+.aboutus-hero {
+  padding: 6rem 2rem 4rem;
+  background: linear-gradient(135deg, #654e12 0%, #4a3a0e 100%);
+  color: #fff;
+  text-align: center;
+}
+
+.aboutus-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.aboutus-hero-label {
+  display: inline-block;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1rem;
+}
+
+.aboutus-hero-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.aboutus-hero-subtitle {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   ZIGZAG SECTIONS
+   ============================================ */
 .aboutus-section {
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
+}
+
+.aboutus-zigzag {
+  background: #fff;
+}
+
+.aboutus-zigzag:nth-child(odd) {
   background: #faf7f2;
 }
 
-.aboutus-why-section {
-  background: #faf7f2;
+.aboutus-zigzag-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
 }
 
-.aboutus-astrologer-section {
-  background: #faf7f2;
+.aboutus-zigzag-reverse .aboutus-zigzag-container {
+  direction: rtl;
 }
 
-.aboutus-contact-section {
-  background: #faf7f2;
+.aboutus-zigzag-reverse .aboutus-zigzag-content,
+.aboutus-zigzag-reverse .aboutus-zigzag-visual {
+  direction: ltr;
 }
 
+/* Section Labels & Titles */
+.aboutus-section-label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #8b6f47;
+  margin-bottom: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  background: rgba(139, 111, 71, 0.1);
+  border-radius: 4px;
+}
+
+.aboutus-section-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #654e12;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.aboutus-text {
+  font-size: 1.0625rem;
+  color: #5a4a3a;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+/* Visual Cards */
+.aboutus-zigzag-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutus-visual-card {
+  width: 280px;
+  height: 280px;
+  background: linear-gradient(145deg, #654e12, #8b6f47);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(101, 78, 18, 0.25);
+  overflow: hidden;
+}
+
+.aboutus-visual-card-alt {
+  background: linear-gradient(145deg, #4a3a0e, #654e12);
+}
+
+.aboutus-visual-icon {
+  font-size: 5rem;
+  z-index: 2;
+}
+
+.aboutus-visual-orbits {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.orbit {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.orbit-1 {
+  width: 120px;
+  height: 120px;
+}
+.orbit-2 {
+  width: 180px;
+  height: 180px;
+}
+.orbit-3 {
+  width: 240px;
+  height: 240px;
+}
+
+.aboutus-visual-glow {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.3),
+    transparent 70%
+  );
+  border-radius: 50%;
+}
+
+.aboutus-visual-lines span {
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 8px auto;
+  border-radius: 2px;
+}
+
+.aboutus-visual-badge {
+  position: absolute;
+  bottom: -10px;
+  right: 20px;
+  background: #fff;
+  color: #654e12;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.aboutus-visual-quote {
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  background: #654e12;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-style: italic;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Highlight Box */
+.aboutus-highlight-box {
+  background: linear-gradient(
+    135deg,
+    rgba(101, 78, 18, 0.08),
+    rgba(139, 111, 71, 0.08)
+  );
+  border-left: 4px solid #654e12;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+  margin: 1.5rem 0;
+}
+
+.aboutus-highlight-text {
+  font-size: 1rem;
+  color: #654e12;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Stats Row */
+.aboutus-stats-row {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(101, 78, 18, 0.15);
+}
+
+.aboutus-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutus-stat-number {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #654e12;
+  line-height: 1;
+}
+
+.aboutus-stat-label {
+  font-size: 0.8125rem;
+  color: #8b6f47;
+  margin-top: 0.25rem;
+}
+
+/* Purpose List */
+.aboutus-purpose-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.aboutus-purpose-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9375rem;
+  color: #5a4a3a;
+  padding: 0.75rem 1rem;
+  background: rgba(101, 78, 18, 0.05);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.aboutus-purpose-list li:hover {
+  background: rgba(101, 78, 18, 0.1);
+  transform: translateX(4px);
+}
+
+.purpose-icon {
+  font-size: 1.25rem;
+}
+
+/* Approach Features */
+.aboutus-approach-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.approach-feature {
+  padding: 1.25rem;
+  background: rgba(101, 78, 18, 0.05);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.approach-feature:hover {
+  background: rgba(101, 78, 18, 0.1);
+  transform: translateY(-2px);
+}
+
+.approach-feature-icon {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.approach-feature h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #654e12;
+  margin-bottom: 0.375rem;
+}
+
+.approach-feature p {
+  font-size: 0.875rem;
+  color: #5a4a3a;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ============================================
+   RESPONSIVE - ZIGZAG SECTIONS
+   ============================================ */
+@media (max-width: 968px) {
+  .aboutus-zigzag-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .aboutus-zigzag-reverse .aboutus-zigzag-container {
+    direction: ltr;
+  }
+
+  .aboutus-zigzag-visual {
+    order: -1;
+  }
+
+  .aboutus-visual-card {
+    width: 220px;
+    height: 220px;
+  }
+
+  .aboutus-visual-icon {
+    font-size: 4rem;
+  }
+
+  .aboutus-stats-row {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .aboutus-purpose-list {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutus-approach-features {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutus-hero {
+    padding: 4rem 1.5rem 3rem;
+  }
+
+  .aboutus-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .aboutus-section-title {
+    font-size: 1.75rem;
+  }
+
+  .aboutus-visual-card {
+    width: 180px;
+    height: 180px;
+  }
+
+  .aboutus-visual-icon {
+    font-size: 3rem;
+  }
+
+  .aboutus-stats-row {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* ============================================
+   ORIGINAL STYLES (Foundation, Astrologer, etc.)
+   ============================================ */
 .aboutus-content {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Typography */
 .aboutus-main-title {
   font-size: 3rem;
   font-weight: 700;
-  color: #5f6b3a;
+  color: #654e12;
   text-align: center;
   margin-bottom: 2rem;
+}
+
+/* Center title for non-zigzag sections */
+.aboutus-section:not(.aboutus-zigzag) .aboutus-section-title {
+  text-align: center;
 }
 
 .aboutus-section-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #5f6b3a;
+  color: #654e12;
   text-align: center;
   margin-bottom: 2rem;
 }
 
 .aboutus-text {
   font-size: 1.125rem;
-  color: #5f6b3a;
+  color: #654e12;
   line-height: 1.8;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -63,11 +445,11 @@
 }
 
 .aboutus-box {
-  background: #faf7f2;
+  background: rgba(250, 248, 243, 0.8);
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(95, 107, 58, 0.1);
-  border: 1px solid #5f6b3a;
+  border: 1px solid #654e12;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -81,14 +463,14 @@
 .aboutus-box-title {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #5f6b3a;
+  color: #654e12;
   margin-bottom: 1rem;
   text-align: center;
 }
 
 .aboutus-box-text {
   font-size: 1rem;
-  color: #5f6b3a;
+  color: #654e12;
   line-height: 1.6;
   text-align: center;
 }
@@ -118,12 +500,12 @@
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background: #faf7f2;
+  background: rgba(250, 248, 243, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 5rem;
-  border: 3px solid #5f6b3a;
+  border: 3px solid #654e12;
 }
 
 .aboutus-astrologer-info {
@@ -133,13 +515,13 @@
 .aboutus-astrologer-name {
   font-size: 2rem;
   font-weight: 700;
-  color: #5f6b3a;
+  color: #654e12;
   margin-bottom: 0.5rem;
 }
 
 .aboutus-astrologer-credentials {
   font-size: 1rem;
-  color: #5f6b3a;
+  color: #654e12;
   margin-bottom: 1.5rem;
   font-style: italic;
 }
@@ -147,14 +529,14 @@
 .aboutus-quote {
   margin-top: 2rem;
   padding: 1.5rem;
-  background: #faf7f2;
-  border-left: 4px solid #5f6b3a;
+  background: rgba(250, 248, 243, 0.8);
+  border-left: 4px solid #654e12;
   border-radius: 4px;
 }
 
 .aboutus-quote blockquote {
   font-size: 1.125rem;
-  color: #5f6b3a;
+  color: #654e12;
   line-height: 1.7;
   font-style: italic;
   margin-bottom: 1rem;
@@ -162,7 +544,7 @@
 
 .aboutus-quote cite {
   font-size: 1rem;
-  color: #5f6b3a;
+  color: #654e12;
   font-style: normal;
   font-weight: 600;
 }
@@ -176,7 +558,7 @@
 }
 
 .aboutus-benefit-box {
-  background: #faf7f2;
+  background: rgba(250, 248, 243, 0.8);
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(95, 107, 58, 0.08);
@@ -197,13 +579,13 @@
 .aboutus-benefit-title {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #5f6b3a;
+  color: #654e12;
   margin-bottom: 0.75rem;
 }
 
 .aboutus-benefit-text {
   font-size: 1rem;
-  color: #5f6b3a;
+  color: #654e12;
   line-height: 1.6;
 }
 
@@ -224,7 +606,7 @@
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  background: #faf7f2;
+  background: rgba(250, 248, 243, 0.8);
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(95, 107, 58, 0.08);
@@ -237,7 +619,7 @@
 .aboutus-contact-label {
   font-size: 0.875rem;
   font-weight: 600;
-  color: #5f6b3a;
+  color: #654e12;
   margin-bottom: 0.25rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -245,7 +627,7 @@
 
 .aboutus-contact-value {
   font-size: 1.125rem;
-  color: #5f6b3a;
+  color: #654e12;
   font-weight: 500;
 }
 
@@ -257,7 +639,7 @@
 }
 
 .aboutus-cta-button {
-  background: #5f6b3a;
+  background: #654e12;
   color: #faf7f2;
   padding: 1rem 2.5rem;
   border: none;
@@ -269,16 +651,16 @@
 }
 
 .aboutus-cta-button:hover {
-  background: #5f6b3a;
+  background: #654e12;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(95, 107, 58, 0.2);
 }
 
 .aboutus-cta-button-secondary {
-  background: #faf7f2;
-  color: #5f6b3a;
+  background: rgba(250, 248, 243, 0.8);
+  color: #654e12;
   padding: 1rem 2.5rem;
-  border: 2px solid #5f6b3a;
+  border: 2px solid #654e12;
   border-radius: 6px;
   font-size: 1.125rem;
   font-weight: 600;
@@ -287,7 +669,7 @@
 }
 
 .aboutus-cta-button-secondary:hover {
-  background: #5f6b3a;
+  background: #654e12;
   color: #faf7f2;
   transform: translateY(-2px);
 }

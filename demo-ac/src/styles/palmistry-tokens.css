@@ -5,29 +5,29 @@
   --palm-paper-hover: #faf7f2; /* Card hover state */
 
   /* Text Colors - Brown Ink */
-  --palm-ink: #5f6b3a; /* Primary text - olive green */
-  --palm-ink-muted: #5f6b3a; /* Secondary text - olive green */
-  --palm-ink-subtle: #5f6b3a; /* Tertiary text - olive green */
+  --palm-ink: #654e12; /* Primary text - olive green */
+  --palm-ink-muted: #654e12; /* Secondary text - olive green */
+  --palm-ink-subtle: #654e12; /* Tertiary text - olive green */
 
   /* Borders & Dividers */
-  --palm-border: #5f6b3a; /* Dividers and borders */
-  --palm-border-hover: #5f6b3a; /* Interactive borders */
-  --palm-border-focus: #5f6b3a; /* Focus borders */
+  --palm-border: #654e12; /* Dividers and borders */
+  --palm-border-hover: #654e12; /* Interactive borders */
+  --palm-border-focus: #654e12; /* Focus borders */
 
   /* Accent Colors - Saddle Brown */
-  --palm-accent: #5f6b3a; /* Primary actions */
-  --palm-accent-hover: #5f6b3a; /* Hover state */
+  --palm-accent: #654e12; /* Primary actions */
+  --palm-accent-hover: #654e12; /* Hover state */
   --palm-accent-subtle: #faf7f2; /* Accent backgrounds */
   --palm-accent-light: #faf7f2; /* Very light accent */
 
   /* Semantic Colors */
-  --palm-success: #5f6b3a; /* Success states */
+  --palm-success: #654e12; /* Success states */
   --palm-success-bg: #faf7f2; /* Success background */
-  --palm-warning: #5f6b3a; /* Warning states */
+  --palm-warning: #654e12; /* Warning states */
   --palm-warning-bg: #faf7f2; /* Warning background */
-  --palm-error: #5f6b3a; /* Error states */
+  --palm-error: #654e12; /* Error states */
   --palm-error-bg: #faf7f2; /* Error background */
-  --palm-info: #5f6b3a; /* Info states */
+  --palm-info: #654e12; /* Info states */
   --palm-info-bg: #faf7f2; /* Info background */
 
   /* ============ TYPOGRAPHY ============ */
@@ -217,3 +217,8 @@
     display: none !important;
   }
 }
+
+
+
+
+

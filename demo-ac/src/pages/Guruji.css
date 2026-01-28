@@ -1,5 +1,7 @@
 /* Import Playfair Display for serif typography */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+/* Import Yatra One for journey navigation */
+@import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
 
 .guruji-page {
   background: linear-gradient(to bottom, #faf7f2 0%, #f5f5f5 100%);
@@ -82,7 +84,7 @@
 .hero-cta {
   padding: 1rem 3rem;
   background: linear-gradient(135deg, #d4af6a 0%, #b8977a 100%);
-  color: #5f6b3a;
+  color: #654e12;
   border: none;
   border-radius: 2px;
   font-size: 1rem;
@@ -124,7 +126,7 @@
   display: block;
   font-family: "Playfair Display", serif;
   font-size: 0.875rem;
-  color: #5f6b3a;
+  color: #654e12;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   margin-bottom: 0.5rem;
@@ -133,7 +135,7 @@
 .chapter-title {
   font-family: "Playfair Display", serif;
   font-size: clamp(2.5rem, 5vw, 3.5rem);
-  color: #5f6b3a;
+  color: #654e12;
   margin-bottom: 3rem;
   font-weight: 600;
   line-height: 1.2;
@@ -146,7 +148,7 @@
 .story-text {
   font-size: 1.125rem;
   line-height: 1.9;
-  color: #5f6b3a;
+  color: #654e12;
   margin-bottom: 2rem;
   opacity: 0.9;
 }
@@ -199,12 +201,12 @@
 .timeline-content h4 {
   font-family: "Playfair Display", serif;
   font-size: 1.5rem;
-  color: #5f6b3a;
+  color: #654e12;
   margin-bottom: 0.5rem;
 }
 
 .timeline-content p {
-  color: #5f6b3a;
+  color: #654e12;
   line-height: 1.7;
 }
 
@@ -228,7 +230,7 @@
   font-family: "Playfair Display", serif;
   font-size: 1.3rem;
   font-style: italic;
-  color: #5f6b3a;
+  color: #654e12;
   line-height: 1.8;
 }
 
@@ -259,13 +261,13 @@
 .pillar h4 {
   font-family: "Playfair Display", serif;
   font-size: 1.3rem;
-  color: #5f6b3a;
+  color: #654e12;
   margin-bottom: 0.5rem;
 }
 
 .pillar p {
   font-size: 0.95rem;
-  color: #5f6b3a;
+  color: #654e12;
   line-height: 1.6;
 }
 
@@ -298,19 +300,19 @@
 .principle-card h4 {
   font-family: "Playfair Display", serif;
   font-size: 1.4rem;
-  color: #5f6b3a;
+  color: #654e12;
   margin-bottom: 1rem;
 }
 
 .principle-card p {
-  color: #5f6b3a;
+  color: #654e12;
   line-height: 1.7;
   font-size: 1rem;
 }
 
 /* ===== CHAPTER 4: PHILOSOPHY ===== */
 .chapter-philosophy {
-  background: linear-gradient(to bottom, #1a1a2e 0%, #16213e 100%);
+  /* background: linear-gradient(to bottom, #1a1a2e 0%, #16213e 100%); */
   color: #ffffff;
 }
 
@@ -345,7 +347,7 @@
 .philosophy-item h3 {
   font-family: "Playfair Display", serif;
   font-size: 1.5rem;
-  color: #5f6b3a;
+  color: #654e12;
   margin-bottom: 1rem;
 }
 
@@ -355,7 +357,7 @@
     107,
     58,
     0.85
-  ); /* Approximate conversion of #5f6b3a with opacity */
+  ); /* Approximate conversion of #654e12 with opacity */
   line-height: 1.8;
 }
 
@@ -412,7 +414,7 @@
 
 .service-card {
   padding: 3rem 2rem;
-  background: #faf7f2;
+  background: rgba(250, 248, 243, 0.8);
   border: 1px solid rgba(95, 107, 58, 0.15);
   border-radius: 2px;
   text-align: left;
@@ -422,18 +424,18 @@
 .service-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 50px rgba(95, 107, 58, 0.2);
-  border-color: #5f6b3a;
+  border-color: #654e12;
 }
 
 .service-card h3 {
   font-family: "Playfair Display", serif;
   font-size: 1.5rem;
-  color: #5f6b3a;
+  color: #654e12;
   margin-bottom: 1rem;
 }
 
 .service-card p {
-  color: #5f6b3a;
+  color: #654e12;
   line-height: 1.7;
   font-size: 1rem;
 }
@@ -441,7 +443,7 @@
 /* ===== TESTIMONIALS ===== */
 .guruji-testimonials {
   padding: 8rem 2rem;
-  background: #faf7f2;
+  background: rgba(250, 248, 243, 0.8);
 }
 
 .testimonials-container {
@@ -452,7 +454,7 @@
 .testimonials-title {
   font-family: "Playfair Display", serif;
   font-size: clamp(2.5rem, 5vw, 3.5rem);
-  color: #5f6b3a;
+  color: #654e12;
   margin-bottom: 4rem;
   text-align: center;
 }
@@ -466,28 +468,28 @@
 .testimonial {
   padding: 3rem;
   background: rgba(255, 255, 255, 0.7);
-  border-left: 3px solid #5f6b3a;
+  border-left: 3px solid #654e12;
   border-radius: 2px;
 }
 
 .testimonial-text {
   font-size: 1.125rem;
   line-height: 1.8;
-  color: #5f6b3a;
+  color: #654e12;
   margin-bottom: 1.5rem;
   font-style: italic;
 }
 
 .testimonial-author {
   font-size: 0.95rem;
-  color: #5f6b3a;
+  color: #654e12;
   font-weight: 500;
 }
 
 /* ===== CLOSING SECTION ===== */
 .guruji-closing {
   padding: 10rem 2rem;
-  background: #faf7f2;
+  background: rgba(250, 248, 243, 0.8);
   text-align: center;
 }
 
@@ -499,7 +501,7 @@
 .closing-wisdom {
   font-family: "Playfair Display", serif;
   font-size: clamp(2rem, 4vw, 3rem);
-  color: #5f6b3a;
+  color: #654e12;
   margin-bottom: 2rem;
   font-style: italic;
   line-height: 1.4;
@@ -507,16 +509,16 @@
 
 .closing-text {
   font-size: 1.125rem;
-  color: #5f6b3a;
+  color: #654e12;
   line-height: 1.9;
   margin-bottom: 3rem;
 }
 
 .closing-cta {
   padding: 1.25rem 3.5rem;
-  background: transparent;
-  color: #5f6b3a;
-  border: 2px solid #5f6b3a;
+  background: rgba(250, 248, 243, 0.8);
+  color: #654e12;
+  border: 2px solid #654e12;
   border-radius: 2px;
   font-size: 1rem;
   font-weight: 600;
@@ -527,7 +529,7 @@
 }
 
 .closing-cta:hover {
-  background: #5f6b3a;
+  background: #654e12;
   color: #faf7f2;
   transform: translateY(-3px);
   box-shadow: 0 10px 30px rgba(95, 107, 58, 0.4);
@@ -575,3 +577,245 @@
     font-size: 1.2rem;
   }
 }
+
+/* ===== JOURNEY FLOATING NAVIGATION ===== */
+.journey-nav {
+  position: fixed;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  background: #faf8f3;
+  padding: 1.75rem 1.5rem 1.75rem 1.25rem;
+  border-radius: 4px;
+  box-shadow:
+    0 4px 24px rgba(95, 107, 58, 0.08),
+    0 1px 4px rgba(95, 107, 58, 0.04);
+  min-width: 140px;
+}
+
+.journey-nav__title {
+  font-family: "Yatra One", cursive;
+  font-size: 1.125rem;
+  color: #654e12;
+  margin: 0 0 1.25rem 0;
+  padding-left: 1rem;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.journey-nav__guideline {
+  position: absolute;
+  left: 1.25rem;
+  top: 4rem;
+  bottom: 1.75rem;
+  width: 1px;
+  /* background: rgba(95, 107, 58, 0.2); */
+}
+
+.journey-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.journey-nav__item {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.journey-nav__item a {
+  font-family: "Yatra One", cursive;
+  font-size: 0.9375rem;
+  color: #654e12;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 0.5rem 0.5rem 0.75rem;
+  transition:
+    opacity 0.2s ease,
+    color 0.2s ease;
+  letter-spacing: normal;
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+.journey-nav__item a:hover {
+  opacity: 1;
+}
+
+.journey-nav__item a:focus {
+  outline: 2px solid #d4af6a;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.journey-nav__item a:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.journey-nav__item a:focus-visible {
+  outline: 2px solid #d4af6a;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Active state with saffron/gold accent bar */
+.journey-nav__item--active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 0.875rem;
+  background: #d4af6a;
+  border-radius: 1px;
+}
+
+.journey-nav__item--active a {
+  opacity: 1;
+  color: #654e12;
+}
+
+/* CTA item (Consultation) - subtle separation */
+.journey-nav__item--cta {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(95, 107, 58, 0.1);
+}
+
+.journey-nav__item--cta a {
+  color: #8b6f47;
+}
+
+.journey-nav__item--cta.journey-nav__item--active::before {
+  background: #c4975a;
+}
+
+/* Mobile Toggle Button */
+.journey-nav-toggle {
+  display: none;
+  position: fixed;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 101;
+  width: 36px;
+  height: 36px;
+  background: rgba(250, 248, 243, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(95, 107, 58, 0.15);
+  border-radius: 3px;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 8px;
+  box-shadow: 0 2px 10px rgba(95, 107, 58, 0.08);
+}
+
+.toggle-line {
+  width: 14px;
+  height: 1.5px;
+  background: #654e12;
+  border-radius: 1px;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.journey-nav-toggle:hover {
+  background: #f5f0e8;
+}
+
+.journey-nav-toggle:focus {
+  outline: 2px solid #d4af6a;
+  outline-offset: 2px;
+}
+
+.journey-nav-toggle:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.journey-nav-toggle:focus-visible {
+  outline: 2px solid #d4af6a;
+  outline-offset: 2px;
+}
+
+/* ===== JOURNEY NAV RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .journey-nav {
+    right: 0.875rem;
+    padding: 0.875rem 0.75rem 0.875rem 0.625rem;
+    min-width: 90px;
+  }
+
+  .journey-nav__title {
+    font-size: 0.8125rem;
+  }
+
+  .journey-nav__item a {
+    font-size: 0.6875rem;
+    padding: 0.3rem 0.3rem 0.3rem 0.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .journey-nav-toggle {
+    display: flex;
+  }
+
+  .journey-nav {
+    position: fixed;
+    right: -200px;
+    top: 100%;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      right 0.3s ease,
+      opacity 0.3s ease,
+      visibility 0.3s ease;
+    min-width: 160px;
+    padding: 1.5rem;
+  }
+
+  .journey-nav--open {
+    right: 1rem;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .journey-nav__guideline {
+    top: 3.5rem;
+    bottom: 1.5rem;
+    left: 1rem;
+  }
+
+  .journey-nav__title {
+    padding-left: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .journey-nav__item {
+    padding-left: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .journey-nav-toggle {
+    right: 0.75rem;
+    width: 40px;
+    height: 40px;
+  }
+
+  .journey-nav--open {
+    right: 0.75rem;
+  }
+}
+
+

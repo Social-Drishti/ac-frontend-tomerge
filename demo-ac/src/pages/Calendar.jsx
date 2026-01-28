@@ -267,7 +267,7 @@ const getTithiAndPaksha = (phase) => {
       tithi: tithiNumber,
       paksha: "Shukla Paksha",
     };
-  } else {
+  } else {                                                                                                                                                                                                                                                                 
     return {
       tithi: tithiNumber - 15,
       paksha: "Krishna Paksha",

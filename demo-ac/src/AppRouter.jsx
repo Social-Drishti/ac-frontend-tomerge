@@ -18,6 +18,7 @@ import CareerAstrology from "./pages/CareerAstrology";
 import Transits from "./pages/Transits";
 import Palmistry from "./pages/Palmistry";
 import Guruji from "./pages/Guruji";
+import Reading from "./pages/Reading";
 
 export default function AppRouter() {
   return (
@@ -30,6 +31,7 @@ export default function AppRouter() {
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/calculator" element={<Calculator />} />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/reading" element={<Reading />} />
         <Route path="/natal-chart" element={<NatalChart />} />
         <Route path="/synastry" element={<Synastry />} />
         <Route path="/progressions" element={<Progressions />} />

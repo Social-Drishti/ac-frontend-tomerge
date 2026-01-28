@@ -1,11 +1,11 @@
 * {
-  color: #5f6b3a;
+  color: #654e12;
 }
 
 html,
 body {
-  color: #5f6b3a;
-  background-color: #faf7f2;
+  color: #654e12;
+  background-color: rgba(250, 248, 243, 0.8);
   /* background-image:
     repeating-linear-gradient(
       90deg,
@@ -52,19 +52,19 @@ h4,
 h5,
 h6 {
   letter-spacing: 0.5px;
-  color: #5f6b3a;
+  color: #654e12;
 }
 
 p,
 span,
 div,
 label {
-  color: #5f6b3a;
+  color: #654e12;
 }
 
 /* Links */
 a {
-  color: #5f6b3a;
+  color: #654e12;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -76,8 +76,8 @@ a:hover {
 
 /* Buttons */
 button {
-  color: #5f6b3a;
-  background-color: #faf7f2;
+  color: #654e12;
+  background-color: rgba(250, 248, 243, 0.8);
   border: 2px solid #800000;
   padding: 10px 20px;
   border-radius: 8px;
@@ -98,7 +98,7 @@ button:active {
 .card,
 .container,
 [class*="card"] {
-  background-color: #faf7f2;
+  background-color: rgba(250, 248, 243, 0.8);
   border-radius: 12px;
   padding: 15px;
   box-shadow: 0 4px 6px rgba(128, 0, 0, 0.1);
@@ -108,8 +108,8 @@ button:active {
 input,
 textarea,
 select {
-  color: #5f6b3a;
-  background-color: #faf7f2;
+  color: #654e12;
+  background-color: rgba(250, 248, 243, 0.8);
   padding: 10px;
   border-radius: 8px;
   transition: all 0.3s ease;
@@ -121,7 +121,7 @@ select:focus {
   outline: none;
   border-color: #600000;
   box-shadow: 0 0 5px rgba(128, 0, 0, 0.3);
-  background-color: #faf7f2;
+  background-color: rgba(250, 248, 243, 0.8);
 }
 
 /* input::placeholder {
@@ -168,10 +168,10 @@ h6 {
 */ .accordion-header,
 [class*="accordion-header"],
 [class*="expand-header"] {
-  background-color: #faf7f2;
+  background-color: rgba(250, 248, 243, 0.8);
   border: none;
   cursor: pointer;
-  color: #5f6b3a;
+  color: #654e12;
   font-size: 1.1em;
 }
 
@@ -184,24 +184,24 @@ h6 {
 .accordion-content,
 [class*="accordion-content"],
 [class*="expand-content"] {
-  background-color: #faf7f2;
-  color: #5f6b3a;
+  background-color: rgba(250, 248, 243, 0.8);
+  color: #654e12;
 }
 
 /* Navbar styling */
-.navbar,
+/* .navbar,
 .header,
 nav,
 [class*="navbar"] {
-  background-color: #faf7f2;
-}
+  background-color: rgba(250, 248, 243, 0.8);
+} */
 
-footer,
+/* footer,
 [class*="footer"] {
   padding: 20px;
-  color: #5f6b3a;
-  background-color: #faf7f2;
-}
+  color: #654e12;
+  background-color: rgba(250, 248, 243, 0.8);
+} */
 
 /* Tables */
 table {
@@ -212,30 +212,29 @@ table {
 
 th,
 td {
-  border: 2px solid #800000;
   padding: 12px;
   text-align: left;
-  color: #5f6b3a;
+  color: #654e12;
 }
 
 th {
-  background-color: #faf7f2;
-  color: #5f6b3a;
+  background-color: rgba(250, 248, 243, 0.8);
+  color: #654e12;
   font-weight: bold;
 }
 
 tr:hover {
-  background-color: #faf7f2;
+  background-color: rgba(250, 248, 243, 0.8);
 }
 
 /* Lists */
 ul,
 ol {
-  color: #5f6b3a;
+  color: #654e12;
 }
 
 li {
-  color: #5f6b3a;
+  color: #654e12;
   margin: 8px 0;
 }
 
@@ -250,3 +249,8 @@ li {
   display: inline-block;
   font-size: 0.9em;
 }
+
+
+
+
+

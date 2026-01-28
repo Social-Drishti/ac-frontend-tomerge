@@ -72,19 +72,15 @@ Each section is a self-contained component in `src/sections/` that handles its o
 
 ### 4. Styling Approach
 
-**Hybrid system**: Tailwind utility classes + custom CSS files + Traditional Indian Aesthetic
+**Hybrid system**: Tailwind utility classes + custom CSS files
 
 - **Primary**: Tailwind utility classes for layout/spacing
 - **Custom CSS**: For complex components (Navbar, Hero) with `.css` files
-- **Ornamental styles**: Traditional Indian decorative elements in `styles/ornamental.css`
-- **Custom imports**: `@import "tailwindcss"` in [index.css](src/index.css), followed by variables, ornamental, and global styles
+- **Custom imports**: `@import "tailwindcss"` in [index.css](src/index.css), followed by variables and global styles
 - **Theme colors** defined in [tailwind.config.js](tailwind.config.js) and [variables.css](src/styles/variables.css):
-  - **Terracotta palette**: `#B8977A`, `#A87D5F`, `#8B6F47` (clay/terracotta tones)
-  - **Sandstone**: `#C9B8A3`, `#D4C4B0`, `#E8DCC8` (warm stone backgrounds)
-  - **Bronze/Gold**: `#8B6F47`, `#D4AF6A` (traditional accents)
-  - **Text**: `#3D2F1F`, `#6B5437` (deep brown ink)
-- **Visual aesthetic**: Warm terracotta, carved stone textures, traditional Indian ornaments inspired by deity sculptures
-- **Decorative elements**: Ornamental dividers, carved patterns, mandala backgrounds, embossed effects
+  - **Primary**: `#5f6b3a` (Olive Green)
+  - **Background**: `#FAF7F2` (Cream)
+- **Visual aesthetic**: Clean, calm, with olive green text on cream backgrounds
 
 ### 5. Component Patterns
 

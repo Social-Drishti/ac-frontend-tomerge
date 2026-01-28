@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
 
 @import "tailwindcss";
 @import "./styles/variables.css";
-@import "./styles/ornamental.css";
 @import "./styles/global.css";
+@import "./styles/ui-theme.css";
 
 :root {
   line-height: var(--line-height-base);
@@ -11,19 +12,6 @@
 
   color-scheme: light dark;
   color: var(--color-text-dark);
-  background-color: var(--color-background);
-  background-image:
-    radial-gradient(
-      circle at 10% 20%,
-      rgba(212, 175, 106, 0.05) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 90% 80%,
-      rgba(168, 125, 95, 0.05) 0%,
-      transparent 50%
-    );
-  background-attachment: fixed;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -42,6 +30,11 @@ a:hover {
 
 body {
   margin: 0;
+  background-image: url("/hhh.png");
+  background-size: 100% auto;
+  background-position: top center;
+  background-attachment: scroll;
+  background-repeat: repeat-y;
 }
 
 h1 {
@@ -104,12 +97,6 @@ button:focus-visible {
     --foreground-rgb: 255, 255, 255;
     --background-rgb: 30, 30, 40;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: var(--color-background);
-  margin: 0;
 }
 
 /* Hide horizontal scrollbar but keep scrolling */
