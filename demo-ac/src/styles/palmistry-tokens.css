@@ -1,0 +1,221 @@
+
+:root {
+
+  /* Backgrounds - Warm Parchment Theme */
+  --palm-parchment: #ffffff; /* Main background - white */
+  --palm-paper: #ffffff; /* Card background - white */
+  --palm-paper-hover: #ffffff; /* Card hover state */
+
+  /* Text Colors - Brown Ink */
+  --palm-ink: #800000; /* Primary text - maroon */
+  --palm-ink-muted: #800000; /* Secondary text - maroon */
+  --palm-ink-subtle: #800000; /* Tertiary text - maroon */
+
+  /* Borders & Dividers */
+  --palm-border: #ffffff; /* Dividers and borders */
+  --palm-border-hover: #d4c4a8; /* Interactive borders */
+  --palm-border-focus: #c4b498; /* Focus borders */
+
+  /* Accent Colors - Saddle Brown */
+  --palm-accent: #8b4513; /* Primary actions */
+  --palm-accent-hover: #6b3410; /* Hover state */
+  --palm-accent-subtle: #ffffff; /* Accent backgrounds */
+  --palm-accent-light: #ffffff; /* Very light accent */
+
+  /* Semantic Colors */
+  --palm-success: #4a7c59; /* Success states */
+  --palm-success-bg: #ffffff; /* Success background */
+  --palm-warning: #c17817; /* Warning states */
+  --palm-warning-bg: #ffffff; /* Warning background */
+  --palm-error: #a0423d; /* Error states */
+  --palm-error-bg: #ffffff; /* Error background */
+  --palm-info: #5b7c8d; /* Info states */
+  --palm-info-bg: #ffffff; /* Info background */
+
+  /* ============ TYPOGRAPHY ============ */
+
+  /* Font Families */
+  --palm-font-serif: "Yatra One", "Georgia", serif;
+  --palm-font-sans:
+    "Yatra One", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --palm-font-mono: "Yatra One", "Consolas", "Monaco", monospace;
+
+  /* Font Sizes */
+  --palm-text-xs: 0.75rem; /* 12px */
+  --palm-text-sm: 0.875rem; /* 14px */
+  --palm-text-base: 1rem; /* 16px */
+  --palm-text-lg: 1.125rem; /* 18px */
+  --palm-text-xl: 1.25rem; /* 20px */
+  --palm-text-2xl: 1.5rem; /* 24px */
+  --palm-text-3xl: 1.875rem; /* 30px */
+  --palm-text-4xl: 2.25rem; /* 36px */
+  --palm-text-5xl: 3rem; /* 48px */
+
+  /* Font Weights */
+  --palm-weight-regular: 400;
+  --palm-weight-medium: 500;
+  --palm-weight-semibold: 600;
+  --palm-weight-bold: 700;
+
+  /* Line Heights */
+  --palm-leading-tight: 1.25; /* Headings */
+  --palm-leading-snug: 1.375; /* Subheadings */
+  --palm-leading-normal: 1.5; /* Body text */
+  --palm-leading-relaxed: 1.625; /* Long-form content */
+  --palm-leading-loose: 1.75; /* Editorial spacing */
+
+  /* ============ SPACING ============ */
+  --palm-space-1: 0.25rem; /* 4px */
+  --palm-space-2: 0.5rem; /* 8px */
+  --palm-space-3: 0.75rem; /* 12px */
+  --palm-space-4: 1rem; /* 16px - base unit */
+  --palm-space-5: 1.25rem; /* 20px */
+  --palm-space-6: 1.5rem; /* 24px */
+  --palm-space-8: 2rem; /* 32px */
+  --palm-space-10: 2.5rem; /* 40px */
+  --palm-space-12: 3rem; /* 48px */
+  --palm-space-16: 4rem; /* 64px */
+  --palm-space-20: 5rem; /* 80px */
+  --palm-space-24: 6rem; /* 96px */
+
+  /* ============ BORDERS & RADIUS ============ */
+  --palm-border-width: 1px;
+  --palm-border-width-thick: 2px;
+  --palm-radius-sm: 4px;
+  --palm-radius-md: 6px;
+  --palm-radius-lg: 8px;
+  --palm-radius-xl: 12px;
+
+  /* ============ SHADOWS ============ */
+  --palm-shadow-none: none;
+  --palm-shadow-sm: 0 1px 2px 0 rgba(43, 24, 16, 0.05);
+  --palm-shadow-md: 0 2px 4px 0 rgba(43, 24, 16, 0.08);
+  --palm-shadow-lg: 0 4px 6px -1px rgba(43, 24, 16, 0.1);
+
+  /* ============ TRANSITIONS ============ */
+  --palm-transition-fast: 150ms ease;
+  --palm-transition-base: 200ms ease;
+  --palm-transition-slow: 300ms ease;
+
+  /* ============ LAYOUT ============ */
+  --palm-container-max: 1440px;
+  --palm-container-padding: var(--palm-space-6);
+  --palm-main-column: 70%;
+  --palm-sidebar-column: 30%;
+  --palm-column-gap: var(--palm-space-8);
+
+  /* ============ Z-INDEX ============ */
+  --palm-z-base: 1;
+  --palm-z-dropdown: 10;
+  --palm-z-sticky: 100;
+  --palm-z-modal: 1000;
+  --palm-z-tooltip: 2000;
+}
+
+/* ============ DARK MODE ============ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Backgrounds */
+    --palm-parchment: #1c1814;
+    --palm-paper: #252018;
+    --palm-paper-hover: #2a241d;
+
+    /* Text */
+    --palm-ink: #e8dcc8;
+    --palm-ink-muted: #b8a898;
+    --palm-ink-subtle: #8b7b6e;
+
+    /* Borders */
+    --palm-border: #3a342d;
+    --palm-border-hover: #4a443d;
+    --palm-border-focus: #5a544d;
+
+    /* Accent */
+    --palm-accent: #c17817;
+    --palm-accent-hover: #e89020;
+    --palm-accent-subtle: #2a2218;
+    --palm-accent-light: #221e18;
+
+    /* Semantic Colors - Dark Mode Adjusted */
+    --palm-success: #6a9c79;
+    --palm-success-bg: #1a2e1f;
+    --palm-warning: #e89020;
+    --palm-warning-bg: #2a2218;
+    --palm-error: #c05550;
+    --palm-error-bg: #2a1a19;
+    --palm-info: #7a9cad;
+    --palm-info-bg: #1a252d;
+
+    /* Shadows */
+    --palm-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --palm-shadow-md: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+    --palm-shadow-lg: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* ============ UTILITY CLASSES ============ */
+
+.palm-focus-ring:focus {
+  outline: 2px solid var(--palm-accent);
+  outline-offset: 2px;
+  border-radius: var(--palm-radius-sm);
+}
+
+.palm-focus-ring:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.palm-divider {
+  border: 0;
+  border-top: var(--palm-border-width) solid var(--palm-border);
+  margin: var(--palm-space-6) 0;
+}
+
+.palm-divider-subtle {
+  border-top-color: var(--palm-border);
+  opacity: 0.5;
+}
+
+/* ============ ACCESSIBILITY ============ */
+
+.palm-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.palm-skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  padding: var(--palm-space-3) var(--palm-space-4);
+  background: var(--palm-accent);
+  color: var(--palm-parchment);
+  text-decoration: none;
+  z-index: var(--palm-z-modal);
+}
+
+.palm-skip-link:focus {
+  top: 0;
+}
+
+/* ============ PRINT STYLES ============ */
+
+@media print {
+  :root {
+    --palm-parchment: #ffffff;
+    --palm-paper: #ffffff;
+    --palm-ink: #000000;
+    --palm-border: #cccccc;
+  }
+
+  .palm-no-print {
+    display: none !important;
+  }
+}

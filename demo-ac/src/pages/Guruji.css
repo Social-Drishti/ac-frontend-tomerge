@@ -1,0 +1,577 @@
+/* Import Playfair Display for serif typography */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+.guruji-page {
+  background: linear-gradient(to bottom, #faf7f2 0%, #f5f5f5 100%);
+  min-height: 100vh;
+}
+
+/* ===== HERO SECTION ===== */
+.guruji-hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.guruji-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: cosmicPulse 20s ease-in-out infinite;
+}
+
+@keyframes cosmicPulse {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+  padding: 2rem;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  font-weight: 300;
+}
+
+.hero-cta {
+  padding: 1rem 3rem;
+  background: linear-gradient(135deg, #d4af6a 0%, #b8977a 100%);
+  color: #5f6b3a;
+  border: none;
+  border-radius: 2px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.hero-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(212, 175, 106, 0.4);
+}
+
+/* ===== CHAPTER SECTIONS ===== */
+.guruji-chapter {
+  padding: 8rem 2rem;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: revealSection 1s ease-out forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+@keyframes revealSection {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.chapter-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.chapter-number {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: 0.875rem;
+  color: #5f6b3a;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.5rem;
+}
+
+.chapter-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  color: #5f6b3a;
+  margin-bottom: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.story-content {
+  margin-top: 2rem;
+}
+
+.story-text {
+  font-size: 1.125rem;
+  line-height: 1.9;
+  color: #5f6b3a;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.serif-text {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 2;
+}
+
+/* ===== CHAPTER 1: TIMELINE ===== */
+.chapter-calling {
+  background: linear-gradient(to bottom, #fafafa 0%, #ffffff 100%);
+}
+
+.timeline {
+  margin-top: 4rem;
+  position: relative;
+  padding-left: 3rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #d4af6a 0%, #8b6f47 100%);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -3.5rem;
+  top: 0.5rem;
+  width: 14px;
+  height: 14px;
+  background: #d4af6a;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(212, 175, 106, 0.2);
+}
+
+.timeline-content h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  color: #5f6b3a;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+  color: #5f6b3a;
+  line-height: 1.7;
+}
+
+/* ===== CHAPTER 2: LINEAGE ===== */
+.chapter-lineage {
+  background: linear-gradient(135deg, #f5efe6 0%, #e8dcc8 100%);
+}
+
+.lineage-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.wisdom-quote {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.6);
+  border-left: 4px solid #8b6f47;
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #5f6b3a;
+  line-height: 1.8;
+}
+
+.knowledge-pillars {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.pillar {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.pillar:hover {
+  transform: translateY(-5px);
+}
+
+.pillar-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.pillar h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  color: #5f6b3a;
+  margin-bottom: 0.5rem;
+}
+
+.pillar p {
+  font-size: 0.95rem;
+  color: #5f6b3a;
+  line-height: 1.6;
+}
+
+/* ===== CHAPTER 3: TODAY ===== */
+.chapter-today {
+  background: #ffffff;
+}
+
+.today-principles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.principle-card {
+  padding: 2.5rem;
+  background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+  border: 1px solid rgba(139, 111, 71, 0.1);
+  border-radius: 2px;
+  transition: all 0.4s ease;
+}
+
+.principle-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(139, 111, 71, 0.15);
+  border-color: #d4af6a;
+}
+
+.principle-card h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  color: #5f6b3a;
+  margin-bottom: 1rem;
+}
+
+.principle-card p {
+  color: #5f6b3a;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* ===== CHAPTER 4: PHILOSOPHY ===== */
+.chapter-philosophy {
+  background: linear-gradient(to bottom, #1a1a2e 0%, #16213e 100%);
+  color: #ffffff;
+}
+
+.chapter-philosophy .chapter-number {
+  color: #d4af6a;
+}
+
+.chapter-philosophy .chapter-title {
+  color: #ffffff;
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.philosophy-item {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(212, 175, 106, 0.2);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.philosophy-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #d4af6a;
+}
+
+.philosophy-item h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  color: #5f6b3a;
+  margin-bottom: 1rem;
+}
+
+.philosophy-item p {
+  color: rgba(
+    95,
+    107,
+    58,
+    0.85
+  ); /* Approximate conversion of #5f6b3a with opacity */
+  line-height: 1.8;
+}
+
+.aphorisms {
+  margin-top: 4rem;
+  text-align: center;
+  padding: 3rem 0;
+  border-top: 1px solid rgba(212, 175, 106, 0.3);
+}
+
+.aphorism {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #d4af6a;
+  margin: 2rem 0;
+  line-height: 1.6;
+}
+
+/* ===== SERVICES SECTION ===== */
+.guruji-services {
+  padding: 8rem 2rem;
+  background: #ffffff;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+}
+
+.services-intro {
+  font-size: 1.125rem;
+  color: #6b5437;
+  margin-bottom: 4rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.service-card {
+  padding: 3rem 2rem;
+  background: #faf7f2;
+  border: 1px solid rgba(95, 107, 58, 0.15);
+  border-radius: 2px;
+  text-align: left;
+  transition: all 0.4s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(95, 107, 58, 0.2);
+  border-color: #5f6b3a;
+}
+
+.service-card h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  color: #5f6b3a;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  color: #5f6b3a;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* ===== TESTIMONIALS ===== */
+.guruji-testimonials {
+  padding: 8rem 2rem;
+  background: #faf7f2;
+}
+
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  color: #5f6b3a;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 3rem;
+}
+
+.testimonial {
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-left: 3px solid #5f6b3a;
+  border-radius: 2px;
+}
+
+.testimonial-text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #5f6b3a;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.testimonial-author {
+  font-size: 0.95rem;
+  color: #5f6b3a;
+  font-weight: 500;
+}
+
+/* ===== CLOSING SECTION ===== */
+.guruji-closing {
+  padding: 10rem 2rem;
+  background: #faf7f2;
+  text-align: center;
+}
+
+.closing-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.closing-wisdom {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #5f6b3a;
+  margin-bottom: 2rem;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.closing-text {
+  font-size: 1.125rem;
+  color: #5f6b3a;
+  line-height: 1.9;
+  margin-bottom: 3rem;
+}
+
+.closing-cta {
+  padding: 1.25rem 3.5rem;
+  background: transparent;
+  color: #5f6b3a;
+  border: 2px solid #5f6b3a;
+  border-radius: 2px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.closing-cta:hover {
+  background: #5f6b3a;
+  color: #faf7f2;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(95, 107, 58, 0.4);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .lineage-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .guruji-chapter {
+    padding: 5rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .guruji-hero {
+    height: 80vh;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .chapter-title {
+    font-size: 2rem;
+  }
+
+  .timeline {
+    padding-left: 2rem;
+  }
+
+  .timeline-marker {
+    left: -2.5rem;
+  }
+
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .aphorism {
+    font-size: 1.2rem;
+  }
+}

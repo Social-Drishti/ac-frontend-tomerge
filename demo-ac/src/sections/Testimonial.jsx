@@ -1,6 +1,6 @@
 export default function Testimonial() {
   return (
-    <section className="py-20 md:py-28 bg-white">
+    <section className="py-20">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left: Image placeholder */}

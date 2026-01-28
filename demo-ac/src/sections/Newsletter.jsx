@@ -1,9 +1,9 @@
 export default function Newsletter() {
   return (
-    <section className="py-20 md:py-28 bg-gradient-to-br from-indigo-50 to-purple-50">
+    <section className="py-20 md:py-28">
       <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
-        <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
-          Stay aligned with the cosmos
+        <h2 className="md:text-4xl">
+          Stay aligned with the Astrochitra
         </h2>
         <p className="mt-4 text-lg text-gray-600">
           Receive monthly planetary forecasts, guidance tailored to your sign.

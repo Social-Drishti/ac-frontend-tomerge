@@ -1,0 +1,293 @@
+/* ============================================
+   ABOUT US PAGE STYLES
+   ============================================ */
+
+.aboutus-container {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.aboutus-section {
+  padding: 4rem 2rem;
+  background: #ffffff;
+}
+
+.aboutus-why-section {
+  background: #f9f9f9;
+}
+
+.aboutus-astrologer-section {
+  background: #f9f9f9;
+}
+
+.aboutus-contact-section {
+  background: #f5f5f5;
+}
+
+.aboutus-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Typography */
+.aboutus-main-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #800000;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.aboutus-section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #800000;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.aboutus-text {
+  font-size: 1.125rem;
+  color: #800000;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Mission/Vision/Faith Boxes */
+.aboutus-boxes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.aboutus-box {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(128, 0, 0, 0.1);
+  border: 1px solid #800000;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.aboutus-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(128, 0, 0, 0.15);
+}
+
+.aboutus-box-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #800000;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.aboutus-box-text {
+  font-size: 1rem;
+  color: #800000;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Astrologer Section */
+.aboutus-astrologer-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: start;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .aboutus-astrologer-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.aboutus-astrologer-image {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutus-image-placeholder {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  border: 3px solid #800000;
+}
+
+.aboutus-astrologer-info {
+  text-align: left;
+}
+
+.aboutus-astrologer-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #800000;
+  margin-bottom: 0.5rem;
+}
+
+.aboutus-astrologer-credentials {
+  font-size: 1rem;
+  color: #600000;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.aboutus-quote {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+
+.aboutus-quote blockquote {
+  font-size: 1.125rem;
+  color: #800000;
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.aboutus-quote cite {
+  font-size: 1rem;
+  color: #600000;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Benefits Grid */
+.aboutus-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.aboutus-benefit-box {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(128, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.aboutus-benefit-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(128, 0, 0, 0.12);
+}
+
+.aboutus-benefit-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.aboutus-benefit-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #800000;
+  margin-bottom: 0.75rem;
+}
+
+.aboutus-benefit-text {
+  font-size: 1rem;
+  color: #800000;
+  line-height: 1.6;
+}
+
+/* Contact Section */
+.aboutus-contact-intro {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.aboutus-contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.aboutus-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(128, 0, 0, 0.08);
+}
+
+.aboutus-contact-icon {
+  font-size: 2rem;
+}
+
+.aboutus-contact-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #600000;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.aboutus-contact-value {
+  font-size: 1.125rem;
+  color: #800000;
+  font-weight: 500;
+}
+
+.aboutus-contact-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.aboutus-cta-button {
+  background: #800000;
+  color: #ffffff;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.aboutus-cta-button:hover {
+  background: #600000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(128, 0, 0, 0.2);
+}
+
+.aboutus-cta-button-secondary {
+  background: #ffffff;
+  color: #800000;
+  padding: 1rem 2.5rem;
+  border: 2px solid #800000;
+  border-radius: 6px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.aboutus-cta-button-secondary:hover {
+  background: #800000;
+  color: #ffffff;
+  transform: translateY(-2px);
+}

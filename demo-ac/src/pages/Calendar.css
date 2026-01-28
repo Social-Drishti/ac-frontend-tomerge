@@ -1,0 +1,20 @@
+/* ============================================
+   CALENDAR PAGE STYLES
+   ============================================ */
+
+:root {
+  --calendar-gradient-start: #ffffff;
+  --calendar-gradient-end: #ffffff;
+}
+
+.calendar-card {
+  background: #ffffff;
+}
+
+.calendar-min-height-28 {
+  min-height: 28px;
+}
+
+.calendar-min-height-60 {
+  min-height: 60px;
+}

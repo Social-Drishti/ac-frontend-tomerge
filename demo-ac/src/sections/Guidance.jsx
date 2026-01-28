@@ -21,23 +21,8 @@ export default function Guidance() {
   ];
 
   return (
-    <section className="py-20 md:py-28 bg-gray-50">
+    <section className="py-20">
       <div className="mx-auto max-w-6xl px-6 lg:px-8 text-center">
-        {/* <span className="inline-block rounded-full bg-indigo-100 px-4 py-1.5 text-sm font-medium text-indigo-800 mb-4">
-          Guidance
-        </span> */}
-        <h2 className="text-4xl font-bold tracking-tight md:text-5xl">
-          Your Path Through the Stars
-        </h2>
-        <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-          Unlock the wisdom written in your birth moment.
-        </p>
-        <p className="mt-2 text-md text-gray-500 max-w-2xl mx-auto">
-          Astrology offers clear guidance across key life areas, helping you
-          understand yourself and navigate relationships, career, and personal
-          growth.
-        </p>
-
         <div className="mt-16 grid md:grid-cols-3 gap-8">
           {cards.map((card, i) => (
             <div

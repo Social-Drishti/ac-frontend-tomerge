@@ -1,6 +1,6 @@
 export default function Clarity() {
   return (
-    <section className="bg-white py-20 md:py-28">
+    <section className="py-20 ">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid gap-14 md:grid-cols-2 items-center">
 

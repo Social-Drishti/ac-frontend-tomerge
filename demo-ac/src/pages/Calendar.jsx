@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
+import "./Calendar.css";
 
 // Hindu Time Conversion Component
 const HinduTimeWidget = () => {
@@ -52,12 +53,7 @@ const HinduTimeWidget = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
       {/* Hindu Time Clock */}
-      <div
-        className="rounded-xl shadow-lg p-6"
-        style={{
-          background: `linear-gradient(135deg, rgba(255, 237, 213, 0.98) 0%, rgba(254, 243, 199, 0.98) 100%)`,
-        }}
-      >
+      <div className="rounded-xl shadow-lg p-6 calendar-card">
         <h2 className="text-2xl text-orange-600 mb-4 text-center font-bold">
           Hindu Time
         </h2>
@@ -93,12 +89,7 @@ const HinduTimeWidget = () => {
       </div>
 
       {/* Panchang Details */}
-      <div
-        className="rounded-xl shadow-lg p-6"
-        style={{
-          background: `linear-gradient(135deg, rgba(255, 237, 213, 0.98) 0%, rgba(254, 243, 199, 0.98) 100%)`,
-        }}
-      >
+      <div className="rounded-xl shadow-lg p-6 calendar-card">
         <h2 className="text-2xl text-orange-600 mb-4 text-center">
           Today's Panchang
         </h2>
@@ -168,19 +159,15 @@ const FESTIVALS = {
   "2026-02-19": { name: "Maha Shivaratri", type: "Hindu" },
   "2026-03-15": { name: "Holi", type: "Hindu" },
   "2026-03-30": { name: "Ram Navami", type: "Hindu" },
-  // "2026-04-02": { name: "Good Friday", type: "Christian" },
-  // "2026-04-10": { name: "Eid ul-Fitr", type: "Islamic" },
   "2026-04-21": { name: "Mahavir Jayanti", type: "Hindu" },
   "2026-05-15": { name: "Buddha Purnima", type: "Hindu" },
   "2026-08-15": { name: "Independence Day", type: "National" },
   "2026-08-30": { name: "Janmashtami", type: "Hindu" },
-  // "2026-09-16": { name: "Milad un-Nabi", type: "Islamic" },
   "2026-10-02": { name: "Gandhi Jayanti", type: "National" },
   "2026-10-03": { name: "Dussehra", type: "Hindu" },
   "2026-10-23": { name: "Diwali", type: "Hindu" },
   "2026-10-24": { name: "Govardhan Puja", type: "Hindu" },
   "2026-11-01": { name: "Bhai Dooj", type: "Hindu" },
-  // "2026-12-25": { name: "Christmas", type: "Christian" },
 };
 
 const PANCHANG_DATA = {
@@ -257,24 +244,30 @@ const PANCHANG_DATA = {
   ],
 };
 const getMoonPhase = (date) => {
-  const baseFullMoon = new Date(2026, 0, 3);
-  const diffDays = (date - baseFullMoon) / (1000 * 60 * 60 * 24);
-  const lunarCycle = 29.53; 
-  let phase = (((diffDays + 14.765) % lunarCycle) + lunarCycle) % lunarCycle;
+  // Known new moon date: January 29, 2026
+  const knownNewMoon = new Date(2026, 0, 29, 12, 0, 0);
+  const diffMs = date - knownNewMoon;
+  const diffDays = diffMs / (1000 * 60 * 60 * 24);
+
+  // Synodic month (lunar cycle) is 29.53059 days
+  const lunarCycle = 29.53059;
+
+  // Calculate phase (0-29.53059 days)
+  let phase = diffDays % lunarCycle;
+  if (phase < 0) phase += lunarCycle;
+
   return phase;
 };
-const getTithiAndPaksha = (phase) => {
 
+const getTithiAndPaksha = (phase) => {
   const tithiNumber = Math.floor(phase / 0.984) + 1;
 
   if (tithiNumber <= 15) {
-    // Shukla Paksha (waxing moon) - Tithis 1-15
     return {
       tithi: tithiNumber,
       paksha: "Shukla Paksha",
     };
   } else {
-    // Krishna Paksha (waning moon) - Tithis 1-15
     return {
       tithi: tithiNumber - 15,
       paksha: "Krishna Paksha",
@@ -287,34 +280,69 @@ const getPaksha = (phase) => {
 };
 
 const MoonPhase = ({ phase, size = 60 }) => {
-  const fullMoonPhase = 14.765; 
+  // 0 days = New Moon
+  // 7.38 days = First Quarter
+  // 14.76 days = Full Moon
+  // 22.14 days = Last Quarter
+  // 29.53 days = New Moon (cycle repeats)
+
+  const lunarCycle = 29.53059;
   let illumination;
-  
-  if (phase <= fullMoonPhase) {
-    
-    illumination = phase / fullMoonPhase; 
+  let isWaxing = phase <= lunarCycle / 2;
+
+  if (isWaxing) {
+    // Waxing: New Moon (0) to Full Moon (14.76)
+    illumination = phase / (lunarCycle / 2);
   } else {
-    
-    illumination = (29.53 - phase) / fullMoonPhase;
+    // Waning: Full Moon (14.76) to New Moon (29.53)
+    illumination = (lunarCycle - phase) / (lunarCycle / 2);
   }
 
+  // Clamp between 0 and 1
   illumination = Math.max(0, Math.min(1, illumination));
-  
+
+  // Calculate the visible portion
+  const shadowOffset = isWaxing
+    ? size / 2 - (size / 2) * illumination // Shadow from right during waxing
+    : -size / 2 + (size / 2) * illumination; // Shadow from left during waning
+
   return (
     <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
+      <defs>
+        <mask id={`moonMask-${phase}`}>
+          <circle cx={size / 2} cy={size / 2} r={size / 2} fill="white" />
+          {/* Shadow ellipse for moon phase */}
+          <ellipse
+            cx={size / 2 + shadowOffset}
+            cy={size / 2}
+            rx={size / 2}
+            ry={size / 2}
+            fill="black"
+          />
+        </mask>
+      </defs>
+
+      {/* Dark side of moon */}
       <circle cx={size / 2} cy={size / 2} r={size / 2} fill="#374151" />
-      {illumination > 0.02 && (
-        <ellipse
-          cx={size / 2}
-          cy={size / 2}
-          rx={(size / 2) * illumination}
-          ry={size / 2}
-          fill="#E5E7EB"
-        />
-      )}
-      
+
+      {/* Illuminated side of moon */}
+      <circle
+        cx={size / 2}
+        cy={size / 2}
+        r={size / 2}
+        fill="#E5E7EB"
+        mask={`url(#moonMask-${phase})`}
+      />
+
       {/* Border */}
-      <circle cx={size / 2} cy={size / 2} r={size / 2} fill="none" stroke="#6B7280" strokeWidth="1" />
+      <circle
+        cx={size / 2}
+        cy={size / 2}
+        r={size / 2}
+        fill="none"
+        stroke="#6B7280"
+        strokeWidth="1"
+      />
     </svg>
   );
 };

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
+import "./Auth.css";
 
 export default function Signup() {
   const [form, setForm] = useState({ name: "", email: "", password: "" });
@@ -30,68 +31,62 @@ export default function Signup() {
   return (
     <div>
       <Navbar />
-      <div className="min-h-screen flex items-center justify-center bg-gray-50">
-        <form
-          className="bg-white p-8 rounded-lg shadow-md w-full max-w-md"
-          onSubmit={handleSubmit}
-        >
-          <h2 className="text-2xl font-bold mb-6 text-center">Sign Up</h2>
-          {error && (
-            <div className="text-red-600 text-center mb-4">{error}</div>
-          )}
-          <div className="mb-4">
-            <label className="block mb-1 font-medium">Name</label>
+      <div className="auth-container">
+        <form className="auth-form" onSubmit={handleSubmit}>
+          <h2 className="auth-title">Sign Up</h2>
+          {error && <div className="auth-error">{error}</div>}
+          <div className="auth-field">
+            <label className="auth-label">Name</label>
             <input
               type="text"
               name="name"
               value={form.name}
               onChange={handleChange}
               required
-              className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="auth-input"
             />
           </div>
-          <div className="mb-4">
-            <label className="block mb-1 font-medium">Email</label>
+          <div className="auth-field">
+            <label className="auth-label">Email</label>
             <input
               type="email"
               name="email"
               value={form.email}
               onChange={handleChange}
               required
-              className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="auth-input"
             />
           </div>
-          <div className="mb-6">
-            <label className="block mb-1 font-medium">Password</label>
+          <div className="auth-field">
+            <label className="auth-label">Password</label>
             <input
               type="password"
               name="password"
               value={form.password}
               onChange={handleChange}
               required
-              className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="auth-input"
             />
           </div>
-          <button
-            type="submit"
-            className="w-full bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700 font-medium transition"
-          >
+          <button type="submit" className="auth-submit">
             Sign Up
           </button>
+          <p className="auth-link-text">
+            Already have an account?{" "}
+            <a href="/login" className="auth-link">
+              Login here
+            </a>
+          </p>
         </form>
         {showModal && (
-          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-40 z-50">
-            <div className="bg-white p-6 rounded shadow text-center">
-              <div className="text-green-600 font-bold mb-2">
-                Signup successful!
-              </div>
-              <div className="text-gray-600 text-sm">
-                Redirecting to login...
-              </div>
+          <div className="auth-modal-overlay">
+            <div className="auth-modal">
+              <div className="auth-modal-success">Signup successful!</div>
+              <div className="auth-modal-message">Redirecting to login...</div>
             </div>
           </div>
-        )}{" "}
-      </div>{" "}
+        )}
+      </div>
       <Footer />
     </div>
   );

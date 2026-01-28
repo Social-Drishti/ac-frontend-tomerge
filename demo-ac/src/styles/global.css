@@ -1,15 +1,12 @@
-/* Global Styles - Parchment Theme with Yatra One Brush Stroke Font and Maroon Color */
-
-/* Base styles */
 * {
-  color: #800000;
+  color: #5f6b3a;
 }
 
 html,
 body {
-  color: #800000;
-  background-color: #d4b5a0;
-  background-image:
+  color: #5f6b3a;
+  background-color: #faf7f2;
+  /* background-image:
     repeating-linear-gradient(
       90deg,
       #e8d4c4 0px,
@@ -26,8 +23,8 @@ body {
       #c9a890 25px,
       #d4b5a0 25px,
       #d4b5a0 40px
-    ),
-    repeating-linear-gradient(
+    ), */
+    /* repeating-linear-gradient(
       0deg,
       transparent 0px,
       transparent 1px,
@@ -43,7 +40,7 @@ body {
       rgba(0, 0, 0, 0.02) 0%,
       rgba(0, 0, 0, 0.05) 50%,
       rgba(0, 0, 0, 0.02) 100%
-    );
+    ); */
   margin: 0;
   padding: 0;
 }
@@ -55,19 +52,19 @@ h4,
 h5,
 h6 {
   letter-spacing: 0.5px;
-  color: #800000;
+  color: #5f6b3a;
 }
 
 p,
 span,
 div,
 label {
-  color: #800000;
+  color: #5f6b3a;
 }
 
 /* Links */
 a {
-  color: #800000;
+  color: #5f6b3a;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -79,8 +76,8 @@ a:hover {
 
 /* Buttons */
 button {
-  color: #800000;
-  background-color: #f5e6d3;
+  color: #5f6b3a;
+  background-color: #faf7f2;
   border: 2px solid #800000;
   padding: 10px 20px;
   border-radius: 8px;
@@ -101,7 +98,7 @@ button:active {
 .card,
 .container,
 [class*="card"] {
-  background-color: #bda381;
+  background-color: #faf7f2;
   border-radius: 12px;
   padding: 15px;
   box-shadow: 0 4px 6px rgba(128, 0, 0, 0.1);
@@ -111,8 +108,8 @@ button:active {
 input,
 textarea,
 select {
-  color: #800000;
-  background-color: #fff9f0;
+  color: #5f6b3a;
+  background-color: #faf7f2;
   padding: 10px;
   border-radius: 8px;
   transition: all 0.3s ease;
@@ -124,11 +121,11 @@ select:focus {
   outline: none;
   border-color: #600000;
   box-shadow: 0 0 5px rgba(128, 0, 0, 0.3);
-  background-color: #ffffff;
+  background-color: #faf7f2;
 }
 
 /* input::placeholder {
-  color: #a67575;
+  color: #800000;
 } */
 
 /* Section titles and headings */
@@ -157,23 +154,22 @@ h6 {
 }
 
 /* Accordion/Expandable sections */
-.accordion,
+/* .accordion,
 [class*="accordion"],
 [class*="expand"],
 [class*="collapse"] {
   border-radius: 12px;
   /* margin: 10px 0; */
-  overflow: hidden;
+/* overflow: hidden;
   background-color: #f5e6d3;
-}
-
-.accordion-header,
+} */
+*/ .accordion-header,
 [class*="accordion-header"],
 [class*="expand-header"] {
-  background-color: #f5e6d3;
+  background-color: #faf7f2;
   border: none;
   cursor: pointer;
-  color: #800000;
+  color: #5f6b3a;
   font-size: 1.1em;
 }
 
@@ -186,8 +182,8 @@ h6 {
 .accordion-content,
 [class*="accordion-content"],
 [class*="expand-content"] {
-  background-color: #e78a39;
-  color: #800000;
+  background-color: #faf7f2;
+  color: #5f6b3a;
 }
 
 /* Navbar styling */
@@ -195,15 +191,14 @@ h6 {
 .header,
 nav,
 [class*="navbar"] {
-  background-color: #f5e6d3;
+  background-color: #faf7f2;
 }
 
-/* Footer styling */
 footer,
 [class*="footer"] {
-  background-color: #f5e6d3;
   padding: 20px;
-  color: #800000;
+  color: #5f6b3a;
+  background-color: #faf7f2;
 }
 
 /* Tables */
@@ -218,27 +213,27 @@ td {
   border: 2px solid #800000;
   padding: 12px;
   text-align: left;
-  color: #800000;
+  color: #5f6b3a;
 }
 
 th {
-  background-color: #efd8bf;
-  color: #800000;
+  background-color: #faf7f2;
+  color: #5f6b3a;
   font-weight: bold;
 }
 
 tr:hover {
-  background-color: #efd8bf;
+  background-color: #faf7f2;
 }
 
 /* Lists */
 ul,
 ol {
-  color: #800000;
+  color: #5f6b3a;
 }
 
 li {
-  color: #800000;
+  color: #5f6b3a;
   margin: 8px 0;
 }
 

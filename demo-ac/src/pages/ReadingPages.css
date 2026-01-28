@@ -1,0 +1,12 @@
+/* ============================================
+   READING PAGES SHARED STYLES
+   Used by: Aspects, Retrogrades, LunarNodes, CareerAstrology, 
+           Compatibility, Progressions, Synastry, Transits
+   ============================================ */
+
+.reading-page-container {
+  min-height: 100vh;
+  padding: 2rem;
+  background: #ffffff;
+  background-attachment: fixed;
+}

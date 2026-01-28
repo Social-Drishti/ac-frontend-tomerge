@@ -1,0 +1,160 @@
+/* ==============================================
+   CSS CUSTOM PROPERTIES (VARIABLES)
+   AstroChitra Design System
+   ============================================== */
+
+:root {
+  /* ============ COLOR PALETTE ============ */
+
+  /* Primary Brand Colors - Terracotta & Clay Theme */
+  --color-primary: #5f6b3a; /* Maroon */
+  --color-primary-hover: #600000; /* Darker maroon */
+  --color-primary-light: #5f6b3a; /* Maroon */
+
+  /* Background Colors - Warm Stone & Sand */
+  --color-background: #faf7f2; /* Cream background */
+  --color-background-light: #faf7f2; /* Cream background */
+  --color-background-accent: #a87d5f; /* Terracotta accent */
+  --color-background-paper: #faf7f2; /* Cream background */
+
+  /* Traditional Heritage Colors */
+  --color-terracotta: #a87d5f; /* Traditional clay */
+  --color-sandstone: #c9b8a3; /* Carved stone */
+  --color-bronze: #8b6f47; /* Ancient bronze */
+  --color-copper: #b8856a; /* Copper ornament */
+  --color-gold: #d4af6a; /* Golden accent */
+
+  /* Neutral Colors - Earthy Tones */
+  --color-neutral-tan: #d4c4b0; /* Warm tan */
+  --color-neutral-brown: #8b6f47; /* Medium brown */
+  --color-neutral-camel: #b8977a; /* Camel */
+  --color-accent-orange: #d4956a; /* Warm terracotta */
+  --color-accent-peach: #e8c4a8; /* Soft peach */
+
+  /* Text Colors - Natural Ink */
+  --color-text-dark: #5f6b3a; /* Maroon text */
+  --color-text-medium: #5f6b3a; /* Maroon text */
+  --color-text-light: #5f6b3a; /* Maroon text */
+
+  /* Grayscale - Warm Neutrals */
+  --color-gray-300: #5f6b3a;
+  --color-gray-600: #5f6b3a;
+  --color-gray-700: #5f6b3a;
+  --color-gray-900: #5f6b3a;
+  --color-white: #ffffff;
+
+  /* ============ SPACING ============ */
+  --spacing-xs: 0.25rem; /* 4px */
+  --spacing-sm: 0.5rem; /* 8px */
+  --spacing-md: 1rem; /* 16px */
+  --spacing-lg: 1.5rem; /* 24px */
+  --spacing-xl: 2rem; /* 32px */
+  --spacing-2xl: 3rem; /* 48px */
+  --spacing-3xl: 4rem; /* 64px */
+  --spacing-4xl: 5rem; /* 80px */
+  --spacing-5xl: 6rem; /* 96px */
+  --spacing-7xl: 7rem; /* 112px */
+
+  /* ============ TYPOGRAPHY ============ */
+
+  /* Font Families */
+  --font-serif: "Yatra One", serif;
+  --font-sans: "Yatra One", system-ui, -apple-system, sans-serif;
+
+  /* Font Sizes */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-lg: 1.125rem; /* 18px */
+  --font-size-xl: 1.25rem; /* 20px */
+  --font-size-2xl: 1.5rem; /* 24px */
+  --font-size-3xl: 1.875rem; /* 30px */
+  --font-size-4xl: 2.25rem; /* 36px */
+  --font-size-5xl: 3rem; /* 48px */
+  --font-size-hero: 2.6rem; /* 41.6px */
+  --font-size-heading: 3.2em; /* Relative */
+
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line Heights */
+  --line-height-tight: 1.1;
+  --line-height-base: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* ============ BORDERS & RADIUS ============ */
+  --border-width: 2px;
+  --border-radius-sm: 8px;
+  --border-radius-md: 1rem;
+  --border-radius-lg: 2rem;
+  --border-radius-xl: 120px;
+  --border-radius-full: 9999px;
+
+  /* ============ SHADOWS ============ */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 8px 32px rgba(0, 0, 0, 0.07);
+
+  /* ============ TRANSITIONS ============ */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.25s ease;
+  --transition-slow: 0.3s ease;
+  --transition-all: all var(--transition-base);
+
+  /* ============ Z-INDEX ============ */
+  --z-base: 1;
+  --z-dropdown: 10;
+  --z-sticky: 1000;
+  --z-modal: 2000;
+  --z-tooltip: 3000;
+
+  /* ============ LAYOUT ============ */
+  --max-width-container: 1600px;
+  --max-width-content: 1200px;
+  --max-width-text: 600px;
+
+  --navbar-logo-width: 50px;
+  --navbar-logo-height: 63px;
+  --footer-logo-size: 60px;
+
+  --navbar-padding-x: 6%;
+  --navbar-gap: 5rem;
+  --navbar-gap-large: 7rem;
+
+  /* ============ COMPONENT SPECIFIC ============ */
+
+  /* Hero Section */
+  --hero-min-height: 340px;
+  --hero-padding: 60px 30px;
+
+  /* Buttons */
+  --button-padding: 0.6em 1.2em;
+  --button-padding-lg: 0.75rem 1.5rem;
+
+  /* Focus Ring */
+  --focus-ring: 4px auto -webkit-focus-ring-color;
+  --focus-ring-offset: 2px;
+}
+
+/* ============ DARK MODE ============ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-rgb: 30, 30, 40;
+    --color-background: var(--color-cosmic-dark);
+    --color-text: var(--color-white);
+  }
+}
+
+/* ============ LIGHT MODE ============ */
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-rgb: 255, 255, 255;
+    --color-text: var(--color-primary);
+  }
+}

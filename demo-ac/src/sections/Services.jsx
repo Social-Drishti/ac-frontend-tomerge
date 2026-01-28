@@ -49,26 +49,18 @@ export default function ServicesCarousel() {
   }
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20">
       <div className="mx-auto max-w-6xl px-6 relative">
-
-        {/* Left Arrow */}
         <button
           onClick={() => scroll("left")}
           className="absolute left-0 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-gray-900 text-white flex items-center justify-center shadow hover:bg-gray-800"
         >
-          ‹
         </button>
-
-        {/* Right Arrow */}
         <button
           onClick={() => scroll("right")}
           className="absolute right-0 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-gray-900 text-white flex items-center justify-center shadow hover:bg-gray-800"
         >
-          ›
         </button>
-
-        {/* Carousel */}
         <div
           ref={carouselRef}
           className="flex gap-12 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar px-14"

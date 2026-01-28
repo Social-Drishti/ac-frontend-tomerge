@@ -21,8 +21,6 @@ export default function AnimatedNumber({ value, className = "" }) {
         const animate = (time) => {
           if (!startTime) startTime = time;
           const progress = Math.min((time - startTime) / duration, 1);
-
-          // ease-out animation
           const eased = progress * (2 - progress);
           const current = Math.floor(eased * number);
 

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
+import "./NatalChart.css";
 
 const zodiacSigns = [
   {
@@ -144,23 +145,16 @@ export default function NatalChart() {
   return (
     <>
       <Navbar />
-      <div
-        className="min-h-screen"
-        style={{
-          background: `linear-gradient(135deg, rgba(248, 250, 252, 0.95) 0%, rgba(241, 245, 249, 0.95) 100%), 
-          url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><rect fill="%23D4AF8F" width="200" height="200"/><line x1="30" y1="20" x2="30" y2="120" stroke="%23A0826D" stroke-width="3" opacity="0.6"/><line x1="70" y1="30" x2="70" y2="130" stroke="%23A0826D" stroke-width="2.5" opacity="0.5"/><line x1="100" y1="15" x2="100" y2="140" stroke="%23A0826D" stroke-width="3" opacity="0.6"/><line x1="130" y1="25" x2="130" y2="135" stroke="%23A0826D" stroke-width="2.5" opacity="0.5"/><line x1="160" y1="20" x2="160" y2="125" stroke="%23A0826D" stroke-width="3" opacity="0.6"/><circle cx="40" cy="80" r="3" fill="%23C19A6B" opacity="0.7"/><circle cx="90" cy="70" r="2.5" fill="%23C19A6B" opacity="0.6"/><circle cx="140" cy="90" r="3" fill="%23C19A6B" opacity="0.7"/><circle cx="170" cy="60" r="2.5" fill="%23C19A6B" opacity="0.6"/></svg>')`,
-          backgroundAttachment: "fixed",
-        }}
-      >
+      <div className="min-h-screen natal-page-container">
         {/* Header Section */}
         <div className="text-center pt-16 pb-8 px-4">
-          <h1 className="text-5xl font-bold mb-4" style={{ color: "#800000" }}>
+          <h1 className="text-5xl font-bold mb-4 natal-header-title">
             Daily Horoscope
           </h1>
-          <p className="text-xl mb-2" style={{ color: "#800000" }}>
+          <p className="text-xl mb-2 natal-header-subtitle">
             Discover what the stars have in store for you today
           </p>
-          <p className="text-sm opacity-75" style={{ color: "#800000" }}>
+          <p className="text-sm opacity-75 natal-header-date">
             {new Date().toLocaleDateString("en-US", {
               weekday: "long",
               year: "numeric",
@@ -202,15 +196,7 @@ export default function NatalChart() {
                 <div
                   key={sign.name}
                   onClick={() => setSelectedSign(sign)}
-                  className="cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-                  style={{
-                    background: "#f5e6d3",
-                    borderRadius: "16px",
-                    border: "2px solid #800000",
-                    padding: "24px",
-                    position: "relative",
-                    overflow: "hidden",
-                  }}
+                  className="cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-2xl natal-zodiac-card"
                 >
                   <div
                     className={`absolute inset-0 bg-gradient-to-br ${sign.gradient} opacity-10`}
@@ -219,23 +205,14 @@ export default function NatalChart() {
                     <div className="text-6xl text-center mb-3">
                       {sign.symbol}
                     </div>
-                    <h3
-                      className="text-2xl font-bold text-center mb-2"
-                      style={{ color: "#800000" }}
-                    >
+                    <h3 className="text-2xl font-bold text-center mb-2 natal-zodiac-name">
                       {sign.name}
                     </h3>
-                    <p
-                      className="text-sm text-center mb-4 opacity-75"
-                      style={{ color: "#800000" }}
-                    >
+                    <p className="text-sm text-center mb-4 opacity-75 natal-zodiac-date">
                       {sign.dates}
                     </p>
                     <div className="text-center">
-                      <span
-                        className="inline-block px-3 py-1 rounded-full text-xs font-semibold"
-                        style={{ background: "#800000", color: "#f5e6d3" }}
-                      >
+                      <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold natal-zodiac-element-badge">
                         {sign.element}
                       </span>
                     </div>
@@ -249,13 +226,7 @@ export default function NatalChart() {
                 <div
                   key={sign.name}
                   onClick={() => setSelectedSign(sign)}
-                  className="cursor-pointer transform transition-all duration-300 hover:shadow-xl"
-                  style={{
-                    background: "#f5e6d3",
-                    borderRadius: "12px",
-                    border: "2px solid #800000",
-                    padding: "20px",
-                  }}
+                  className="cursor-pointer transform transition-all duration-300 hover:shadow-xl natal-zodiac-card-list"
                 >
                   <div className="flex items-center gap-4">
                     <div className="text-5xl">{sign.symbol}</div>

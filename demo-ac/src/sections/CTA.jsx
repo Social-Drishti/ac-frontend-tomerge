@@ -3,11 +3,11 @@ export default function CTA() {
     <section className="relative overflow-hidden py-28 md:py-36 text-white">
       
       {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-purple-900 to-black" />
+      <div className="absolute inset-0" />
 
-      {/* Decorative Glow */}
+      {/* Decorative Glow
       <div className="absolute -top-32 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-purple-600/30 blur-3xl" />
-      <div className="absolute bottom-0 right-0 h-80 w-80 bg-indigo-600/20 blur-3xl" />
+      <div className="absolute bottom-0 right-0 h-80 w-80 bg-indigo-600/20 blur-3xl" /> */}
 
       {/* Content */}
       <div className="relative mx-auto max-w-5xl px-6 text-center lg:px-8">
@@ -22,10 +22,10 @@ export default function CTA() {
 
         {/* CTA Buttons */}
         <div className="mt-12 flex flex-col sm:flex-row gap-5 justify-center">
-          <button className="rounded-xl bg-white px-10 py-4 text-base font-semibold text-gray-900 shadow-lg hover:bg-gray-100 transition">
+          <button className="rounded-xl bg-white px-10 py-4 text-base font-semibold text-gray-900 shadow-lg transition">
             Book for appointment          </button>
 
-          <button className="rounded-xl border border-white/40 px-10 py-4 text-base font-semibold text-white hover:bg-white/10 transition">
+          <button className="rounded-xl border border-white/40 px-10 py-4 text-base font-semibold text-white transition">
             Free Reading           </button>
         </div>
 

@@ -1,10 +1,7 @@
 export default function WhyAstrology() {
   return (
-    <section className="py-20 md:py-28 bg-gray-50">
+    <section className="py-20">
       <div className="mx-auto max-w-5xl px-6 text-center lg:px-8">
-        {/* <span className="inline-block rounded-full bg-indigo-100 px-4 py-1.5 text-sm font-medium text-indigo-800 mb-4">
-          Advantages
-        </span> */}
 
         <h2 className="text-4xl font-bold tracking-tight md:text-5xl">
           Why astrology matters

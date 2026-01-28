@@ -8,7 +8,7 @@ export default function Impact() {
   ];
 
   return (
-    <section className="py-20 md:py-28 bg-gray-50">
+    <section className="py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6 lg:px-8 text-center">
         {/* <span className="inline-block rounded-full bg-indigo-100 px-4 py-1.5 text-sm font-medium text-indigo-800 mb-4">
           Impact

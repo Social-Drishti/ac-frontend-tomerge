@@ -16,6 +16,8 @@ import Retrogrades from "./pages/Retrogrades";
 import Aspects from "./pages/Aspects";
 import CareerAstrology from "./pages/CareerAstrology";
 import Transits from "./pages/Transits";
+import Palmistry from "./pages/Palmistry";
+import Guruji from "./pages/Guruji";
 
 export default function AppRouter() {
   return (
@@ -37,6 +39,8 @@ export default function AppRouter() {
         <Route path="/aspects" element={<Aspects />} />
         <Route path="/career-astrology" element={<CareerAstrology />} />
         <Route path="/transits" element={<Transits />} />
+        <Route path="/palmistry" element={<Palmistry />} />
+        <Route path="/guruji" element={<Guruji />} />
       </Routes>
     </Router>
   );
