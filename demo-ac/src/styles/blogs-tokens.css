@@ -1,0 +1,181 @@
+/* ==============================================
+   BLOGS PAGE - DESIGN TOKENS
+   Clean Editorial Journal Layout
+   Calm, Readable, Professional
+   ============================================== */
+
+:root {
+  /* ============ COLOR PALETTE ============ */
+
+  /* Primary Colors - Olive Green (Brand) */
+  --blogs-primary: #5f6b3a;
+  --blogs-primary-light: rgba(95, 107, 58, 0.08);
+  --blogs-primary-muted: rgba(95, 107, 58, 0.6);
+  --blogs-primary-hover: rgba(95, 107, 58, 0.12);
+
+  /* Background - Warm Parchment */
+  --blogs-bg: #faf8f3;
+  --blogs-bg-subtle: #f5f2eb;
+  --blogs-bg-card: #ffffff;
+  --blogs-bg-featured: rgba(95, 107, 58, 0.04);
+
+  /* Text Colors */
+  --blogs-ink: #5f6b3a;
+  --blogs-ink-muted: rgba(95, 107, 58, 0.7);
+  --blogs-ink-subtle: rgba(95, 107, 58, 0.5);
+  --blogs-ink-light: rgba(95, 107, 58, 0.4);
+
+  /* Borders & Dividers */
+  --blogs-border: rgba(95, 107, 58, 0.15);
+  --blogs-divider: rgba(95, 107, 58, 0.1);
+
+  /* ============ TYPOGRAPHY ============ */
+
+  /* Font Families */
+  --blogs-font-display: "Yatra One", cursive;
+  --blogs-font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* Font Sizes - Editorial Scale */
+  --blogs-text-xs: 0.75rem;      /* 12px */
+  --blogs-text-sm: 0.875rem;     /* 14px */
+  --blogs-text-base: 1rem;       /* 16px */
+  --blogs-text-lg: 1.125rem;     /* 18px */
+  --blogs-text-xl: 1.25rem;      /* 20px */
+  --blogs-text-2xl: 1.5rem;      /* 24px */
+  --blogs-text-3xl: 1.875rem;    /* 30px */
+  --blogs-text-4xl: 2.25rem;     /* 36px */
+  --blogs-text-5xl: 3rem;        /* 48px */
+
+  /* Font Weights */
+  --blogs-weight-normal: 400;
+  --blogs-weight-medium: 500;
+  --blogs-weight-semibold: 600;
+
+  /* Line Heights */
+  --blogs-leading-tight: 1.2;
+  --blogs-leading-snug: 1.375;
+  --blogs-leading-normal: 1.5;
+  --blogs-leading-relaxed: 1.625;
+  --blogs-leading-loose: 1.75;
+
+  /* Letter Spacing */
+  --blogs-tracking-tight: -0.01em;
+  --blogs-tracking-normal: 0;
+  --blogs-tracking-wide: 0.02em;
+  --blogs-tracking-wider: 0.08em;
+
+  /* ============ SPACING ============ */
+
+  --blogs-space-1: 0.25rem;    /* 4px */
+  --blogs-space-2: 0.5rem;     /* 8px */
+  --blogs-space-3: 0.75rem;    /* 12px */
+  --blogs-space-4: 1rem;       /* 16px */
+  --blogs-space-5: 1.25rem;    /* 20px */
+  --blogs-space-6: 1.5rem;     /* 24px */
+  --blogs-space-8: 2rem;       /* 32px */
+  --blogs-space-10: 2.5rem;    /* 40px */
+  --blogs-space-12: 3rem;      /* 48px */
+  --blogs-space-16: 4rem;      /* 64px */
+  --blogs-space-20: 5rem;      /* 80px */
+  --blogs-space-24: 6rem;      /* 96px */
+
+  /* ============ LAYOUT ============ */
+
+  --blogs-container-max: 1120px;
+  --blogs-container-narrow: 720px;
+  --blogs-container-padding: 2rem;
+
+  /* Grid Configuration */
+  --blogs-grid-gap: 2rem;
+  --blogs-card-min-width: 320px;
+
+  /* ============ TRANSITIONS ============ */
+
+  --blogs-transition-fast: 0.15s ease;
+  --blogs-transition-base: 0.25s ease;
+  --blogs-transition-slow: 0.4s ease;
+
+  /* ============ BORDERS & SHADOWS ============ */
+
+  --blogs-radius-sm: 4px;
+  --blogs-radius-md: 8px;
+
+  --blogs-shadow-sm: 0 1px 3px rgba(95, 107, 58, 0.06);
+  --blogs-shadow-md: 0 4px 12px rgba(95, 107, 58, 0.08);
+  --blogs-shadow-hover: 0 8px 20px rgba(95, 107, 58, 0.1);
+}
+
+/* ============ DARK MODE SUPPORT ============ */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --blogs-bg: #1a1914;
+    --blogs-bg-subtle: #24231d;
+    --blogs-bg-card: #1f1e18;
+    --blogs-bg-featured: rgba(250, 248, 243, 0.04);
+
+    --blogs-ink: #e5e3d8;
+    --blogs-ink-muted: rgba(229, 227, 216, 0.75);
+    --blogs-ink-subtle: rgba(229, 227, 216, 0.55);
+    --blogs-ink-light: rgba(229, 227, 216, 0.4);
+
+    --blogs-border: rgba(229, 227, 216, 0.15);
+    --blogs-divider: rgba(229, 227, 216, 0.1);
+
+    --blogs-primary-light: rgba(229, 227, 216, 0.08);
+    --blogs-primary-hover: rgba(229, 227, 216, 0.12);
+
+    --blogs-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2);
+    --blogs-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.25);
+    --blogs-shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* ============ RESPONSIVE TOKENS ============ */
+
+@media (max-width: 1024px) {
+  :root {
+    --blogs-container-padding: 1.5rem;
+    --blogs-grid-gap: 1.5rem;
+    --blogs-text-5xl: 2.5rem;
+    --blogs-text-4xl: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --blogs-text-5xl: 2rem;
+    --blogs-text-4xl: 1.75rem;
+    --blogs-text-3xl: 1.5rem;
+    --blogs-space-16: 3rem;
+    --blogs-space-20: 4rem;
+    --blogs-container-padding: 1.25rem;
+    --blogs-grid-gap: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --blogs-text-5xl: 1.75rem;
+    --blogs-text-4xl: 1.5rem;
+    --blogs-text-3xl: 1.25rem;
+    --blogs-space-16: 2.5rem;
+    --blogs-space-20: 3rem;
+    --blogs-container-padding: 1rem;
+    --blogs-grid-gap: 1rem;
+    --blogs-card-min-width: 280px;
+  }
+}
+
+/* ============ PRINT STYLES ============ */
+
+@media print {
+  :root {
+    --blogs-bg: #ffffff;
+    --blogs-ink: #000000;
+    --blogs-ink-muted: #333333;
+    --blogs-shadow-sm: none;
+    --blogs-shadow-md: none;
+    --blogs-shadow-hover: none;
+  }
+}

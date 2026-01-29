@@ -1,14 +1,10 @@
 .aboutus-container {
   min-height: 100vh;
-  background: #faf7f2;
 }
 
-/* ============================================
-   HERO SECTION
-   ============================================ */
 .aboutus-hero {
   padding: 6rem 2rem 4rem;
-  background: linear-gradient(135deg, #654e12 0%, #4a3a0e 100%);
+  /* background: linear-gradient(135deg, #654e12 0%, #4a3a0e 100%); */
   color: #fff;
   text-align: center;
 }
@@ -43,20 +39,17 @@
   margin: 0 auto;
 }
 
-/* ============================================
-   ZIGZAG SECTIONS
-   ============================================ */
 .aboutus-section {
   padding: 5rem 2rem;
 }
 
-.aboutus-zigzag {
+/* .aboutus-zigzag {
   background: #fff;
-}
+} */
 
-.aboutus-zigzag:nth-child(odd) {
+/* .aboutus-zigzag:nth-child(odd) {
   background: #faf7f2;
-}
+} */
 
 .aboutus-zigzag-container {
   max-width: 1200px;
@@ -117,13 +110,13 @@
 .aboutus-visual-card {
   width: 280px;
   height: 280px;
-  background: linear-gradient(145deg, #654e12, #8b6f47);
+  /* background: linear-gradient(145deg, #654e12, #8b6f47); */
   border-radius: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  box-shadow: 0 20px 60px rgba(101, 78, 18, 0.25);
+  /* box-shadow: 0 20px 60px rgba(101, 78, 18, 0.25); */
   overflow: hidden;
 }
 

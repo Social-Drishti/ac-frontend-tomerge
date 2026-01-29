@@ -2,28 +2,109 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <footer className="text-gray-300">
-      <div className="mx-auto px-6 py-12">
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-10">
-          <div className="lg:col-span-2">
-            <div className="footer-logo">
-              <a href="/">
-                <img
-                  src="/Astrochitra-color-logo.svg"
-                  alt="Astro Chitra Logo"
-                />
-              </a>
-            </div>
-            <p className="text-sm mb-4 footer-text">
-              Contact number
-              <br />
-              email id <br />
-              Mumbai, Maharashtra, India
+    <footer className="footer">
+      <div className="footer-container">
+        {/* Main Footer Content */}
+        <div className="footer-grid">
+          {/* Brand & Contact Column */}
+          <div className="footer-brand">
+            <a href="/" className="footer-logo-link">
+              <img
+                src="/Astrochitra-color-logo.svg"
+                alt="Astro Chitra Logo"
+                className="footer-logo"
+              />
+            </a>
+            <p className="footer-tagline">
+              Guiding your cosmic journey with ancient wisdom and modern
+              insight.
             </p>
-            <div className="mt-6 rounded-lg overflow-hidden shadow-lg border border-gray-700 footer-map-container">
+            <div className="footer-contact">
+              <div className="footer-contact-item">
+                <svg
+                  className="footer-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                >
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+                </svg>
+                <span>Contact number</span>
+              </div>
+              <div className="footer-contact-item">
+                <svg
+                  className="footer-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                >
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                <span>email id</span>
+              </div>
+              <div className="footer-contact-item">
+                <svg
+                  className="footer-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span>Mumbai, Maharashtra, India</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Company Links */}
+          <div className="footer-links-group">
+            <h4 className="footer-heading">Company</h4>
+            <ul className="footer-links">
+              <li>
+                <a href="/about">About us</a>
+              </li>
+              <li>
+                <a href="/services">Services</a>
+              </li>
+              <li>
+                <a href="/careers">Careers</a>
+              </li>
+              <li>
+                <a href="/contact">Contact us</a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Useful Links */}
+          <div className="footer-links-group">
+            <h4 className="footer-heading">Useful Links</h4>
+            <ul className="footer-links">
+              <li>
+                <a href="/#faq">FAQs</a>
+              </li>
+              <li>
+                <a href="/#testimonials">Testimonials</a>
+              </li>
+              <li>
+                <a href="/gallery">Gallery</a>
+              </li>
+              <li>
+                <a href="/events">Events</a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Map Column */}
+          <div className="footer-map-column">
+            <h4 className="footer-heading">Find Us</h4>
+            <div className="footer-map-wrapper">
               <iframe
                 title="AstroChitra Location - Mumbai"
-                className="w-full h-48 sm:h-64"
                 loading="lazy"
                 allowFullScreen
                 referrerPolicy="no-referrer-when-downgrade"
@@ -31,66 +112,19 @@ export default function Footer() {
               ></iframe>
             </div>
           </div>
-
-          <div>
-            <h4 className="font-semibold mb-4 footer-section-title">Company</h4>
-            <ul className="space-y-2 text-sm footer-list">
-              <li className="hover:text-terracotta-200 cursor-pointer transition-colors">
-                About us
-              </li>
-              <li className="hover:text-terracotta-200 cursor-pointer transition-colors">
-                Services
-              </li>
-              <li className="hover:text-terracotta-200 cursor-pointer transition-colors">
-                Blog
-              </li>
-              <li className="hover:text-terracotta-200 cursor-pointer transition-colors">
-                Contact us
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-semibold mb-4 footer-section-title">
-              Useful Links
-            </h4>
-            <ul className="space-y-2 text-sm footer-list">
-              <li className="hover:text-terracotta-200 cursor-pointer transition-colors">
-                FAQs
-              </li>
-              <li className="hover:text-terracotta-200 cursor-pointer transition-colors">
-                Testimonials
-              </li>
-              <li className="hover:text-terracotta-200 cursor-pointer transition-colors">
-                Gallery
-              </li>
-              <li className="hover:text-terracotta-200 cursor-pointer transition-colors">
-                Events
-              </li>
-            </ul>
-          </div>
-
-          {/* <div>
-            <h4 className="font-semibold text-white mb-4">Shop</h4>
-            <ul className="space-y-2 text-sm">
-              <li>Crystals</li>
-              <li>Books</li>
-            </ul>
-          </div> */}
         </div>
 
-        <div className="mt-16 pt-8 text-center text-sm footer-copyright">
-          <p>© 2025 AstroChitra. All rights reserved.</p>
-          <div className="mt-4 flex justify-center gap-6">
-            <a href="#" className="transition-colors footer-link">
-              Privacy Policy
-            </a>
-            <a href="#" className="transition-colors footer-link">
-              Terms of Service
-            </a>
-            <a href="#" className="transition-colors footer-link">
-              Cookies Settings
-            </a>
+        {/* Footer Bottom */}
+        <div className="footer-bottom">
+          <p className="footer-copyright">
+            © 2025 AstroChitra. All rights reserved.
+          </p>
+          <div className="footer-legal-links">
+            <a href="/privacy">Privacy Policy</a>
+            <span className="footer-divider">·</span>
+            <a href="/terms">Terms of Service</a>
+            <span className="footer-divider">·</span>
+            <a href="/cookies">Cookies Settings</a>
           </div>
         </div>
       </div>

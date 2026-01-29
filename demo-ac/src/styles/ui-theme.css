@@ -39,16 +39,18 @@
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #654e12 0%, #8b6914 100%);
-  color: #faf7f2;
-  border: 2px solid transparent;
-  box-shadow: 0 4px 14px rgba(101, 78, 18, 0.25);
+  background: transparent;
+  color: #654e12;
+  border: 2px solid #654e12;
+  box-shadow: none;
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #7a5d16 0%, #9a7818 100%);
+  background: #654e12;
+  color: #faf7f2;
+  border-color: #654e12;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(101, 78, 18, 0.35);
+  box-shadow: 0 4px 14px rgba(101, 78, 18, 0.2);
 }
 
 .btn-primary:active {
@@ -248,7 +250,7 @@
 
 /* Base Card */
 .card {
-  background: #fff;
+  background: transparent;
   border-radius: 16px;
   padding: 1.5rem;
   border: 1px solid rgba(101, 78, 18, 0.1);
@@ -257,7 +259,7 @@
 
 /* Card Variants */
 .card-elevated {
-  background: #fff;
+  background: rgba(250, 247, 242, 0.6);
   border: none;
   box-shadow: 0 4px 20px rgba(101, 78, 18, 0.08);
 }
@@ -719,63 +721,5 @@
 
   .card-pricing.featured {
     transform: none;
-  }
-}
-
-/* ============================================
-   DARK MODE SUPPORT
-   ============================================ */
-@media (prefers-color-scheme: dark) {
-  .card {
-    background: #2a2520;
-    border-color: rgba(250, 247, 242, 0.1);
-  }
-
-  .card-elevated {
-    background: #2a2520;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  }
-
-  .card-filled {
-    background: #1f1b18;
-  }
-
-  .card-title,
-  .card-feature-title,
-  .card-service-title,
-  .card-testimonial-name,
-  .card-pricing-title,
-  .card-stat-value {
-    color: #d4c4a8;
-  }
-
-  .card-body,
-  .card-feature-text,
-  .card-service-description,
-  .card-testimonial-text {
-    color: rgba(250, 247, 242, 0.8);
-  }
-
-  .card-link {
-    color: #d4c4a8;
-  }
-
-  .btn-secondary {
-    border-color: #d4c4a8;
-    color: #d4c4a8;
-  }
-
-  .btn-secondary:hover {
-    background: #d4c4a8;
-    color: #1f1b18;
-  }
-
-  .btn-ghost:hover {
-    background: rgba(212, 196, 168, 0.1);
-  }
-
-  .btn-light {
-    background: #2a2520;
-    color: #d4c4a8;
   }
 }

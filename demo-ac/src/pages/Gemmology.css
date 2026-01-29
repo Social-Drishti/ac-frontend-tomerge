@@ -1,0 +1,574 @@
+/* ============ GEMMOLOGY PAGE ============ */
+
+.gem-page {
+  min-height: 100vh;
+}
+
+/* ============ HERO SECTION ============ */
+
+.gem-hero {
+  padding: var(--gem-space-16) 0 var(--gem-space-12);
+  text-align: center;
+}
+
+.gem-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--gem-space-6);
+}
+
+.gem-hero-title {
+  font-family: var(--gem-font-display);
+  font-size: var(--gem-text-5xl);
+  font-weight: var(--gem-weight-bold);
+  color: var(--gem-ink);
+  margin: 0 0 var(--gem-space-6);
+  line-height: var(--gem-leading-tight);
+}
+
+.gem-hero-subtitle {
+  font-family: var(--gem-font-sans);
+  font-size: var(--gem-text-xl);
+  font-style: italic;
+  color: var(--gem-ink-secondary);
+  margin: 0;
+  line-height: var(--gem-leading-relaxed);
+}
+
+/* ============ MAIN CONTAINER ============ */
+
+.gem-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--gem-space-8) var(--gem-space-6) var(--gem-space-16);
+}
+
+/* ============ CONTENT SECTIONS ============ */
+
+.gem-section {
+  margin-bottom: var(--gem-space-12);
+}
+
+.gem-section:last-child {
+  margin-bottom: 0;
+}
+
+.gem-section-title {
+  font-family: var(--gem-font-display);
+  font-size: var(--gem-text-3xl);
+  font-weight: var(--gem-weight-bold);
+  color: var(--gem-ink);
+  margin: 0 0 var(--gem-space-2);
+  line-height: var(--gem-leading-tight);
+}
+
+.gem-section-divider {
+  width: 60px;
+  height: 3px;
+  background: var(--gem-accent);
+  border: none;
+  margin: var(--gem-space-4) 0 var(--gem-space-6);
+  border-radius: var(--gem-radius-full);
+}
+
+/* ============ CONTENT TYPOGRAPHY ============ */
+
+.gem-section p {
+  font-family: var(--gem-font-sans);
+  font-size: var(--gem-text-base);
+  color: var(--gem-ink);
+  line-height: var(--gem-leading-editorial);
+  margin: 0 0 var(--gem-space-5);
+}
+
+.gem-section p:last-child {
+  margin-bottom: 0;
+}
+
+.gem-lead {
+  font-size: var(--gem-text-lg);
+  color: var(--gem-ink-secondary);
+  line-height: var(--gem-leading-loose);
+}
+
+.gem-section h3 {
+  font-family: var(--gem-font-display);
+  font-size: var(--gem-text-xl);
+  font-weight: var(--gem-weight-semibold);
+  color: var(--gem-ink);
+  margin: var(--gem-space-8) 0 var(--gem-space-4);
+  line-height: var(--gem-leading-snug);
+}
+
+.gem-section h3:first-of-type {
+  margin-top: var(--gem-space-6);
+}
+
+.gem-section strong {
+  font-weight: var(--gem-weight-semibold);
+  color: var(--gem-ink);
+}
+
+/* ============ INFO BOXES ============ */
+
+.gem-info-box {
+  display: flex;
+  gap: var(--gem-space-4);
+  padding: var(--gem-space-5);
+  border: var(--gem-border-width) solid var(--gem-border);
+  border-radius: var(--gem-radius-lg);
+  margin: var(--gem-space-6) 0;
+  background: var(--gem-paper-alt);
+}
+
+.gem-info-box--warning {
+  border-color: var(--gem-warning);
+  background: var(--gem-warning-bg);
+}
+
+.gem-info-box--success {
+  border-color: var(--gem-success);
+  background: var(--gem-success-bg);
+}
+
+.gem-info-box--error {
+  border-color: var(--gem-error);
+  background: var(--gem-error-bg);
+}
+
+.gem-info-icon {
+  font-size: var(--gem-text-2xl);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.gem-info-content {
+  flex: 1;
+}
+
+.gem-info-title {
+  font-family: var(--gem-font-display);
+  font-size: var(--gem-text-base);
+  font-weight: var(--gem-weight-semibold);
+  color: var(--gem-ink);
+  margin: 0 0 var(--gem-space-2);
+}
+
+.gem-info-text {
+  font-family: var(--gem-font-sans);
+  font-size: var(--gem-text-sm);
+  color: var(--gem-ink-secondary);
+  line-height: var(--gem-leading-relaxed);
+  margin: 0;
+}
+
+/* ============ GEMSTONE CARDS ============ */
+
+.gem-stone-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--gem-space-4);
+  margin: var(--gem-space-6) 0;
+}
+
+.gem-stone-card {
+  border: var(--gem-border-width) solid var(--gem-border);
+  border-radius: var(--gem-radius-lg);
+  padding: var(--gem-space-5);
+  position: relative;
+  overflow: hidden;
+  transition: border-color var(--gem-transition-base);
+}
+
+.gem-stone-card:hover {
+  border-color: var(--gem-border-dark);
+}
+
+.gem-stone-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+}
+
+.gem-stone-card--ruby::before {
+  background: var(--gem-ruby);
+}
+.gem-stone-card--pearl::before {
+  background: var(--gem-pearl);
+  border-right: 1px solid var(--gem-border);
+}
+.gem-stone-card--coral::before {
+  background: var(--gem-coral);
+}
+.gem-stone-card--emerald::before {
+  background: var(--gem-emerald);
+}
+.gem-stone-card--yellow-sapphire::before {
+  background: var(--gem-yellow-sapphire);
+}
+.gem-stone-card--diamond::before {
+  background: var(--gem-diamond);
+}
+.gem-stone-card--blue-sapphire::before {
+  background: var(--gem-blue-sapphire);
+}
+.gem-stone-card--hessonite::before {
+  background: var(--gem-hessonite);
+}
+.gem-stone-card--cats-eye::before {
+  background: var(--gem-cats-eye);
+}
+
+.gem-stone-name {
+  font-family: var(--gem-font-display);
+  font-size: var(--gem-text-lg);
+  font-weight: var(--gem-weight-semibold);
+  color: var(--gem-ink);
+  margin: 0 0 var(--gem-space-1);
+}
+
+.gem-stone-sanskrit {
+  font-family: var(--gem-font-sans);
+  font-size: var(--gem-text-sm);
+  color: var(--gem-ink-muted);
+  margin-bottom: var(--gem-space-3);
+}
+
+.gem-stone-planet {
+  display: inline-block;
+  font-family: var(--gem-font-sans);
+  font-size: var(--gem-text-xs);
+  font-weight: var(--gem-weight-medium);
+  color: var(--gem-accent);
+  background: var(--gem-accent-subtle);
+  padding: var(--gem-space-1) var(--gem-space-2);
+  border-radius: var(--gem-radius-sm);
+  margin-bottom: var(--gem-space-3);
+}
+
+.gem-stone-desc {
+  font-family: var(--gem-font-sans);
+  font-size: var(--gem-text-sm);
+  color: var(--gem-ink-secondary);
+  line-height: var(--gem-leading-relaxed);
+  margin: 0;
+}
+
+/* ============ NAVARATNA DISPLAY ============ */
+
+.gem-navaratna-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gem-space-3);
+  margin: var(--gem-space-6) 0;
+  max-width: 450px;
+}
+
+.gem-navaratna-cell {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: var(--gem-border-width) solid var(--gem-border);
+  border-radius: var(--gem-radius-md);
+  padding: var(--gem-space-3);
+  text-align: center;
+  transition: all var(--gem-transition-base);
+}
+
+.gem-navaratna-cell:hover {
+  border-color: var(--gem-border-dark);
+  transform: translateY(-2px);
+}
+
+.gem-navaratna-cell--center {
+  background: var(--gem-accent-subtle);
+  border-color: var(--gem-accent);
+}
+
+.gem-navaratna-symbol {
+  font-size: var(--gem-text-2xl);
+  margin-bottom: var(--gem-space-1);
+}
+
+.gem-navaratna-name {
+  font-family: var(--gem-font-sans);
+  font-size: var(--gem-text-xs);
+  font-weight: var(--gem-weight-medium);
+  color: var(--gem-ink);
+}
+
+/* ============ PLANET-GEM TABLE ============ */
+
+.gem-table-wrapper {
+  overflow-x: auto;
+  margin: var(--gem-space-6) 0;
+  border: var(--gem-border-width) solid var(--gem-border);
+  border-radius: var(--gem-radius-lg);
+}
+
+.gem-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--gem-font-sans);
+  font-size: var(--gem-text-sm);
+}
+
+.gem-table th,
+.gem-table td {
+  padding: var(--gem-space-3) var(--gem-space-4);
+  text-align: left;
+  border-bottom: var(--gem-border-width) solid var(--gem-border-light);
+}
+
+.gem-table th {
+  font-weight: var(--gem-weight-semibold);
+  color: var(--gem-ink);
+  background: var(--gem-paper-alt);
+}
+
+.gem-table tr:last-child td {
+  border-bottom: none;
+}
+
+.gem-table tr:hover td {
+  background: var(--gem-accent-subtle);
+}
+
+/* ============ COMPARISON GRID ============ */
+
+.gem-comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--gem-space-4);
+  margin: var(--gem-space-6) 0;
+}
+
+.gem-comparison-card {
+  border: var(--gem-border-width) solid var(--gem-border);
+  border-radius: var(--gem-radius-lg);
+  padding: var(--gem-space-5);
+}
+
+.gem-comparison-title {
+  font-family: var(--gem-font-display);
+  font-size: var(--gem-text-lg);
+  font-weight: var(--gem-weight-semibold);
+  color: var(--gem-ink);
+  margin: 0 0 var(--gem-space-3);
+}
+
+.gem-comparison-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gem-comparison-list li {
+  font-family: var(--gem-font-sans);
+  font-size: var(--gem-text-sm);
+  color: var(--gem-ink-secondary);
+  padding: var(--gem-space-2) 0;
+  border-bottom: var(--gem-border-width) solid var(--gem-border-light);
+  line-height: var(--gem-leading-relaxed);
+}
+
+.gem-comparison-list li:last-child {
+  border-bottom: none;
+}
+
+/* ============ LISTS ============ */
+
+.gem-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--gem-space-4) 0;
+}
+
+.gem-list li {
+  position: relative;
+  padding-left: var(--gem-space-6);
+  margin-bottom: var(--gem-space-3);
+  font-family: var(--gem-font-sans);
+  font-size: var(--gem-text-base);
+  color: var(--gem-ink);
+  line-height: var(--gem-leading-relaxed);
+}
+
+.gem-list li::before {
+  content: "◆";
+  position: absolute;
+  left: 0;
+  color: var(--gem-accent);
+  font-size: var(--gem-text-xs);
+  top: 0.4em;
+}
+
+.gem-list--check li::before {
+  content: "✓";
+  color: var(--gem-success);
+  font-weight: bold;
+}
+
+.gem-list--cross li::before {
+  content: "✕";
+  color: var(--gem-error);
+  font-weight: bold;
+}
+
+/* ============ DOS & DONTS ============ */
+
+.gem-dos-donts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--gem-space-6);
+  margin: var(--gem-space-6) 0;
+}
+
+.gem-dos,
+.gem-donts {
+  padding: var(--gem-space-5);
+  border-radius: var(--gem-radius-lg);
+}
+
+.gem-dos {
+  background: var(--gem-success-bg);
+  border: var(--gem-border-width) solid var(--gem-success);
+}
+
+.gem-donts {
+  background: var(--gem-error-bg);
+  border: var(--gem-border-width) solid var(--gem-error);
+}
+
+.gem-dos-title,
+.gem-donts-title {
+  font-family: var(--gem-font-display);
+  font-size: var(--gem-text-lg);
+  font-weight: var(--gem-weight-semibold);
+  margin: 0 0 var(--gem-space-4);
+}
+
+.gem-dos-title {
+  color: var(--gem-success);
+}
+
+.gem-donts-title {
+  color: var(--gem-error);
+}
+
+/* ============ FAQ ACCORDION ============ */
+
+.gem-faq-list {
+  margin: var(--gem-space-6) 0;
+}
+
+.gem-faq-item {
+  border: var(--gem-border-width) solid var(--gem-border);
+  border-radius: var(--gem-radius-lg);
+  margin-bottom: var(--gem-space-3);
+  overflow: hidden;
+  transition: border-color var(--gem-transition-base);
+}
+
+.gem-faq-item:hover {
+  border-color: var(--gem-border-dark);
+}
+
+.gem-faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: var(--gem-space-4) var(--gem-space-5);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: var(--gem-font-sans);
+  font-size: var(--gem-text-base);
+  font-weight: var(--gem-weight-medium);
+  color: var(--gem-ink);
+  text-align: left;
+  transition: background var(--gem-transition-base);
+}
+
+.gem-faq-question:hover {
+  background: var(--gem-paper-alt);
+}
+
+.gem-faq-icon {
+  font-size: var(--gem-text-lg);
+  color: var(--gem-ink-muted);
+  transition: transform var(--gem-transition-base);
+}
+
+.gem-faq-item.expanded .gem-faq-icon {
+  transform: rotate(45deg);
+}
+
+.gem-faq-answer {
+  padding: 0 var(--gem-space-5) var(--gem-space-5);
+  font-family: var(--gem-font-sans);
+  font-size: var(--gem-text-sm);
+  color: var(--gem-ink-secondary);
+  line-height: var(--gem-leading-relaxed);
+}
+
+/* ============ RESPONSIVE DESIGN ============ */
+
+@media (max-width: 768px) {
+  .gem-hero {
+    padding: var(--gem-space-12) 0 var(--gem-space-8);
+  }
+
+  .gem-hero-title {
+    font-size: var(--gem-text-4xl);
+  }
+
+  .gem-hero-subtitle {
+    font-size: var(--gem-text-lg);
+  }
+
+  .gem-section-title {
+    font-size: var(--gem-text-2xl);
+  }
+
+  .gem-container {
+    padding: var(--gem-space-6) var(--gem-space-4);
+  }
+
+  .gem-navaratna-grid {
+    max-width: 100%;
+  }
+
+  .gem-stone-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gem-comparison-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gem-dos-donts {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .gem-hero-title {
+    font-size: var(--gem-text-3xl);
+  }
+
+  .gem-section-title {
+    font-size: var(--gem-text-xl);
+  }
+
+  .gem-info-box {
+    flex-direction: column;
+    gap: var(--gem-space-3);
+  }
+}

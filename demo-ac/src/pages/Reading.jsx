@@ -157,7 +157,7 @@ export default function Reading() {
         <section className="reading-hero">
           <div className="reading-hero-content">
             <span className="reading-hero-label">
-              ✦ Discover Your Cosmic Path
+              Discover Your Cosmic Path
             </span>
             <h1 className="reading-hero-title">Astrology Readings</h1>
             <p className="reading-hero-subtitle">
@@ -166,9 +166,9 @@ export default function Reading() {
               toward your highest potential.
             </p>
           </div>
-          <div className="reading-hero-decoration">
+          {/* <div className="reading-hero-decoration">
             <div className="celestial-circle"></div>
-          </div>
+          </div> */}
         </section>
 
         {/* Introduction */}

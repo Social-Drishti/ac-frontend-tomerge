@@ -4,7 +4,7 @@ import Footer from "../components/layout/Footer";
 
 export default function Transits() {
   const [selectedDate, setSelectedDate] = useState("2026-01-27");
-  const [selectedMonth, setSelectedMonth] = useState("January 2026");
+  const [selectedMonth] = useState("January 2026");
 
   const planetaryEvents = [
     {

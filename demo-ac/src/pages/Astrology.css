@@ -1,0 +1,958 @@
+/* ==============================================
+   ASTROLOGY PAGE STYLES
+   Long-form Editorial Design with Dual Navigation
+   ============================================== */
+
+/* ============ CSS VARIABLES ============ */
+:root {
+  /* Colors */
+  --astro-parchment: #faf7f2;
+  --astro-paper: #ffffff;
+  --astro-paper-alt: #f5f1eb;
+  --astro-sidebar-bg: #fefdfb;
+
+  --astro-ink: #2d3436;
+  --astro-ink-secondary: #4a5568;
+  --astro-ink-muted: #718096;
+  --astro-ink-subtle: #a0aec0;
+
+  --astro-accent: #654e12;
+  --astro-accent-hover: #4a3a0d;
+  --astro-accent-light: #8b7355;
+  --astro-accent-subtle: #f9f5eb;
+
+  /* Planet Colors */
+  --astro-sun: #f6ad55;
+  --astro-moon: #cbd5e0;
+  --astro-mars: #fc8181;
+  --astro-mercury: #68d391;
+  --astro-jupiter: #f6e05e;
+  --astro-venus: #f687b3;
+  --astro-saturn: #a0aec0;
+  --astro-rahu: #9f7aea;
+  --astro-ketu: #ed8936;
+
+  --astro-border: #e2d8c8;
+  --astro-border-light: #f0e8dc;
+  --astro-border-dark: #c9b99a;
+
+  --astro-success: #38a169;
+  --astro-success-bg: #f0fff4;
+  --astro-warning: #d69e2e;
+  --astro-warning-bg: #fffff0;
+  --astro-info: #3182ce;
+  --astro-info-bg: #ebf8ff;
+
+  /* Typography */
+  --astro-font-display: "Yatra One", "Georgia", serif;
+  --astro-font-body:
+    "Yatra One", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* Sizes */
+  --astro-text-xs: 0.75rem;
+  --astro-text-sm: 0.875rem;
+  --astro-text-base: 1rem;
+  --astro-text-lg: 1.125rem;
+  --astro-text-xl: 1.25rem;
+  --astro-text-2xl: 1.5rem;
+  --astro-text-3xl: 1.875rem;
+  --astro-text-4xl: 2.25rem;
+  --astro-text-5xl: 3rem;
+
+  /* Spacing */
+  --astro-space-1: 0.25rem;
+  --astro-space-2: 0.5rem;
+  --astro-space-3: 0.75rem;
+  --astro-space-4: 1rem;
+  --astro-space-5: 1.25rem;
+  --astro-space-6: 1.5rem;
+  --astro-space-8: 2rem;
+  --astro-space-10: 2.5rem;
+  --astro-space-12: 3rem;
+  --astro-space-16: 4rem;
+
+  /* Layout */
+  --astro-container-max: 1400px;
+  --astro-content-max: 760px;
+  --astro-sidebar-width: 240px;
+  --astro-column-gap: 3rem;
+
+  /* Misc */
+  --astro-radius-sm: 4px;
+  --astro-radius-md: 6px;
+  --astro-radius-lg: 8px;
+  --astro-radius-xl: 12px;
+  --astro-radius-full: 9999px;
+  --astro-transition: 200ms ease;
+}
+
+/* ============ BASE LAYOUT ============ */
+
+.astro-page {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.astro-container {
+  max-width: var(--astro-container-max);
+  margin: 0 auto;
+  padding: 0 var(--astro-space-6);
+}
+
+/* ============ HERO SECTION ============ */
+
+.astro-hero {
+  /* background: linear-gradient(
+    180deg,
+    var(--astro-paper) 0%,
+    var(--astro-parchment) 100%
+  ); */
+  padding: var(--astro-space-16) 0 var(--astro-space-12);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.astro-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/zodiac-wheel-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 700px;
+  opacity: 0.03;
+  pointer-events: none;
+}
+
+.astro-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--astro-space-6);
+}
+
+.astro-hero-label {
+  display: inline-block;
+  font-family: var(--astro-font-body);
+  font-size: var(--astro-text-sm);
+  font-weight: 500;
+  color: var(--astro-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--astro-space-4);
+  padding: var(--astro-space-2) var(--astro-space-4);
+  background: var(--astro-accent-subtle);
+  border-radius: var(--astro-radius-full);
+}
+
+.astro-hero-title {
+  font-family: var(--astro-font-display);
+  font-size: var(--astro-text-5xl);
+  font-weight: 700;
+  color: var(--astro-ink);
+  margin: 0 0 var(--astro-space-6);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.astro-hero-subtitle {
+  font-family: var(--astro-font-display);
+  font-size: var(--astro-text-xl);
+  font-style: italic;
+  color: var(--astro-ink-secondary);
+  margin: 0 0 var(--astro-space-8);
+  line-height: 1.6;
+}
+
+.astro-hero-meta {
+  display: flex;
+  justify-content: center;
+  gap: var(--astro-space-8);
+  font-family: var(--astro-font-body);
+  font-size: var(--astro-text-sm);
+  color: var(--astro-ink-muted);
+}
+
+.astro-hero-meta-item {
+  display: flex;
+  align-items: center;
+  gap: var(--astro-space-2);
+}
+
+/* ============ MAIN LAYOUT ============ */
+
+.astro-main-wrapper {
+  max-width: var(--astro-container-max);
+  margin: 0 auto;
+  padding: var(--astro-space-12) var(--astro-space-6);
+}
+
+.astro-content {
+  max-width: 100%;
+}
+
+/* ============ RIGHT SIDEBAR NAVIGATION ============ */
+
+.astro-sidebar-nav {
+  width: var(--astro-sidebar-width);
+  flex-shrink: 0;
+  position: sticky;
+  top: 50%;
+  transform: translateY(-50%);
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: var(--astro-space-4);
+  align-self: flex-start;
+  margin-top: 15vh;
+}
+
+.astro-sidebar-nav::-webkit-scrollbar {
+  width: 4px;
+}
+
+.astro-sidebar-nav::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.astro-sidebar-nav::-webkit-scrollbar-thumb {
+  background: var(--astro-border);
+  border-radius: var(--astro-radius-full);
+}
+
+.astro-toc {
+  background: var(--astro-sidebar-bg);
+  border: 1px solid var(--astro-border);
+  border-radius: var(--astro-radius-lg);
+  padding: var(--astro-space-6);
+}
+
+.astro-toc-title {
+  font-family: var(--astro-font-body);
+  font-size: var(--astro-text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--astro-ink-muted);
+  margin: 0 0 var(--astro-space-4);
+  padding-bottom: var(--astro-space-3);
+  border-bottom: 1px solid var(--astro-border-light);
+}
+
+.astro-toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.astro-toc-item {
+  margin: 0;
+}
+
+.astro-toc-link {
+  display: block;
+  padding: var(--astro-space-2) var(--astro-space-3);
+  font-family: var(--astro-font-body);
+  font-size: var(--astro-text-sm);
+  color: var(--astro-ink-secondary);
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  margin-left: calc(var(--astro-space-3) * -1);
+  transition: all var(--astro-transition);
+  line-height: 1.4;
+}
+
+.astro-toc-link:hover {
+  color: var(--astro-ink);
+  background: var(--astro-accent-subtle);
+  border-left-color: var(--astro-border-dark);
+}
+
+.astro-toc-link.active {
+  color: var(--astro-accent);
+  font-weight: 500;
+  border-left-color: var(--astro-accent);
+  background: var(--astro-accent-subtle);
+}
+
+/* ============ CONTENT SECTIONS ============ */
+
+.astro-section {
+  margin-bottom: var(--astro-space-16);
+  scroll-margin-top: var(--astro-space-8);
+}
+
+.astro-section:last-child {
+  margin-bottom: 0;
+}
+
+.astro-section-header {
+  margin-bottom: var(--astro-space-6);
+}
+
+.astro-section-number {
+  display: inline-block;
+  font-family: var(--astro-font-body);
+  font-size: var(--astro-text-sm);
+  font-weight: 500;
+  color: var(--astro-accent);
+  margin-bottom: var(--astro-space-2);
+}
+
+.astro-section-title {
+  font-family: var(--astro-font-display);
+  font-size: var(--astro-text-3xl);
+  font-weight: 700;
+  color: var(--astro-ink);
+  margin: 0;
+  line-height: 1.25;
+}
+
+.astro-section-divider {
+  width: 60px;
+  height: 3px;
+  background: var(--astro-accent);
+  border: none;
+  margin: var(--astro-space-4) 0 0;
+  border-radius: var(--astro-radius-full);
+}
+
+/* ============ TYPOGRAPHY ============ */
+
+.astro-content p {
+  font-family: var(--astro-font-body);
+  font-size: var(--astro-text-base);
+  color: var(--astro-ink);
+  line-height: 1.85;
+  margin: 0 0 var(--astro-space-5);
+}
+
+.astro-content p:last-child {
+  margin-bottom: 0;
+}
+
+.astro-lead {
+  font-size: var(--astro-text-lg);
+  color: var(--astro-ink-secondary);
+  line-height: 1.75;
+}
+
+.astro-content h3 {
+  font-family: var(--astro-font-display);
+  font-size: var(--astro-text-xl);
+  font-weight: 600;
+  color: var(--astro-ink);
+  margin: var(--astro-space-8) 0 var(--astro-space-4);
+  line-height: 1.4;
+}
+
+.astro-content h3:first-child {
+  margin-top: 0;
+}
+
+.astro-content strong {
+  font-weight: 600;
+  color: var(--astro-ink);
+}
+
+.astro-content em {
+  font-style: italic;
+  color: var(--astro-ink-secondary);
+}
+
+/* ============ CARDS ============ */
+
+.astro-card {
+  border: 1px solid var(--astro-border);
+  border-radius: var(--astro-radius-lg);
+  padding: var(--astro-space-6);
+  margin-bottom: var(--astro-space-6);
+  transition: border-color var(--astro-transition);
+}
+
+.astro-card:hover {
+  border-color: var(--astro-border-dark);
+}
+
+/* Planet Grid */
+.astro-planet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--astro-space-4);
+  margin: var(--astro-space-6) 0;
+}
+
+.astro-planet-card {
+  border: 1px solid var(--astro-border);
+  border-radius: var(--astro-radius-lg);
+  padding: var(--astro-space-5);
+  position: relative;
+  overflow: hidden;
+  transition: all var(--astro-transition);
+}
+
+.astro-planet-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.astro-planet-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+}
+
+.astro-planet-card--sun::before {
+  background: var(--astro-sun);
+}
+.astro-planet-card--moon::before {
+  background: var(--astro-moon);
+}
+.astro-planet-card--mars::before {
+  background: var(--astro-mars);
+}
+.astro-planet-card--mercury::before {
+  background: var(--astro-mercury);
+}
+.astro-planet-card--jupiter::before {
+  background: var(--astro-jupiter);
+}
+.astro-planet-card--venus::before {
+  background: var(--astro-venus);
+}
+.astro-planet-card--saturn::before {
+  background: var(--astro-saturn);
+}
+.astro-planet-card--rahu::before {
+  background: var(--astro-rahu);
+}
+.astro-planet-card--ketu::before {
+  background: var(--astro-ketu);
+}
+
+.astro-planet-symbol {
+  font-size: var(--astro-text-2xl);
+  margin-bottom: var(--astro-space-2);
+}
+
+.astro-planet-name {
+  font-family: var(--astro-font-display);
+  font-size: var(--astro-text-lg);
+  font-weight: 600;
+  color: var(--astro-ink);
+  margin: 0 0 var(--astro-space-1);
+}
+
+.astro-planet-sanskrit {
+  font-family: var(--astro-font-body);
+  font-size: var(--astro-text-sm);
+  color: var(--astro-ink-muted);
+  margin-bottom: var(--astro-space-3);
+}
+
+.astro-planet-desc {
+  font-family: var(--astro-font-body);
+  font-size: var(--astro-text-sm);
+  color: var(--astro-ink-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Zodiac Grid */
+.astro-zodiac-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: var(--astro-space-3);
+  margin: var(--astro-space-6) 0;
+}
+
+.astro-zodiac-card {
+  border: 1px solid var(--astro-border);
+  border-radius: var(--astro-radius-lg);
+  padding: var(--astro-space-4);
+  text-align: center;
+  transition: all var(--astro-transition);
+}
+
+.astro-zodiac-card:hover {
+  border-color: var(--astro-accent);
+  background: var(--astro-accent-subtle);
+}
+
+.astro-zodiac-symbol {
+  font-size: var(--astro-text-3xl);
+  margin-bottom: var(--astro-space-2);
+}
+
+.astro-zodiac-name {
+  font-family: var(--astro-font-display);
+  font-size: var(--astro-text-base);
+  font-weight: 600;
+  color: var(--astro-ink);
+  margin: 0;
+}
+
+.astro-zodiac-sanskrit {
+  font-family: var(--astro-font-body);
+  font-size: var(--astro-text-xs);
+  color: var(--astro-ink-muted);
+  margin-top: var(--astro-space-1);
+}
+
+.astro-zodiac-element {
+  font-family: var(--astro-font-body);
+  font-size: var(--astro-text-xs);
+  color: var(--astro-accent);
+  margin-top: var(--astro-space-2);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Houses Grid */
+.astro-houses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--astro-space-4);
+  margin: var(--astro-space-6) 0;
+}
+
+.astro-house-card {
+  border: 1px solid var(--astro-border);
+  border-radius: var(--astro-radius-lg);
+  padding: var(--astro-space-5);
+  transition: border-color var(--astro-transition);
+}
+
+.astro-house-card:hover {
+  border-color: var(--astro-border-dark);
+}
+
+.astro-house-header {
+  display: flex;
+  align-items: center;
+  gap: var(--astro-space-3);
+  margin-bottom: var(--astro-space-3);
+  padding-bottom: var(--astro-space-3);
+  border-bottom: 1px solid var(--astro-border-light);
+}
+
+.astro-house-number {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--astro-accent-subtle);
+  border: 1px solid var(--astro-accent);
+  border-radius: var(--astro-radius-md);
+  font-family: var(--astro-font-display);
+  font-size: var(--astro-text-lg);
+  font-weight: 700;
+  color: var(--astro-accent);
+}
+
+.astro-house-info {
+  flex: 1;
+}
+
+.astro-house-name {
+  font-family: var(--astro-font-display);
+  font-size: var(--astro-text-base);
+  font-weight: 600;
+  color: var(--astro-ink);
+  margin: 0;
+}
+
+.astro-house-sanskrit {
+  font-family: var(--astro-font-body);
+  font-size: var(--astro-text-xs);
+  color: var(--astro-ink-muted);
+}
+
+.astro-house-desc {
+  font-family: var(--astro-font-body);
+  font-size: var(--astro-text-sm);
+  color: var(--astro-ink-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Nakshatra Grid */
+.astro-nakshatra-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--astro-space-3);
+  margin: var(--astro-space-6) 0;
+}
+
+.astro-nakshatra-item {
+  display: flex;
+  align-items: center;
+  gap: var(--astro-space-3);
+  padding: var(--astro-space-3) var(--astro-space-4);
+  border: 1px solid var(--astro-border);
+  border-radius: var(--astro-radius-md);
+  transition: all var(--astro-transition);
+}
+
+.astro-nakshatra-item:hover {
+  background: var(--astro-accent-subtle);
+  border-color: var(--astro-border-dark);
+}
+
+.astro-nakshatra-number {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--astro-accent-subtle);
+  border-radius: var(--astro-radius-full);
+  font-family: var(--astro-font-body);
+  font-size: var(--astro-text-xs);
+  font-weight: 600;
+  color: var(--astro-accent);
+}
+
+.astro-nakshatra-name {
+  font-family: var(--astro-font-body);
+  font-size: var(--astro-text-sm);
+  color: var(--astro-ink);
+}
+
+/* Info Box */
+.astro-info-box {
+  display: flex;
+  gap: var(--astro-space-4);
+  padding: var(--astro-space-5);
+  background: var(--astro-info-bg);
+  border: 1px solid var(--astro-info);
+  border-left-width: 4px;
+  border-radius: var(--astro-radius-md);
+  margin: var(--astro-space-6) 0;
+}
+
+.astro-info-box--warning {
+  background: var(--astro-warning-bg);
+  border-color: var(--astro-warning);
+}
+
+.astro-info-box--success {
+  background: var(--astro-success-bg);
+  border-color: var(--astro-success);
+}
+
+.astro-info-icon {
+  font-size: var(--astro-text-xl);
+  flex-shrink: 0;
+}
+
+.astro-info-content {
+  flex: 1;
+}
+
+.astro-info-title {
+  font-family: var(--astro-font-body);
+  font-size: var(--astro-text-sm);
+  font-weight: 600;
+  color: var(--astro-ink);
+  margin: 0 0 var(--astro-space-2);
+}
+
+.astro-info-text {
+  font-family: var(--astro-font-body);
+  font-size: var(--astro-text-sm);
+  color: var(--astro-ink-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Quote Block */
+.astro-quote {
+  border-left: 4px solid var(--astro-accent);
+  padding: var(--astro-space-6);
+  margin: var(--astro-space-8) 0;
+  background: var(--astro-accent-subtle);
+  border-radius: 0 var(--astro-radius-lg) var(--astro-radius-lg) 0;
+}
+
+.astro-quote-text {
+  font-family: var(--astro-font-display);
+  font-size: var(--astro-text-xl);
+  font-style: italic;
+  color: var(--astro-ink);
+  line-height: 1.6;
+  margin: 0 0 var(--astro-space-3);
+}
+
+.astro-quote-source {
+  font-family: var(--astro-font-body);
+  font-size: var(--astro-text-sm);
+  color: var(--astro-ink-muted);
+}
+
+/* ============ FAQ SECTION ============ */
+
+.astro-faq-list {
+  margin: var(--astro-space-6) 0;
+}
+
+.astro-faq-item {
+  border-bottom: 1px solid var(--astro-border);
+}
+
+.astro-faq-item:last-child {
+  border-bottom: none;
+}
+
+.astro-faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--astro-space-4) 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: color var(--astro-transition);
+}
+
+.astro-faq-question:hover {
+  color: var(--astro-accent);
+}
+
+.astro-faq-question-text {
+  font-family: var(--astro-font-body);
+  font-size: var(--astro-text-base);
+  font-weight: 500;
+  color: var(--astro-ink);
+}
+
+.astro-faq-toggle {
+  font-size: var(--astro-text-lg);
+  color: var(--astro-ink-muted);
+  transition: transform var(--astro-transition);
+}
+
+.astro-faq-toggle.expanded {
+  transform: rotate(45deg);
+}
+
+.astro-faq-answer {
+  padding: 0 0 var(--astro-space-4);
+}
+
+.astro-faq-answer p {
+  font-family: var(--astro-font-body);
+  font-size: var(--astro-text-sm);
+  color: var(--astro-ink-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ============ CTA SECTION ============ */
+
+.astro-cta {
+  background: linear-gradient(
+    135deg,
+    var(--astro-accent-subtle) 0%,
+    var(--astro-paper) 100%
+  );
+  border: 1px solid var(--astro-border);
+  border-radius: var(--astro-radius-xl);
+  padding: var(--astro-space-10);
+  text-align: center;
+  margin: var(--astro-space-12) 0;
+}
+
+.astro-cta-title {
+  font-family: var(--astro-font-display);
+  font-size: var(--astro-text-2xl);
+  font-weight: 700;
+  color: var(--astro-ink);
+  margin: 0 0 var(--astro-space-4);
+}
+
+.astro-cta-text {
+  font-family: var(--astro-font-body);
+  font-size: var(--astro-text-base);
+  color: var(--astro-ink-secondary);
+  max-width: 500px;
+  margin: 0 auto var(--astro-space-6);
+  line-height: 1.6;
+}
+
+.astro-cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--astro-space-2);
+  padding: var(--astro-space-4) var(--astro-space-8);
+  background: var(--astro-accent);
+  color: white;
+  font-family: var(--astro-font-body);
+  font-size: var(--astro-text-base);
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  border-radius: var(--astro-radius-md);
+  cursor: pointer;
+  transition: all var(--astro-transition);
+}
+
+.astro-cta-button:hover {
+  background: var(--astro-accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ============ RESPONSIVE ============ */
+
+@media (max-width: 1024px) {
+  .astro-main-wrapper {
+    flex-direction: column;
+  }
+
+  .astro-sidebar-nav {
+    position: relative;
+    top: 0;
+    transform: none;
+    width: 100%;
+    max-height: none;
+    order: -1;
+    margin-top: 0;
+    margin-bottom: var(--astro-space-8);
+  }
+
+  .astro-toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--astro-space-2);
+    align-items: center;
+  }
+
+  .astro-toc-title {
+    width: 100%;
+    margin-bottom: var(--astro-space-3);
+  }
+
+  .astro-toc-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--astro-space-1);
+  }
+
+  .astro-toc-link {
+    padding: var(--astro-space-2) var(--astro-space-3);
+    border: 1px solid var(--astro-border);
+    border-radius: var(--astro-radius-full);
+    border-left-width: 1px;
+    margin-left: 0;
+  }
+
+  .astro-toc-link:hover,
+  .astro-toc-link.active {
+    border-color: var(--astro-accent);
+  }
+
+  .astro-content {
+    max-width: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .astro-hero {
+    padding: var(--astro-space-12) 0 var(--astro-space-8);
+  }
+
+  .astro-hero-title {
+    font-size: var(--astro-text-4xl);
+  }
+
+  .astro-hero-subtitle {
+    font-size: var(--astro-text-lg);
+  }
+
+  .astro-hero-meta {
+    flex-direction: column;
+    gap: var(--astro-space-2);
+  }
+
+  .astro-section-title {
+    font-size: var(--astro-text-2xl);
+  }
+
+  .astro-main-wrapper {
+    padding: var(--astro-space-8) var(--astro-space-4);
+  }
+
+  .astro-planet-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .astro-zodiac-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .astro-hero-title {
+    font-size: var(--astro-text-3xl);
+  }
+
+  .astro-zodiac-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .astro-houses-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============ ACCESSIBILITY ============ */
+
+.astro-skip-link {
+  position: absolute;
+  top: -100px;
+  left: var(--astro-space-4);
+  padding: var(--astro-space-3) var(--astro-space-4);
+  background: var(--astro-accent);
+  color: white;
+  text-decoration: none;
+  border-radius: var(--astro-radius-md);
+  z-index: 10000;
+  transition: top 150ms ease;
+}
+
+.astro-skip-link:focus {
+  top: var(--astro-space-4);
+}
+
+/* ============ PRINT ============ */
+
+@media print {
+  .astro-sidebar-nav,
+  .astro-skip-link,
+  .astro-cta {
+    display: none !important;
+  }
+
+  .astro-main-wrapper {
+    display: block;
+  }
+
+  .astro-content {
+    max-width: none;
+  }
+
+  .astro-section {
+    page-break-inside: avoid;
+  }
+}

@@ -6,7 +6,6 @@
 /* ============ BASE LAYOUT ============ */
 
 .palm-layout {
-  background-color: var(--palm-parchment);
   min-height: 100vh;
 }
 
@@ -19,8 +18,7 @@
 /* ============ HEADER ============ */
 
 .palm-header {
-  background-color: var(--palm-paper);
-  border-bottom: var(--palm-border-width) solid var(--palm-border);
+
   padding: var(--palm-space-16) 0 var(--palm-space-12);
   text-align: center;
 }
@@ -77,8 +75,6 @@
 /* ============ CARDS ============ */
 
 .palm-card {
-  background-color: var(--palm-paper);
-  border: var(--palm-border-width) solid var(--palm-border);
   border-radius: var(--palm-radius-lg);
   padding: var(--palm-space-8);
   transition: border-color var(--palm-transition-base);
@@ -129,8 +125,6 @@
 /* ============ COLLAPSIBLE SECTIONS ============ */
 
 .palm-collapsible-section {
-  background-color: var(--palm-paper);
-  border: var(--palm-border-width) solid var(--palm-border);
   border-radius: var(--palm-radius-lg);
   overflow: hidden;
 }
@@ -141,7 +135,6 @@
   align-items: center;
   gap: var(--palm-space-4);
   padding: var(--palm-space-6) var(--palm-space-8);
-  background: rgba(250, 248, 243, 0.8);
   border: none;
   cursor: pointer;
   transition: background-color var(--palm-transition-base);
@@ -178,7 +171,6 @@
 .palm-section-line {
   flex-grow: 1;
   height: var(--palm-border-width);
-  background-color: var(--palm-border);
   margin-left: var(--palm-space-4);
 }
 
@@ -290,8 +282,7 @@
   display: flex;
   gap: var(--palm-space-4);
   padding: var(--palm-space-6);
-  background-color: var(--palm-paper);
-  border: var(--palm-border-width) solid var(--palm-border);
+
   border-radius: var(--palm-radius-lg);
   margin-top: var(--palm-space-8);
 }
@@ -323,7 +314,6 @@
 }
 
 .palm-btn-secondary {
-  background-color: rgba(250, 248, 243, 0.8);
   color: var(--palm-ink);
   border: var(--palm-border-width) solid var(--palm-border);
 }

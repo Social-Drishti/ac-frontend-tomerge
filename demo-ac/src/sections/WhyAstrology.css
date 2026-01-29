@@ -1,0 +1,59 @@
+/* WhyAstrology Section Styles */
+
+.why-astrology-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.why-astrology-card:hover {
+  transform: translateY(-8px);
+}
+
+.why-astrology-image {
+  /* width: 200px; */
+  height: 260px;
+  /* border-radius: 16px; */
+  overflow: hidden;
+  /* box-shadow: 0 8px 24px rgba(101, 78, 18, 0.15);
+  transition: box-shadow 0.3s ease; */
+}
+
+/* .why-astrology-card:hover .why-astrology-image {
+  box-shadow: 0 12px 32px rgba(101, 78, 18, 0.25);
+} */
+
+.why-astrology-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.why-astrology-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #654e12;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .why-astrology-image {
+    width: 160px;
+    height: 210px;
+  }
+
+  .why-astrology-label {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-astrology-image {
+    width: 140px;
+    height: 180px;
+  }
+}

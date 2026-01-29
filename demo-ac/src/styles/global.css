@@ -77,31 +77,34 @@ a:hover {
 /* Buttons */
 button {
   color: #654e12;
-  background-color: rgba(250, 248, 243, 0.8);
-  border: 2px solid #800000;
+  background-color: transparent;
+  border: 2px solid #654e12;
   padding: 10px 20px;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-weight: 600;
 }
 
 button:hover {
-  background-color: #800000;
-  color: #f5e6d3;
+  background-color: #654e12;
+  color: #faf7f2;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(101, 78, 18, 0.2);
 }
 
 button:active {
-  transform: scale(0.98);
+  transform: translateY(0);
 }
 
 /* Cards and containers */
 .card,
 .container,
 [class*="card"] {
-  background-color: rgba(250, 248, 243, 0.8);
+  background-color: transparent;
   border-radius: 12px;
   padding: 15px;
-  box-shadow: 0 4px 6px rgba(128, 0, 0, 0.1);
+  box-shadow: none;
 }
 
 /* Input fields */
@@ -249,8 +252,3 @@ li {
   display: inline-block;
   font-size: 0.9em;
 }
-
-
-
-
-

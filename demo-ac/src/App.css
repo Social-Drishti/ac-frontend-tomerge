@@ -1,7 +1,7 @@
 #root {
   margin: 0 auto;
   padding: 2rem;
-  background-color: rgba(250, 248, 243, 0.8);
+  /* background-color: rgba(250, 248, 243, 0.8); */
 }
 
 .logo {
@@ -34,7 +34,7 @@
 
 .card {
   padding: 2em;
-  background-color: rgba(250, 248, 243, 0.8);
+  /* background-color: rgba(250, 248, 243, 0.8); */
   border: 2px solid #654e12;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(95, 107, 58, 0.1);
@@ -46,12 +46,12 @@
 
 .App {
   color: #654e12;
-  background-color: rgba(250, 248, 243, 0.8);
+  /* background-color: rgba(250, 248, 243, 0.8); */
 }
 
 /* Updated Navbar Styles */
 .custom-navbar {
-  background: rgba(250, 248, 243, 0.8);
+  /* background: rgba(250, 248, 243, 0.8); */
   position: relative;
   z-index: 20;
 }
@@ -122,7 +122,7 @@
 
 /* Updated Hero Section Styles */
 .custom-hero {
-  background: rgba(250, 248, 243, 0.8);
+  /* background: rgba(250, 248, 243, 0.8); */
   border: 2px solid #654e12;
   border-radius: 12px;
   margin: 0 auto;
@@ -165,9 +165,8 @@
 }
 
 .primary-btn {
-  background: #654e12;
   color: #faf7f2;
-  border: 2px solid #654e12;
+  border: 2px solid #a52424;
   padding: 0.9rem 2.2rem;
   border-radius: 8px;
   font-size: 1.08rem;
@@ -177,14 +176,13 @@
 }
 
 .primary-btn:hover {
-  background: #654e12;
-  border-color: #654e12;
+  border-color: #a52424;
 }
 
 .secondary-btn {
-  background: rgba(250, 248, 243, 0.8);
+  /* background: rgba(250, 248, 243, 0.8); */
   color: #654e12;
-  border: 2px solid #654e12;
+  border: 2px solid #a52424;
   padding: 0.9rem 2.2rem;
   border-radius: 8px;
   font-size: 1.08rem;
@@ -194,7 +192,7 @@
 }
 
 .secondary-btn:hover {
-  background: #654e12;
+  /* background: #654e12; */
   color: #faf7f2;
 }
 

@@ -1,0 +1,214 @@
+/* ==============================================
+   INSIGHTS BLOG - DESIGN TOKENS
+   Magazine-Style Editorial Layout
+   Calm, Intellectual, Vedic Aesthetic
+   ============================================== */
+
+:root {
+  /* ============ COLOR PALETTE ============ */
+
+  /* Primary Colors - Deep Wisdom Brown */
+  --insights-primary: #654e12;
+  --insights-primary-light: rgba(101, 78, 18, 0.08);
+  --insights-primary-muted: rgba(101, 78, 18, 0.6);
+  --insights-primary-hover: rgba(101, 78, 18, 0.12);
+
+  /* Background - Warm Parchment */
+  --insights-bg: #faf8f3;
+  --insights-bg-subtle: #f5f2eb;
+  --insights-bg-card: #ffffff;
+  --insights-bg-section: rgba(101, 78, 18, 0.03);
+  --insights-bg-featured: rgba(101, 78, 18, 0.04);
+
+  /* Text Colors */
+  --insights-ink: #654e12;
+  --insights-ink-muted: rgba(101, 78, 18, 0.7);
+  --insights-ink-subtle: rgba(101, 78, 18, 0.5);
+  --insights-ink-light: rgba(101, 78, 18, 0.4);
+
+  /* Borders & Dividers */
+  --insights-border: rgba(101, 78, 18, 0.12);
+  --insights-divider: rgba(101, 78, 18, 0.08);
+  --insights-divider-strong: rgba(101, 78, 18, 0.15);
+
+  /* Category Colors - Subtle, Harmonious */
+  --insights-cat-vedic: #5a7247;
+  --insights-cat-planetary: #7b5c3d;
+  --insights-cat-interpretation: #4a5d6b;
+  --insights-cat-timing: #6b5a7b;
+  --insights-cat-case: #5d6b4a;
+  --insights-cat-classical: #7b4a5a;
+
+  /* ============ TYPOGRAPHY ============ */
+
+  /* Font Families */
+  --insights-font-display: "Yatra One", cursive;
+  --insights-font-body:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --insights-font-mono: "SF Mono", "Consolas", monospace;
+
+  /* Font Sizes - Editorial Scale */
+  --insights-text-xs: 0.75rem; /* 12px - meta info */
+  --insights-text-sm: 0.875rem; /* 14px - captions, tags */
+  --insights-text-base: 1rem; /* 16px - body text */
+  --insights-text-lg: 1.125rem; /* 18px - lead text */
+  --insights-text-xl: 1.25rem; /* 20px - card titles */
+  --insights-text-2xl: 1.5rem; /* 24px - section headers */
+  --insights-text-3xl: 1.875rem; /* 30px - featured excerpt */
+  --insights-text-4xl: 2.25rem; /* 36px - featured title */
+  --insights-text-5xl: 3rem; /* 48px - hero title */
+  --insights-text-6xl: 3.75rem; /* 60px - featured hero */
+
+  /* Font Weights */
+  --insights-weight-normal: 400;
+  --insights-weight-medium: 500;
+  --insights-weight-semibold: 600;
+
+  /* Line Heights */
+  --insights-leading-none: 1;
+  --insights-leading-tight: 1.2;
+  --insights-leading-snug: 1.375;
+  --insights-leading-normal: 1.5;
+  --insights-leading-relaxed: 1.625;
+  --insights-leading-loose: 1.875;
+
+  /* Letter Spacing */
+  --insights-tracking-tight: -0.01em;
+  --insights-tracking-normal: 0;
+  --insights-tracking-wide: 0.02em;
+  --insights-tracking-wider: 0.06em;
+  --insights-tracking-widest: 0.1em;
+
+  /* ============ SPACING ============ */
+
+  --insights-space-1: 0.25rem; /* 4px */
+  --insights-space-2: 0.5rem; /* 8px */
+  --insights-space-3: 0.75rem; /* 12px */
+  --insights-space-4: 1rem; /* 16px */
+  --insights-space-5: 1.25rem; /* 20px */
+  --insights-space-6: 1.5rem; /* 24px */
+  --insights-space-8: 2rem; /* 32px */
+  --insights-space-10: 2.5rem; /* 40px */
+  --insights-space-12: 3rem; /* 48px */
+  --insights-space-16: 4rem; /* 64px */
+  --insights-space-20: 5rem; /* 80px */
+  --insights-space-24: 6rem; /* 96px */
+  --insights-space-32: 8rem; /* 128px */
+
+  /* ============ LAYOUT ============ */
+
+  --insights-container-max: 1200px;
+  --insights-container-article: 720px;
+  --insights-container-narrow: 600px;
+  --insights-container-padding: 2rem;
+
+  /* Grid Configuration */
+  --insights-grid-gap: 2rem;
+  --insights-grid-gap-sm: 1.5rem;
+  --insights-card-min-width: 320px;
+
+  /* ============ TRANSITIONS ============ */
+
+  --insights-transition-fast: 0.15s ease;
+  --insights-transition-base: 0.2s ease;
+  --insights-transition-slow: 0.35s ease;
+  --insights-transition-fade: 0.5s ease;
+
+  /* ============ BORDERS & SHADOWS ============ */
+
+  --insights-radius-sm: 4px;
+  --insights-radius-md: 8px;
+  --insights-radius-lg: 12px;
+
+  --insights-shadow-sm: 0 1px 3px rgba(101, 78, 18, 0.06);
+  --insights-shadow-md: 0 4px 12px rgba(101, 78, 18, 0.08);
+  --insights-shadow-hover: 0 8px 24px rgba(101, 78, 18, 0.1);
+
+  /* ============ Z-INDEX ============ */
+
+  --insights-z-base: 1;
+  --insights-z-sticky: 10;
+  --insights-z-overlay: 100;
+}
+
+/* ============ DARK MODE SUPPORT ============ */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --insights-bg: #1a1814;
+    --insights-bg-subtle: #242019;
+    --insights-bg-card: #1f1b16;
+    --insights-bg-section: rgba(250, 248, 243, 0.03);
+    --insights-bg-featured: rgba(250, 248, 243, 0.05);
+
+    --insights-ink: #e8e2d8;
+    --insights-ink-muted: rgba(232, 226, 216, 0.75);
+    --insights-ink-subtle: rgba(232, 226, 216, 0.55);
+    --insights-ink-light: rgba(232, 226, 216, 0.4);
+
+    --insights-border: rgba(232, 226, 216, 0.12);
+    --insights-divider: rgba(232, 226, 216, 0.08);
+    --insights-divider-strong: rgba(232, 226, 216, 0.15);
+
+    --insights-primary-light: rgba(232, 226, 216, 0.08);
+    --insights-primary-hover: rgba(232, 226, 216, 0.12);
+
+    --insights-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2);
+    --insights-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.25);
+    --insights-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* ============ RESPONSIVE TOKENS ============ */
+
+@media (max-width: 1024px) {
+  :root {
+    --insights-container-padding: 1.5rem;
+    --insights-grid-gap: 1.5rem;
+    --insights-text-6xl: 3rem;
+    --insights-text-5xl: 2.5rem;
+    --insights-text-4xl: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --insights-text-6xl: 2.5rem;
+    --insights-text-5xl: 2rem;
+    --insights-text-4xl: 1.75rem;
+    --insights-text-3xl: 1.5rem;
+    --insights-space-16: 3rem;
+    --insights-space-20: 4rem;
+    --insights-space-24: 5rem;
+    --insights-container-padding: 1.25rem;
+    --insights-grid-gap: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --insights-text-6xl: 2rem;
+    --insights-text-5xl: 1.75rem;
+    --insights-text-4xl: 1.5rem;
+    --insights-text-3xl: 1.25rem;
+    --insights-space-16: 2.5rem;
+    --insights-space-20: 3rem;
+    --insights-space-24: 4rem;
+    --insights-container-padding: 1rem;
+    --insights-grid-gap: 1rem;
+    --insights-card-min-width: 280px;
+  }
+}
+
+/* ============ PRINT STYLES ============ */
+
+@media print {
+  :root {
+    --insights-bg: #ffffff;
+    --insights-ink: #000000;
+    --insights-ink-muted: #333333;
+    --insights-shadow-sm: none;
+    --insights-shadow-md: none;
+    --insights-shadow-hover: none;
+  }
+}

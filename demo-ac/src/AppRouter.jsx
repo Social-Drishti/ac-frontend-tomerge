@@ -19,6 +19,12 @@ import Transits from "./pages/Transits";
 import Palmistry from "./pages/Palmistry";
 import Guruji from "./pages/Guruji";
 import Reading from "./pages/Reading";
+import Vastu from "./pages/Vastu";
+import Astrology from "./pages/Astrology";
+import Gemmology from "./pages/Gemmology";
+import FaceReading from "./pages/FaceReading";
+import Insights from "./pages/Insights";
+import Blogs from "./pages/Blogs";
 
 export default function AppRouter() {
   return (
@@ -43,6 +49,12 @@ export default function AppRouter() {
         <Route path="/transits" element={<Transits />} />
         <Route path="/palmistry" element={<Palmistry />} />
         <Route path="/guruji" element={<Guruji />} />
+        <Route path="/vastu" element={<Vastu />} />
+        <Route path="/astrology" element={<Astrology />} />
+        <Route path="/gemmology" element={<Gemmology />} />
+        <Route path="/face-reading" element={<FaceReading />} />
+        <Route path="/insights" element={<Insights />} />
+        <Route path="/blogs" element={<Blogs />} />
       </Routes>
     </Router>
   );

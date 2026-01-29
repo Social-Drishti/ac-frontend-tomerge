@@ -11,7 +11,7 @@ const AboutUs = () => {
         {/* Hero Banner */}
         <section className="aboutus-hero">
           <div className="aboutus-hero-content">
-            <span className="aboutus-hero-label">✦ Discover Our Story</span>
+            <span className="aboutus-hero-label">Discover Our Story</span>
             <h1 className="aboutus-hero-title">About AstroChitra</h1>
             <p className="aboutus-hero-subtitle">
               Where ancient cosmic wisdom meets modern insight — guiding souls

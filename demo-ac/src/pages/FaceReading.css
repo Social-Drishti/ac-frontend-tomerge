@@ -1,0 +1,440 @@
+/* ==============================================
+   FACE READING PAGE - Samudrika Shastra
+   Narrative, Editorial Design
+   ============================================== */
+
+/* ============ CSS VARIABLES ============ */
+.face-reading-page {
+  --face-color-text: #654e12;
+  --face-color-text-muted: rgba(101, 78, 18, 0.75);
+  --face-color-text-subtle: rgba(101, 78, 18, 0.6);
+  /* --face-color-background: #faf8f3;
+  --face-color-background-warm: #f7f4ed; */
+  --face-color-border: rgba(101, 78, 18, 0.12);
+  --face-color-border-subtle: rgba(101, 78, 18, 0.08);
+  --face-font-heading: "Yatra One", serif;
+  --face-font-body: "Georgia", "Times New Roman", serif;
+  --face-max-width: 800px;
+  --face-section-spacing: 7rem;
+  --face-paragraph-spacing: 1.75rem;
+}
+
+/* ============ PAGE LAYOUT ============ */
+.face-reading-page {
+  /* background-color: var(--face-color-background); */
+  min-height: 100vh;
+}
+
+.face-reading-main {
+  padding-bottom: 6rem;
+}
+
+/* ============ HERO SECTION ============ */
+.face-hero {
+  padding: 8rem 1.5rem 6rem;
+  text-align: center;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.face-hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.face-hero-title {
+  font-family: var(--face-font-heading);
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  font-weight: 400;
+  color: var(--face-color-text);
+  line-height: 1.2;
+  margin: 0 0 2.5rem;
+  letter-spacing: -0.01em;
+}
+
+.face-hero-subtitle {
+  font-family: var(--face-font-body);
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  color: var(--face-color-text-muted);
+  line-height: 1.8;
+  margin: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============ CONTENT SECTIONS ============ */
+.face-section {
+  padding: var(--face-section-spacing) 1.5rem;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: faceFadeIn 0.8s ease forwards;
+}
+
+.face-section:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.face-section:nth-child(3) {
+  animation-delay: 0.15s;
+}
+.face-section:nth-child(4) {
+  animation-delay: 0.2s;
+}
+.face-section:nth-child(5) {
+  animation-delay: 0.25s;
+}
+.face-section:nth-child(6) {
+  animation-delay: 0.3s;
+}
+.face-section:nth-child(7) {
+  animation-delay: 0.35s;
+}
+.face-section:nth-child(8) {
+  animation-delay: 0.4s;
+}
+.face-section:nth-child(9) {
+  animation-delay: 0.45s;
+}
+
+@keyframes faceFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.face-section-inner {
+  max-width: var(--face-max-width);
+  margin: 0 auto;
+}
+
+.face-section-title {
+  font-family: var(--face-font-heading);
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 400;
+  color: var(--face-color-text);
+  line-height: 1.3;
+  margin: 0 0 2.5rem;
+  letter-spacing: -0.005em;
+}
+
+.face-section-text {
+  font-family: var(--face-font-body);
+  font-size: 1.125rem;
+  color: var(--face-color-text-muted);
+  line-height: 1.9;
+  margin: 0 0 var(--face-paragraph-spacing);
+}
+
+.face-section-text:last-child {
+  margin-bottom: 0;
+}
+
+/* ============ DIVIDER ============ */
+.face-divider {
+  width: 60px;
+  height: 1px;
+  background: var(--face-color-border);
+  margin: var(--face-section-spacing) auto;
+  border: none;
+}
+
+/* ============ ORIGINS SECTION ============ */
+.face-origins {
+  background-color: var(--face-color-background-warm);
+}
+
+/* ============ GURUJI SECTION ============ */
+.face-guruji {
+  position: relative;
+}
+
+.face-guruji::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 80px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--face-color-border),
+    transparent
+  );
+}
+
+.face-guruji .face-section-inner {
+  padding-top: 2rem;
+}
+
+/* ============ REVEALS SECTION - Insights List ============ */
+.face-reveals-list {
+  list-style: none;
+  padding: 0;
+  margin: 2.5rem 0 0;
+}
+
+.face-reveals-item {
+  font-family: var(--face-font-body);
+  font-size: 1.125rem;
+  color: var(--face-color-text-muted);
+  line-height: 1.8;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--face-color-border-subtle);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.face-reveals-item:last-child {
+  border-bottom: none;
+}
+
+.face-reveals-item::before {
+  content: "·";
+  position: absolute;
+  left: 0;
+  color: var(--face-color-text);
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+/* ============ WHO IS IT FOR SECTION ============ */
+.face-seekers {
+  background-color: var(--face-color-background-warm);
+}
+
+.face-seekers-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.face-seekers-item {
+  font-family: var(--face-font-body);
+  font-size: 1.125rem;
+  color: var(--face-color-text-muted);
+  line-height: 1.7;
+  padding-left: 0;
+}
+
+/* ============ EXPERIENCE SECTION ============ */
+.face-experience {
+  position: relative;
+}
+
+/* ============ CLOSING REFLECTION - Quote Style ============ */
+.face-reflection {
+  text-align: center;
+  padding: 6rem 1.5rem 5rem;
+}
+
+.face-reflection-inner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.face-quote {
+  font-family: var(--face-font-heading);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 400;
+  color: var(--face-color-text);
+  line-height: 1.5;
+  margin: 0;
+  font-style: normal;
+  position: relative;
+}
+
+.face-quote::before,
+.face-quote::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: var(--face-color-border);
+  margin: 2rem auto;
+}
+
+.face-quote::before {
+  margin-bottom: 2.5rem;
+}
+
+.face-quote::after {
+  margin-top: 2.5rem;
+}
+
+/* ============ CTA SECTION ============ */
+.face-cta-section {
+  text-align: center;
+  padding: 4rem 1.5rem 6rem;
+}
+
+.face-cta-inner {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.face-cta-text {
+  font-family: var(--face-font-body);
+  font-size: 1.0625rem;
+  color: var(--face-color-text-subtle);
+  line-height: 1.7;
+  margin: 0 0 2.5rem;
+}
+
+.face-cta-button {
+  display: inline-block;
+  font-family: var(--face-font-body);
+  font-size: 1rem;
+  color: var(--face-color-text);
+  background: transparent;
+  border: 1px solid var(--face-color-text);
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.face-cta-button:hover {
+  background: var(--face-color-text);
+  color: var(--face-color-background);
+}
+
+.face-cta-button:focus {
+  outline: 2px solid var(--face-color-text);
+  outline-offset: 3px;
+}
+
+/* ============ RESPONSIVE ADJUSTMENTS ============ */
+@media (max-width: 768px) {
+  .face-hero {
+    padding: 6rem 1.25rem 4rem;
+    min-height: 60vh;
+  }
+
+  .face-section {
+    padding: 4rem 1.25rem;
+  }
+
+  .face-divider {
+    margin: 4rem auto;
+  }
+
+  .face-section-title {
+    margin-bottom: 2rem;
+  }
+
+  .face-section-text {
+    font-size: 1.0625rem;
+  }
+
+  .face-reveals-item {
+    font-size: 1.0625rem;
+    padding: 0.875rem 0;
+    padding-left: 1.25rem;
+  }
+
+  .face-reflection {
+    padding: 4rem 1.25rem;
+  }
+
+  .face-cta-section {
+    padding: 3rem 1.25rem 5rem;
+  }
+
+  :root {
+    --face-section-spacing: 4rem;
+    --face-paragraph-spacing: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .face-hero {
+    padding: 5rem 1rem 3rem;
+  }
+
+  .face-hero-title {
+    margin-bottom: 2rem;
+  }
+
+  .face-section {
+    padding: 3rem 1rem;
+  }
+
+  .face-section-text {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .face-cta-button {
+    padding: 0.875rem 2rem;
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+/* ============ ACCESSIBILITY ============ */
+@media (prefers-reduced-motion: reduce) {
+  .face-section {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}
+
+/* Skip Link */
+.face-skip-link {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--face-color-text);
+  color: var(--face-color-background);
+  padding: 0.75rem 1.5rem;
+  font-family: var(--face-font-body);
+  font-size: 0.875rem;
+  text-decoration: none;
+  z-index: 1000;
+  transition: top 0.2s ease;
+}
+
+.face-skip-link:focus {
+  top: 1rem;
+}
+
+/* Focus Styles */
+.face-reading-page a:focus-visible,
+.face-reading-page button:focus-visible {
+  outline: 2px solid var(--face-color-text);
+  outline-offset: 3px;
+}
+
+/* ============ PRINT STYLES ============ */
+@media print {
+  .face-reading-page {
+    background: white;
+  }
+
+  .face-hero {
+    min-height: auto;
+    padding: 2rem 0;
+  }
+
+  .face-section {
+    padding: 2rem 0;
+    opacity: 1;
+    transform: none;
+  }
+
+  .face-cta-section {
+    display: none;
+  }
+}
