@@ -1,0 +1,358 @@
+/* Life Direction Page Styles */
+.life-direction-main {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", sans-serif;
+  line-height: 1.7;
+  color: #2d3748;
+}
+
+.life-direction-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 24px 40px 24px; /* Top padding accounts for fixed navbar */
+}
+
+/* Typography */
+.life-direction-title {
+  font-family: "Yatra One", serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: #1a202c;
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.life-direction-subtitle {
+  font-size: 1.25rem;
+  color: #4a5568;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-style: italic;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.life-direction-section h2 {
+  font-family: "Yatra One", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #1a202c;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.life-direction-section h3 {
+  font-family: "Yatra One", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #2d3748;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.life-direction-section p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+/* Header Section */
+.life-direction-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+}
+
+/* Section Spacing */
+.life-direction-section {
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+}
+
+/* Dividers */
+.life-direction-divider {
+  height: 1px;
+  background-color: #e2e8f0;
+  margin: 4rem auto;
+  width: 60%;
+  max-width: 400px;
+}
+
+/* Dharma Grid */
+.dharma-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.dharma-item {
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease;
+}
+
+.dharma-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dharma-item h3 {
+  font-family: "Yatra One", serif;
+  font-size: 1.25rem;
+  color: #8b4513; /* Saddle brown accent */
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.dharma-item p {
+  font-size: 1rem;
+  margin-bottom: 0;
+  color: #4a5568;
+}
+
+/* Phases Grid */
+.phases-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.phase-item {
+  padding: 1.25rem;
+  background-color: #f7fafc;
+  border-left: 4px solid #8b4513;
+  border-radius: 4px;
+}
+
+.phase-item h3 {
+  font-family: "Yatra One", serif;
+  font-size: 1.125rem;
+  color: #8b4513;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.phase-item p {
+  font-size: 1rem;
+  margin-bottom: 0;
+  color: #4a5568;
+}
+
+/* FAQ Section */
+.life-direction-faq {
+  background-color: #f7fafc;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 4rem;
+}
+
+.faq-item {
+  margin-bottom: 2.5rem;
+}
+
+.faq-item:last-child {
+  margin-bottom: 0;
+}
+
+.faq-item h3 {
+  font-family: "Yatra One", serif;
+  font-size: 1.25rem;
+  color: #8b4513;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.faq-item p {
+  font-size: 1rem;
+  margin-bottom: 0;
+  color: #4a5568;
+}
+
+/* Closing Section */
+.life-direction-closing {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin-top: 4rem;
+  border: 1px solid #e2e8f0;
+}
+
+.life-direction-closing h2 {
+  margin-top: 0;
+  color: #8b4513;
+}
+
+/* Related Topics */
+.life-direction-related {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.related-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.related-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #8b4513;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.related-link:hover {
+  background-color: #a0522d;
+  transform: translateY(-1px);
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (min-width: 640px) {
+  .life-direction-container {
+    padding: 100px 40px 60px 40px;
+  }
+
+  .dharma-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .phases-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .life-direction-title {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .life-direction-container {
+    padding: 120px 60px 80px 60px;
+  }
+
+  .life-direction-section {
+    padding: 0;
+  }
+
+  .related-links {
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .life-direction-container {
+    padding: 120px 80px 80px 80px;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .life-direction-main {
+    background-color: #1a1a1a;
+    color: #e2e8f0;
+  }
+
+  .life-direction-container {
+    background-color: #1a1a1a;
+  }
+
+  .life-direction-title {
+    color: #f7fafc;
+  }
+
+  .life-direction-subtitle {
+    color: #cbd5e0;
+  }
+
+  .life-direction-section h2 {
+    color: #f7fafc;
+  }
+
+  .life-direction-section h3 {
+    color: #e2e8f0;
+  }
+
+  .life-direction-section p {
+    color: #cbd5e0;
+  }
+
+  .life-direction-divider {
+    background-color: #4a5568;
+  }
+
+  .dharma-item {
+    background-color: #2d3748;
+    border-color: #4a5568;
+  }
+
+  .dharma-item p {
+    color: #cbd5e0;
+  }
+
+  .phase-item {
+    background-color: #2d3748;
+  }
+
+  .phase-item p {
+    color: #cbd5e0;
+  }
+
+  .life-direction-faq {
+    background-color: #2d3748;
+  }
+
+  .faq-item p {
+    color: #cbd5e0;
+  }
+
+  .life-direction-closing {
+    background-color: #2d3748;
+    border-color: #4a5568;
+  }
+}
+
+/* Accessibility */
+.related-link:focus,
+.dharma-item:focus-within,
+.phase-item:focus-within {
+  outline: 2px solid #8b4513;
+  outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+  .life-direction-main {
+    background-color: white;
+    color: black;
+  }
+
+  .related-link {
+    background-color: transparent;
+    color: #8b4513;
+    border: 1px solid #8b4513;
+  }
+}

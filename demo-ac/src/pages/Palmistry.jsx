@@ -292,7 +292,7 @@ export default function Palmistry() {
               <hr className="palm-divider palm-divider-subtle" />
               <ul className="palm-link-list">
                 <li>
-                  <a href="/natal-chart">Natal Chart</a>
+                  <a href="/birth-chart-analysis">Birth Chart Analysis</a>
                 </li>
                 <li>
                   <a href="/numerology">Numerology</a>

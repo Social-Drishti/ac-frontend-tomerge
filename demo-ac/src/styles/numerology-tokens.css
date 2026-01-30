@@ -5,15 +5,6 @@
    ============================================== */
 
 :root {
-  /* ============ NUMEROLOGY COLOR PALETTE ============ */
-
-  /* Backgrounds - Cream Foundation */
-  --num-bg-primary: #faf7f2; /* Main background - cream */
-  --num-bg-secondary: #f5f2ed; /* Subtle section alternation */
-  --num-bg-sidebar: #f8f5f0; /* Sidebar background */
-  --num-bg-card: #faf7f2; /* Card backgrounds */
-  --num-bg-highlight: #f8f6f3; /* Subtle highlight areas */
-  --num-bg-table: #fdfcfb; /* Table row alternation */
 
   /* Text Colors - Deep Scholarly Tones */
   --num-ink-primary: #1a1a1a; /* Primary text - near black */
@@ -44,13 +35,6 @@
   --num-planet-saturn: #3a3a4a; /* 8 - Saturn (Shani) */
   --num-planet-mars: #8b3a3a; /* 9 - Mars (Mangal) */
 
-  /* Borders & Dividers - Minimal, Refined */
-  --num-border-light: #e8e8e8; /* Light border */
-  --num-border-default: #d4d4d4; /* Default border */
-  --num-border-dark: #b8b8b8; /* Darker border for emphasis */
-  --num-border-accent: #c45a1b; /* Accent border */
-  --num-divider: #e0e0e0; /* Section dividers */
-  --num-divider-subtle: #f0f0f0; /* Subtle dividers */
 
   /* Semantic Colors */
   --num-info: #4a6fa5;

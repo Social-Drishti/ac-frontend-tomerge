@@ -1,0 +1,409 @@
+/* ============ COMPATIBILITY ANALYSIS PAGE STYLES ============ */
+
+/* Import Design Tokens */
+@import "../styles/compatibility-tokens.css";
+
+/* ============ BASE LAYOUT ============ */
+
+.compat-layout {
+  background-color: var(--compat-parchment);
+  min-height: 100vh;
+  font-family: var(--compat-font-body);
+  color: var(--compat-ink);
+  line-height: var(--compat-leading-normal);
+}
+
+/* Skip Link for Accessibility */
+.compat-skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--compat-primary);
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: var(--compat-radius-md);
+  z-index: 1000;
+  font-size: var(--compat-text-sm);
+  font-weight: var(--compat-weight-medium);
+}
+
+.compat-skip-link:focus {
+  top: 6px;
+  outline: 2px solid var(--compat-focus-border);
+  outline-offset: 2px;
+}
+
+/* ============ CONTAINER SYSTEM ============ */
+
+.compat-container {
+  max-width: var(--compat-container-max);
+  margin: 0 auto;
+  padding: 0 var(--compat-space-lg);
+}
+
+.compat-container-wide {
+  max-width: var(--compat-container-wide);
+}
+
+/* ============ HEADER SECTION ============ */
+
+.compat-header {
+  background: linear-gradient(
+    135deg,
+    var(--compat-parchment) 0%,
+    var(--compat-primary-light) 100%
+  );
+  padding: var(--compat-space-3xl) 0;
+  margin-bottom: var(--compat-section-gap);
+  border-bottom: 1px solid var(--compat-divider);
+}
+
+.compat-hero-title {
+  font-family: var(--compat-font-heading);
+  font-size: var(--compat-text-4xl);
+  font-weight: var(--compat-weight-bold);
+  color: var(--compat-primary);
+  margin: 0 0 var(--compat-space-lg) 0;
+  line-height: var(--compat-leading-tight);
+  text-align: center;
+}
+
+.compat-hero-subtitle {
+  font-size: var(--compat-text-lg);
+  color: var(--compat-ink-muted);
+  text-align: center;
+  line-height: var(--compat-leading-relaxed);
+  margin: 0 auto;
+  max-width: 32rem;
+}
+
+/* ============ MAIN CONTENT ============ */
+
+.compat-main-content {
+  padding: 0 0 var(--compat-section-gap) 0;
+}
+
+/* ============ SECTION STYLING ============ */
+
+.compat-section {
+  margin-bottom: var(--compat-section-gap);
+  scroll-margin-top: 5rem; /* Account for fixed nav */
+}
+
+.compat-section-title {
+  font-family: var(--compat-font-heading);
+  font-size: var(--compat-text-3xl);
+  font-weight: var(--compat-weight-bold);
+  color: var(--compat-primary);
+  margin: 0 0 var(--compat-space-xl) 0;
+  line-height: var(--compat-leading-tight);
+  position: relative;
+}
+
+.compat-section-title::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 2px;
+  background-color: var(--compat-primary);
+  margin-top: var(--compat-space-md);
+}
+
+.compat-subsection-title {
+  font-family: var(--compat-font-heading);
+  font-size: var(--compat-text-2xl);
+  font-weight: var(--compat-weight-semibold);
+  color: var(--compat-ink);
+  margin: var(--compat-subsection-gap) 0 var(--compat-space-lg) 0;
+  line-height: var(--compat-leading-tight);
+}
+
+.compat-subsection {
+  margin-bottom: var(--compat-subsection-gap);
+}
+
+/* ============ TYPOGRAPHY ============ */
+
+.compat-paragraph {
+  font-size: var(--compat-text-base);
+  line-height: var(--compat-leading-relaxed);
+  margin-bottom: var(--compat-paragraph-gap);
+  color: var(--compat-ink);
+}
+
+.compat-paragraph-large {
+  font-size: var(--compat-text-lg);
+  line-height: var(--compat-leading-relaxed);
+  margin-bottom: var(--compat-space-lg);
+  color: var(--compat-ink);
+}
+
+.compat-emphasis {
+  color: var(--compat-ink-accent);
+  font-weight: var(--compat-weight-medium);
+}
+
+.compat-highlight {
+  background-color: var(--compat-primary-light);
+  padding: 0.125rem 0.25rem;
+  border-radius: var(--compat-radius-sm);
+  color: var(--compat-primary);
+}
+
+/* ============ LISTS ============ */
+
+.compat-list {
+  margin-bottom: var(--compat-paragraph-gap);
+  padding-left: var(--compat-space-lg);
+}
+
+.compat-list li {
+  margin-bottom: var(--compat-space-sm);
+  line-height: var(--compat-leading-relaxed);
+  color: var(--compat-ink);
+}
+
+.compat-list-unstyled {
+  list-style: none;
+  padding-left: 0;
+}
+
+.compat-list-spaced li {
+  margin-bottom: var(--compat-space-md);
+}
+
+/* ============ CONTENT CARDS ============ */
+
+.compat-content-card {
+  background-color: var(--compat-paper);
+  border: 1px solid var(--compat-border);
+  border-radius: var(--compat-radius-lg);
+  padding: var(--compat-space-xl);
+  margin-bottom: var(--compat-space-xl);
+  box-shadow: var(--compat-shadow-sm);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.compat-content-card:hover {
+  box-shadow: var(--compat-shadow-md);
+}
+
+.compat-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--compat-space-md);
+  margin-bottom: var(--compat-space-lg);
+}
+
+.compat-card-icon {
+  font-size: var(--compat-text-2xl);
+  color: var(--compat-primary);
+}
+
+.compat-card-title {
+  font-family: var(--compat-font-heading);
+  font-size: var(--compat-text-xl);
+  font-weight: var(--compat-weight-semibold);
+  color: var(--compat-ink);
+  margin: 0;
+}
+
+.compat-card-content {
+  color: var(--compat-ink);
+}
+
+/* ============ DIVIDERS ============ */
+
+.compat-divider {
+  border: none;
+  height: 1px;
+  background-color: var(--compat-border);
+  margin: var(--compat-space-lg) 0;
+}
+
+.compat-section-divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, var(--compat-primary), transparent);
+  margin: var(--compat-section-gap) 0;
+  max-width: 6rem;
+}
+
+/* ============ CALLOUT BOXES ============ */
+
+.compat-callout {
+  padding: var(--compat-space-lg);
+  border-radius: var(--compat-radius-md);
+  margin-bottom: var(--compat-space-xl);
+  border-left: 4px solid;
+}
+
+.compat-callout-harmony {
+  background-color: var(--compat-harmony-bg);
+  border-left-color: var(--compat-harmony);
+  color: var(--compat-ink);
+}
+
+.compat-callout-caution {
+  background-color: var(--compat-caution-bg);
+  border-left-color: var(--compat-caution);
+  color: var(--compat-ink);
+}
+
+.compat-callout-challenge {
+  background-color: var(--compat-challenge-bg);
+  border-left-color: var(--compat-challenge);
+  color: var(--compat-ink);
+}
+
+.compat-callout-title {
+  font-weight: var(--compat-weight-semibold);
+  margin-bottom: var(--compat-space-sm);
+  font-size: var(--compat-text-lg);
+}
+
+/* ============ QUOTE BLOCKS ============ */
+
+.compat-quote {
+  border-left: 3px solid var(--compat-primary);
+  padding-left: var(--compat-space-lg);
+  margin: var(--compat-space-xl) 0;
+  font-style: italic;
+  color: var(--compat-ink-muted);
+  font-size: var(--compat-text-lg);
+  line-height: var(--compat-leading-relaxed);
+}
+
+/* ============ TABLE STYLING ============ */
+
+.compat-table-container {
+  overflow-x: auto;
+  margin-bottom: var(--compat-space-xl);
+  border-radius: var(--compat-radius-md);
+  box-shadow: var(--compat-shadow-sm);
+}
+
+.compat-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--compat-paper);
+  font-size: var(--compat-text-sm);
+}
+
+.compat-table th {
+  background-color: var(--compat-primary-light);
+  color: var(--compat-primary);
+  padding: var(--compat-space-md);
+  text-align: left;
+  font-weight: var(--compat-weight-semibold);
+  border-bottom: 1px solid var(--compat-border);
+}
+
+.compat-table td {
+  padding: var(--compat-space-md);
+  border-bottom: 1px solid var(--compat-border);
+  color: var(--compat-ink);
+}
+
+.compat-table tr:hover {
+  background-color: var(--compat-primary-light);
+}
+
+/* ============ FOOTER SECTION ============ */
+
+.compat-footer-section {
+  border-top: 1px solid var(--compat-divider);
+  background-color: var(--compat-secondary-light);
+  padding: var(--compat-space-xl) 0;
+  margin-top: var(--compat-section-gap);
+  text-align: center;
+}
+
+.compat-footer-disclaimer {
+  font-size: var(--compat-text-sm);
+  color: var(--compat-ink-subtle);
+  line-height: var(--compat-leading-relaxed);
+  margin-bottom: var(--compat-space-lg);
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.compat-footer-guidance {
+  font-size: var(--compat-text-base);
+  color: var(--compat-ink-muted);
+  font-weight: var(--compat-weight-medium);
+  line-height: var(--compat-leading-relaxed);
+}
+
+/* ============ RESPONSIVE DESIGN ============ */
+
+@media (max-width: 768px) {
+  .compat-container {
+    padding: 0 var(--compat-space-md);
+  }
+
+  .compat-hero-title {
+    font-size: var(--compat-text-3xl);
+  }
+
+  .compat-section-title {
+    font-size: var(--compat-text-2xl);
+  }
+
+  .compat-subsection-title {
+    font-size: var(--compat-text-xl);
+  }
+
+  .compat-header {
+    padding: var(--compat-space-2xl) 0;
+  }
+
+  .compat-content-card {
+    padding: var(--compat-space-lg);
+  }
+}
+
+/* ============ FOCUS MANAGEMENT ============ */
+
+.compat-layout :focus {
+  outline: 2px solid var(--compat-focus-border);
+  outline-offset: 2px;
+  border-radius: var(--compat-radius-sm);
+}
+
+.compat-layout :focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ============ PRINT STYLES ============ */
+
+@media print {
+  .compat-layout {
+    background-color: white;
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+
+  .compat-header {
+    background: none;
+    border-bottom: 2pt solid black;
+    padding: 1rem 0;
+  }
+
+  .compat-content-card {
+    box-shadow: none;
+    border: 1pt solid #ccc;
+    page-break-inside: avoid;
+  }
+
+  .compat-section {
+    page-break-inside: avoid;
+    margin-bottom: 1.5rem;
+  }
+
+  .compat-section-title {
+    page-break-after: avoid;
+  }
+}

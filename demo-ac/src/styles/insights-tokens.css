@@ -13,23 +13,12 @@
   --insights-primary-muted: rgba(101, 78, 18, 0.6);
   --insights-primary-hover: rgba(101, 78, 18, 0.12);
 
-  /* Background - Warm Parchment */
-  --insights-bg: #faf8f3;
-  --insights-bg-subtle: #f5f2eb;
-  --insights-bg-card: #faf7f2;
-  --insights-bg-section: rgba(101, 78, 18, 0.03);
-  --insights-bg-featured: rgba(101, 78, 18, 0.04);
-
+  
   /* Text Colors */
   --insights-ink: #654e12;
   --insights-ink-muted: rgba(101, 78, 18, 0.7);
   --insights-ink-subtle: rgba(101, 78, 18, 0.5);
   --insights-ink-light: rgba(101, 78, 18, 0.4);
-
-  /* Borders & Dividers */
-  --insights-border: rgba(101, 78, 18, 0.12);
-  --insights-divider: rgba(101, 78, 18, 0.08);
-  --insights-divider-strong: rgba(101, 78, 18, 0.15);
 
   /* Category Colors - Subtle, Harmonious */
   --insights-cat-vedic: #5a7247;

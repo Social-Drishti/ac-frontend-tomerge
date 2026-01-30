@@ -850,7 +850,7 @@ export default function Vastu() {
                 your home or office and provide customized recommendations for
                 harmony and prosperity.
               </p>
-              <a href="/reading" className="vastu-cta-button">
+              <a href="/astrology" className="vastu-cta-button">
                 Book a Consultation
                 <span>→</span>
               </a>

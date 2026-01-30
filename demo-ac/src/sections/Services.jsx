@@ -7,35 +7,35 @@ export default function ServicesCarousel() {
   const services = [
     {
       img: "/services-image/Transit-Reading.png",
-      link: "/reading/transits",
+      link: "/transits",
     },
     {
       img: "/services-image/Muhurta.png",
-      link: "/reading/muhurta",
+      link: "/astrology",
     },
     // {
     //   img: "/services-image/remedial-astrology.png",
-    //   link: "/reading/remedial",
+    //   link: "/remedial",
     // },
     {
       img: "/services-image/Horary.png",
-      link: "/reading/horary",
+      link: "/astrology",
     },
     {
       img: "/services-image/lab-kitab.png",
-      link: "/reading/lal-kitab",
+      link: "/astrology",
     },
     {
       img: "/services-image/Career-astrology.png",
-      link: "/reading/career-astrology",
+      link: "/career-astrology",
     },
     {
       img: "/services-image/Compatibility.png",
-      link: "/reading/compatibility",
+      link: "/compatibility",
     },
     {
       img: "/services-image/Natal-chart.png",
-      link: "/reading/natal-chart",
+      link: "/birth-chart-analysis",
     },
   ];
 

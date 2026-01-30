@@ -4,13 +4,6 @@
    ============================================== */
 
 :root {
-  /* ============ VASTU COLOR PALETTE ============ */
-
-  /* Backgrounds - Warm Earth Tones */
-  --vastu-parchment: #faf7f2; /* Main background - cream */
-  --vastu-paper: #faf7f2; /* Card/section background */
-  --vastu-paper-alt: #f5f1eb; /* Alternate section background */
-  --vastu-sidebar-bg: #fefdfb; /* Sidebar background */
 
   /* Text Colors - Deep Earth Tones */
   --vastu-ink: #2d3436; /* Primary text - charcoal */

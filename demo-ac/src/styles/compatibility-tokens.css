@@ -1,0 +1,119 @@
+:root {
+
+
+  /* Text Colors - Balanced & Authoritative */
+  --compat-ink: #2d3748; /* Primary text - deep gray */
+  --compat-ink-muted: #4a5568; /* Secondary text - medium gray */
+  --compat-ink-subtle: #718096; /* Tertiary text - light gray */
+  --compat-ink-accent: #8b4513; /* Accent text - saddle brown */
+
+
+  /* Accent Colors - Harmony Theme */
+  --compat-primary: #8b4513; /* Primary actions - saddle brown */
+  --compat-primary-hover: #7a3a0f; /* Hover state */
+  --compat-primary-light: #f7ebe0; /* Light accent backgrounds */
+  --compat-secondary: #5f6b3a; /* Secondary accent - olive */
+  --compat-secondary-light: #f3f5f1; /* Light secondary */
+
+  /* Semantic Colors */
+  --compat-harmony: #38a169; /* Positive compatibility */
+  --compat-harmony-bg: #f0fff4; /* Harmony background */
+  --compat-caution: #d69e2e; /* Areas needing attention */
+  --compat-caution-bg: #fffaf0; /* Caution background */
+  --compat-challenge: #e53e3e; /* Potential challenges */
+  --compat-challenge-bg: #fed7d7; /* Challenge background */
+
+  /* ============ TYPOGRAPHY ============ */
+
+  /* Font Families */
+  --compat-font-heading: "Yatra One", "Georgia", serif; /* For headings only */
+  --compat-font-body:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; /* Body text */
+  --compat-font-mono:
+    "SF Mono", "Monaco", "Consolas", monospace; /* Code/data */
+
+  /* Font Sizes */
+  --compat-text-xs: 0.75rem; /* 12px - Captions */
+  --compat-text-sm: 0.875rem; /* 14px - Small text */
+  --compat-text-base: 1rem; /* 16px - Body text */
+  --compat-text-lg: 1.125rem; /* 18px - Large body */
+  --compat-text-xl: 1.25rem; /* 20px - Small headings */
+  --compat-text-2xl: 1.5rem; /* 24px - Section headings */
+  --compat-text-3xl: 1.875rem; /* 30px - Major headings */
+  --compat-text-4xl: 2.25rem; /* 36px - Page title */
+
+  /* Line Heights */
+  --compat-leading-tight: 1.25; /* Headings */
+  --compat-leading-normal: 1.6; /* Body text */
+  --compat-leading-relaxed: 1.75; /* Long-form content */
+
+  /* Font Weights */
+  --compat-weight-normal: 400;
+  --compat-weight-medium: 500;
+  --compat-weight-semibold: 600;
+  --compat-weight-bold: 700;
+
+  /* ============ SPACING SYSTEM ============ */
+
+  /* Spacing Scale */
+  --compat-space-xs: 0.25rem; /* 4px */
+  --compat-space-sm: 0.5rem; /* 8px */
+  --compat-space-md: 1rem; /* 16px */
+  --compat-space-lg: 1.5rem; /* 24px */
+  --compat-space-xl: 2rem; /* 32px */
+  --compat-space-2xl: 3rem; /* 48px */
+  --compat-space-3xl: 4rem; /* 64px */
+
+  /* Content Spacing */
+  --compat-section-gap: 4rem; /* Between major sections */
+  --compat-subsection-gap: 2rem; /* Between subsections */
+  --compat-paragraph-gap: 1rem; /* Between paragraphs */
+
+  /* ============ LAYOUT DIMENSIONS ============ */
+
+  /* Container Widths */
+  --compat-container-max: 42rem; /* 672px - optimal reading line length */
+  --compat-container-wide: 48rem; /* 768px - for wider content */
+  --compat-sidebar-width: 16rem; /* 256px - if sidebar needed */
+
+  /* Border Radius */
+  --compat-radius-sm: 0.25rem; /* 4px */
+  --compat-radius-md: 0.5rem; /* 8px */
+  --compat-radius-lg: 0.75rem; /* 12px */
+
+  /* Shadows */
+  --compat-shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  --compat-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --compat-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+  /* Focus States */
+  --compat-focus-ring: 0 0 0 3px rgba(139, 69, 19, 0.1);
+  --compat-focus-border: var(--compat-primary);
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --compat-parchment: #1a202c;
+    --compat-paper: #2d3748;
+    --compat-paper-hover: #4a5568;
+    --compat-ink: #f7fafc;
+    --compat-ink-muted: #e2e8f0;
+    --compat-ink-subtle: #cbd5e0;
+    --compat-border: #4a5568;
+    --compat-border-hover: #718096;
+    --compat-divider: #2d3748;
+  }
+}
+
+/* Print Styles */
+@media print {
+  :root {
+    --compat-parchment: #ffffff;
+    --compat-paper: #ffffff;
+    --compat-ink: #000000;
+    --compat-ink-muted: #333333;
+    --compat-ink-subtle: #666666;
+    --compat-section-gap: 2rem;
+  }
+}

@@ -271,14 +271,14 @@ export default function Transits() {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen bg-gray-50 py-8">
-        <div className="container mx-auto px-4">
+      <div className="min-h-screen py-8">
+        <div className="max-w-4xl mx-auto px-4">
           {/* Header */}
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            <h1 className="text-3xl font-bold text-gray-900 mb-4">
               Planetary Events & Transits
             </h1>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Understand current planetary movements and their cosmic
               influences. Track important astrological events happening this
               month.
@@ -286,9 +286,9 @@ export default function Transits() {
           </div>
 
           {/* Date Selector */}
-          <div className="bg-[#faf7f2] rounded-xl shadow-lg p-6 mb-8">
-            <div className="flex flex-wrap items-center justify-between gap-4">
-              <div className="flex items-center gap-4">
+          <div className="mb-8 max-w-2xl mx-auto">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 bg-gray-50 rounded-lg p-4">
+              <div className="flex items-center gap-3">
                 <label className="text-sm font-medium text-gray-700">
                   Current Date:
                 </label>
@@ -296,10 +296,10 @@ export default function Transits() {
                   type="date"
                   value={selectedDate}
                   onChange={(e) => setSelectedDate(e.target.value)}
-                  className="border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  className="px-3 py-2 rounded border focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 />
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-3">
                 <span className="text-sm font-medium text-gray-700">
                   Location:
                 </span>
@@ -309,7 +309,7 @@ export default function Transits() {
           </div>
 
           {/* Events Calendar */}
-          <div className="bg-[#faf7f2] rounded-xl shadow-lg p-6">
+          <div className="max-w-6xl mx-auto">
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-2xl font-bold text-gray-900">
                 {selectedMonth} Planetary Events
@@ -320,11 +320,11 @@ export default function Transits() {
             </div>
 
             {/* Event Type Legend */}
-            <div className="mb-6 p-4 bg-gray-50 rounded-lg">
+            <div className="mb-8 p-4 bg-gray-50 rounded-lg">
               <p className="text-sm font-medium text-gray-700 mb-3">
                 Event Types:
               </p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 justify-center">
                 {[
                   "conjunction",
                   "opposition",
@@ -343,31 +343,44 @@ export default function Transits() {
               </div>
             </div>
 
-            {/* Events List */}
-            <div className="space-y-4">
+            {/* Events Cards Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
               {planetaryEvents.map((event, index) => (
                 <div
                   key={index}
-                  className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow"
+                  className="border border-gray-200 rounded-lg p-4 hover:shadow-lg hover:scale-105 transition-all duration-300 bg-gradient-to-br from-gray-50 to-white"
                 >
-                  <div className="flex flex-wrap items-center justify-between gap-4">
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-3 mb-2">
-                        <span className="text-sm font-medium text-gray-600">
-                          {event.date}
-                        </span>
-                        <span className="text-sm text-gray-500">
-                          {event.time}
-                        </span>
-                        <span
-                          className={`px-2 py-1 rounded-full text-xs font-medium border ${getEventTypeColor(event.type)}`}
-                        >
-                          {event.type}
-                        </span>
-                      </div>
-                      <h3 className="text-lg font-semibold text-gray-900">
+                  <div className="flex flex-col h-full">
+                    {/* Event Type Badge */}
+                    <div className="flex justify-center mb-3">
+                      <span
+                        className={`px-2 py-1 rounded-full text-xs font-medium border ${getEventTypeColor(event.type)}`}
+                      >
+                        {event.type}
+                      </span>
+                    </div>
+
+                    {/* Event Details */}
+                    <div className="flex-1">
+                      <h3 className="text-sm font-semibold text-gray-900 mb-3 text-center line-clamp-2">
                         {event.event}
                       </h3>
+
+                      <div className="space-y-2 text-xs text-gray-600">
+                        <div className="flex items-center justify-center">
+                          <span className="font-medium">
+                            {event.date.split(",")[0]}
+                          </span>
+                        </div>
+                        <div className="flex items-center justify-center">
+                          <span className="text-gray-500">{event.time}</span>
+                        </div>
+                        <div className="text-center">
+                          <span className="text-gray-500 text-xs">
+                            {event.date.split(",")[1]}
+                          </span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -376,14 +389,14 @@ export default function Transits() {
           </div>
 
           {/* Information Section */}
-          <div className="mt-8 bg-indigo-50 rounded-xl p-6">
-            <h3 className="text-lg font-semibold text-indigo-900 mb-3">
+          <div className="mt-8 max-w-3xl mx-auto bg-indigo-50 rounded-xl p-6">
+            <h3 className="text-lg font-semibold text-indigo-900 mb-4 text-center">
               Understanding Planetary Events
             </h3>
-            <div className="grid md:grid-cols-2 gap-6 text-sm text-indigo-800">
+            <div className="grid sm:grid-cols-2 gap-6 text-sm text-indigo-800">
               <div>
-                <p className="font-medium mb-2">Key Event Types:</p>
-                <ul className="space-y-1">
+                <p className="font-medium mb-3">Key Event Types:</p>
+                <ul className="space-y-2">
                   <li>
                     • <strong>Conjunctions (0°):</strong> Planets align,
                     energies combine
@@ -399,8 +412,8 @@ export default function Transits() {
                 </ul>
               </div>
               <div>
-                <p className="font-medium mb-2">Timing & Location:</p>
-                <ul className="space-y-1">
+                <p className="font-medium mb-3">Timing & Location:</p>
+                <ul className="space-y-2">
                   <li>• Times are calculated for New Delhi, India</li>
                   <li>• Events may vary slightly based on your location</li>
                   <li>• Use this data for general astrological planning</li>

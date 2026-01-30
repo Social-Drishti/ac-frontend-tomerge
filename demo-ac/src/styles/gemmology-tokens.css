@@ -1,16 +1,6 @@
-/* ==============================================
-   GEMMOLOGY (RATNA SHASTRA) PAGE - DESIGN TOKENS
-   Calm, Authoritative, Traditional Editorial Design
-   ============================================== */
 
 :root {
-  /* ============ GEMMOLOGY COLOR PALETTE ============ */
 
-  /* Backgrounds - Warm Parchment Tones */
-  --gem-parchment: #faf8f4; /* Main background - warm cream */
-  --gem-paper: #faf7f2; /* Card/section background */
-  --gem-paper-alt: #f6f3ed; /* Alternate section background */
-  --gem-sidebar-bg: #fefdfb; /* Sidebar background */
 
   /* Text Colors - Deep Jewel Tones */
   --gem-ink: #2c2c2c; /* Primary text - deep charcoal */
@@ -38,11 +28,7 @@
   --gem-hessonite: #a52a2a; /* Hessonite - brown-red */
   --gem-cats-eye: #bdb76b; /* Cat's Eye - khaki */
 
-  /* Borders & Dividers */
-  --gem-border: #e5dfd5; /* Default border */
-  --gem-border-light: #f0ebe3; /* Light border */
-  --gem-border-dark: #ccc3b5; /* Dark border */
-  --gem-border-focus: #8b2942; /* Focus border */
+
 
   /* Semantic Colors */
   --gem-success: #2e7d32;

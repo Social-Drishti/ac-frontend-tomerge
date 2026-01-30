@@ -7,7 +7,7 @@ export default function Guidance() {
       desc: "Understand your core personality traits, emotional nature, and natural strengths. Discover the life themes and challenges written in your stars.",
       link: "Explore →",
       image: "/guidances-image/Birth-Chart-Reading.png",
-      route: "/birth-chart",
+      route: "/birth-chart-analysis",
     },
     {
       title: "Compatibility Analysis",

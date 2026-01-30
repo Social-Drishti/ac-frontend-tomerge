@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./WhyAstrology.css";
 
 export default function WhyAstrology() {
@@ -23,21 +24,24 @@ export default function WhyAstrology() {
         </div> */}
 
         <div className="mt-16 flex flex-wrap justify-center gap-8">
-          <div className="why-astrology-card">
+          <Link to="/self-awareness" className="why-astrology-card">
             <div className="why-astrology-image">
-              <img src="./whyastrology-images/self-awarness.png" alt="Self Awareness" />
+              <img src="./whyastrology-images/self-awarness.png" />
             </div>
-          </div>
-          <div className="why-astrology-card">
+          </Link>
+          <Link to="/relationships" className="why-astrology-card">
             <div className="why-astrology-image">
-              <img src="./whyastrology-images/relationships.png" alt="Relationships" />
+              <img src="./whyastrology-images/relationships.png" />
             </div>
-          </div>
-          <div className="why-astrology-card">
+          </Link>
+          <Link to="/life-direction" className="why-astrology-card">
             <div className="why-astrology-image">
-              <img src="./whyastrology-images/life-directions.png" alt="Life Direction" />
+              <img
+                src="./whyastrology-images/life-directions.png"
+                alt="Life Direction"
+              />
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

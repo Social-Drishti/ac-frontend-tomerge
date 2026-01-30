@@ -1,8 +1,4 @@
 :root {
-  /* Career-specific backgrounds - Editorial parchment theme */
-  --career-parchment: #faf8f3; /* Main background - warm cream */
-  --career-paper: #fefefe; /* Card background - pure white */
-  --career-paper-hover: #f8f6f1; /* Card hover state */
 
   /* Text Colors - Professional earthtones */
   --career-ink: #5f6b3a; /* Primary text - olive green (brand) */
@@ -10,11 +6,6 @@
   --career-ink-subtle: #9d8969; /* Tertiary text - lighter brown */
   --career-ink-light: #b8a082; /* Caption text */
 
-  /* Borders & Dividers */
-  --career-border: #e8e3d8; /* Light dividers and borders */
-  --career-border-medium: #d4c9b8; /* Medium borders */
-  --career-border-strong: #c0b397; /* Strong borders */
-  --career-border-focus: #5f6b3a; /* Focus borders */
 
   /* Accent Colors - Professional authority */
   --career-accent: #8b4513; /* Saddle brown - authority */

@@ -1,7 +1,6 @@
 /* ============ CAREER ASTROLOGY PAGE STYLES ============ */
 
 .career-layout {
-  background-color: var(--career-parchment);
   color: var(--career-ink);
   min-height: 100vh;
   font-family: var(--career-font-sans);
@@ -13,8 +12,7 @@
   position: absolute;
   top: -40px;
   left: 6px;
-  background: var(--career-accent);
-  color: white;
+  color: rgb(163, 110, 110);
   padding: 8px 16px;
   text-decoration: none;
   border-radius: var(--career-radius-md);

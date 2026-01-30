@@ -156,22 +156,9 @@ h6 {
   margin: 10px 0;
 }
 
-/* Accordion/Expandable sections */
-/*
-.accordion,
-[class*="accordion"],
-[class*="expand"],
-[class*="collapse"] {
-  border-radius: 12px;
-  margin: 10px 0;
-  overflow: hidden;
-  background-color: #f5e6d3;
-}
-*/
 */ .accordion-header,
 [class*="accordion-header"],
 [class*="expand-header"] {
-  background-color: rgba(250, 248, 243, 0.8);
   border: none;
   cursor: pointer;
   color: #654e12;
@@ -187,24 +174,9 @@ h6 {
 .accordion-content,
 [class*="accordion-content"],
 [class*="expand-content"] {
-  background-color: rgba(250, 248, 243, 0.8);
   color: #654e12;
 }
 
-/* Navbar styling */
-/* .navbar,
-.header,
-nav,
-[class*="navbar"] {
-  background-color: rgba(250, 248, 243, 0.8);
-} */
-
-/* footer,
-[class*="footer"] {
-  padding: 20px;
-  color: #654e12;
-  background-color: rgba(250, 248, 243, 0.8);
-} */
 
 /* Tables */
 table {
@@ -221,14 +193,10 @@ td {
 }
 
 th {
-  background-color: rgba(250, 248, 243, 0.8);
   color: #654e12;
   font-weight: bold;
 }
 
-tr:hover {
-  background-color: rgba(250, 248, 243, 0.8);
-}
 
 /* Lists */
 ul,

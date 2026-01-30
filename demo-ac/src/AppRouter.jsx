@@ -9,7 +9,6 @@ import Dashboard from "./pages/Dashboard";
 import Calendar from "./pages/Calendar";
 import Calculator from "./pages/Calculator";
 import AboutUs from "./pages/AboutUs";
-import NatalChart from "./pages/NatalChart";
 import Synastry from "./pages/Synastry";
 import Progressions from "./pages/Progressions";
 import Compatibility from "./pages/Compatibility";
@@ -20,7 +19,6 @@ import CareerAstrology from "./pages/CareerAstrology";
 import Transits from "./pages/Transits";
 import Palmistry from "./pages/Palmistry";
 import Guruji from "./pages/Guruji";
-import Reading from "./pages/Reading";
 import Vastu from "./pages/Vastu";
 import Astrology from "./pages/Astrology";
 import Gemmology from "./pages/Gemmology";
@@ -31,6 +29,9 @@ import Numerology from "./pages/Numerology";
 import Remedies from "./pages/Remedies";
 import ThumbReading from "./pages/ThumbReading";
 import BirthChartAnalysis from "./pages/BirthChartAnalysis";
+import SelfAwareness from "./pages/SelfAwareness";
+import Relationships from "./pages/Relationships";
+import LifeDirection from "./pages/LifeDirection";
 import OAuthCallback from "./pages/OAuthCallback";
 
 export default function AppRouter() {
@@ -46,8 +47,6 @@ export default function AppRouter() {
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/calculator" element={<Calculator />} />
           <Route path="/about" element={<AboutUs />} />
-          <Route path="/reading" element={<Reading />} />
-          <Route path="/natal-chart" element={<NatalChart />} />
           <Route path="/synastry" element={<Synastry />} />
           <Route path="/progressions" element={<Progressions />} />
           <Route path="/compatibility" element={<Compatibility />} />
@@ -71,6 +70,9 @@ export default function AppRouter() {
             path="/birth-chart-analysis"
             element={<BirthChartAnalysis />}
           />
+          <Route path="/self-awareness" element={<SelfAwareness />} />
+          <Route path="/relationships" element={<Relationships />} />
+          <Route path="/life-direction" element={<LifeDirection />} />
           <Route path="/auth/callback" element={<OAuthCallback />} />
         </Routes>
       </AuthProvider>

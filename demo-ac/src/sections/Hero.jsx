@@ -14,10 +14,10 @@ export default function Hero() {
       <div className="hero-overlay">
         <div className="hero-content">
           <h1>Let the universe speaks to you</h1>
-          <div className="hero-buttons">
+          {/* <div className="hero-buttons">
             <button className="primary-btn">Get Started</button>
             <button className="secondary-btn">Learn More</button>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

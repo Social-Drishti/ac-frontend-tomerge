@@ -1952,7 +1952,7 @@ export default function Numerology() {
               <h4 className="numerology-footer-column-title">Readings</h4>
               <ul className="numerology-footer-links">
                 <li>
-                  <a href="/natal-chart">Natal Chart</a>
+                  <a href="/birth-chart-analysis">Birth Chart Analysis</a>
                 </li>
                 <li>
                   <a href="/compatibility">Compatibility</a>

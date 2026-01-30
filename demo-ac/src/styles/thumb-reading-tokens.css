@@ -5,15 +5,7 @@
    ============================================== */
 
 :root {
-  /* ============ BACKGROUND COLORS ============ */
-  /* Warm, calm parchment theme for reflective spiritual content */
-  --thumb-bg-primary: #faf7f2; /* Main page background - warm cream */
-  --thumb-bg-secondary: #f5f1ea; /* Section alternating background */
-  --thumb-bg-card: #faf7f2; /* Card/callout background */
-  --thumb-bg-highlight: #fdf9f3; /* Highlighted content areas */
-  --thumb-bg-caution: #fef7ed; /* Caution/warning callouts */
-  --thumb-bg-ethical: #f0f4e8; /* Ethical emphasis backgrounds */
-  --thumb-bg-insight: #f5f3eb; /* Insight callout background */
+
 
   /* ============ TEXT COLORS ============ */
   /* Brown-olive ink for grounded, authoritative reading */
@@ -33,11 +25,6 @@
   --thumb-accent-sage: #6b7b5a; /* Sage green - balance, nature */
   --thumb-accent-ethical: #5a6b4e; /* Ethical/caution emphasis */
 
-  /* ============ BORDER COLORS ============ */
-  --thumb-border-light: #e8e4dc; /* Light dividers */
-  --thumb-border-medium: #d4cfc3; /* Medium borders */
-  --thumb-border-dark: #b8b2a4; /* Darker borders for emphasis */
-  --thumb-border-accent: #8b7355; /* Accent borders */
 
   /* ============ SEMANTIC COLORS ============ */
   /* Calm, non-alarmist semantic indicators */

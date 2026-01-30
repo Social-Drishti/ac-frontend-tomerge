@@ -5,14 +5,6 @@
    ============================================== */
 
 :root {
-  /* ============ BACKGROUND COLORS ============ */
-  /* Warm, calm parchment theme for ethical spiritual content */
-  --remedy-bg-primary: #faf7f2; /* Main page background - cream */
-  --remedy-bg-secondary: #f5f1ea; /* Section alternating background */
-  --remedy-bg-card: #faf7f2; /* Card/callout background */
-  --remedy-bg-highlight: #fdf9f3; /* Highlighted content areas */
-  --remedy-bg-warning: #fef7ed; /* Caution/warning callouts */
-  --remedy-bg-ethical: #f0f4e8; /* Ethical emphasis backgrounds */
 
   /* ============ TEXT COLORS ============ */
   /* Brown-olive ink for grounded, authoritative reading */
@@ -32,25 +24,7 @@
   --remedy-accent-sage: #6b7b5a; /* Sage green - balance, nature */
   --remedy-accent-ethical: #5a6b4e; /* Ethical/caution emphasis */
 
-  /* ============ BORDER COLORS ============ */
-  --remedy-border-light: #e8e4dc; /* Light dividers */
-  --remedy-border-medium: #d4cfc3; /* Medium borders */
-  --remedy-border-dark: #b8b2a4; /* Darker borders for emphasis */
-  --remedy-border-accent: #8b7355; /* Accent borders */
 
-  /* ============ SEMANTIC COLORS ============ */
-  /* Calm, non-alarmist semantic indicators */
-  --remedy-caution-bg: #fef7ed; /* Caution background */
-  --remedy-caution-border: #d4a574; /* Caution border */
-  --remedy-caution-text: #7a5a32; /* Caution text */
-
-  --remedy-important-bg: #f5f0e8; /* Important note background */
-  --remedy-important-border: #a69b82; /* Important border */
-  --remedy-important-text: #5f5a4d; /* Important text */
-
-  --remedy-ethical-bg: #f0f4e8; /* Ethical callout background */
-  --remedy-ethical-border: #8b9b7a; /* Ethical border */
-  --remedy-ethical-text: #4a5a3e; /* Ethical text */
 
   /* ============ TYPOGRAPHY ============ */
 

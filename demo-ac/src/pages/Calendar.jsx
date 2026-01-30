@@ -59,7 +59,7 @@ const HinduTimeWidget = () => {
         </h2>
 
         {/* Hindu Time Display */}
-        <div className="bg-[#faf7f2] rounded-lg p-6 mb-4 text-center">
+        <div className="p-6 mb-4 text-center">
           <div className="text-4xl text-orange-700 mb-2">
             {String(hinduTime.ghati).padStart(2, "0")} :{" "}
             {String(hinduTime.pala).padStart(2, "0")} :{" "}
@@ -69,7 +69,7 @@ const HinduTimeWidget = () => {
         </div>
 
         {/* Standard Time Display */}
-        <div className="bg-orange-50 rounded-lg p-4 mb-4 text-center">
+        <div className="rounded-lg p-4 mb-4 text-center">
           <div className="text-2xl text-gray-700">
             {currentTime.toLocaleTimeString("en-IN", { hour12: false })}
           </div>
@@ -77,7 +77,7 @@ const HinduTimeWidget = () => {
         </div>
 
         {/* Hindu Time Units Information */}
-        <div className="bg-orange-50 rounded-lg p-4 text-xs text-gray-700 space-y-1">
+        <div className="rounded-lg p-4 text-xs text-gray-700 space-y-1">
           <p className="text-orange-600 mb-2">Hindu Time:</p>
           <p>1 day (24 hours) = 60 Ghatis</p>
           <p>1 Ghati = 60 Vighati (Pala/Kala)</p>
@@ -96,13 +96,13 @@ const HinduTimeWidget = () => {
 
         <div className="space-y-3">
           {/* Date */}
-          <div className="bg-[#faf7f2] rounded-lg p-4">
+          <div className="rounded-lg p-4">
             <div className="text-sm text-gray-600">Date</div>
             <div className="text-xl text-gray-800">{panchangData.date}</div>
           </div>
 
           {/* Tithi */}
-          <div className="bg-[#faf7f2] rounded-lg p-4">
+          <div className="rounded-lg p-4">
             <div className="text-sm text-gray-600">Tithi</div>
             <div className="text-xl font-semibold text-orange-700">
               {panchangData.tithi}
@@ -111,13 +111,13 @@ const HinduTimeWidget = () => {
 
           {/* Paksha & Month */}
           <div className="grid grid-cols-2 gap-3">
-            <div className="bg-[#faf7f2] rounded-lg p-4">
+            <div className="rounded-lg p-4">
               <div className="text-xs text-gray-600">Paksha</div>
               <div className="text-sm font-semibold text-gray-800">
                 {panchangData.paksha}
               </div>
             </div>
-            <div className="bg-[#faf7f2] rounded-lg p-4">
+            <div className="rounded-lg p-4">
               <div className="text-xs text-gray-600">Vikram Samvat</div>
               <div className="text-sm font-semibold text-gray-800">
                 {panchangData.year}
@@ -126,10 +126,10 @@ const HinduTimeWidget = () => {
           </div>
 
           {/* Sun Timings */}
-          <div className="bg-orange-50 rounded-lg p-4">
+          <div className="rounded-lg p-4">
             <div className="flex justify-between items-center mb-2">
               <div className="flex items-center gap-2">
-                <span className="text-xl">🌅</span>
+                {/* <span className="text-xl">🌅</span> */}
                 <div>
                   <div className="text-xs text-gray-600">Sunrise</div>
                   <div className="text-lg text-gray-800">
@@ -275,9 +275,7 @@ const getTithiAndPaksha = (phase) => {
   }
 };
 
-const getPaksha = (phase) => {
-  return phase <= 15 ? "Shukla Paksha" : "Krishna Paksha";
-};
+
 
 const MoonPhase = ({ phase, size = 60 }) => {
   // 0 days = New Moon
@@ -306,10 +304,13 @@ const MoonPhase = ({ phase, size = 60 }) => {
     ? size / 2 - (size / 2) * illumination // Shadow from right during waxing
     : -size / 2 + (size / 2) * illumination; // Shadow from left during waning
 
+  // Generate unique ID to avoid conflicts
+  const maskId = `moonMask-${Math.round(phase * 100)}-${size}`;
+
   return (
     <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
       <defs>
-        <mask id={`moonMask-${phase}`}>
+        <mask id={maskId}>
           <circle cx={size / 2} cy={size / 2} r={size / 2} fill="white" />
           {/* Shadow ellipse for moon phase */}
           <ellipse
@@ -331,7 +332,7 @@ const MoonPhase = ({ phase, size = 60 }) => {
         cy={size / 2}
         r={size / 2}
         fill="#E5E7EB"
-        mask={`url(#moonMask-${phase})`}
+        mask={`url(#${maskId})`}
       />
 
       {/* Border */}
@@ -480,7 +481,7 @@ const ShubhMuhuratCalendar = () => {
   const selectedMuhurat = SHUBH_MUHURAT_DATES[selectedDateKey];
 
   return (
-    <div className="rounded-xl shadow-md bg-[#faf7f2] p-3">
+    <div className="rounded-xl shadow-md calendar-card p-3">
       <h2 className="text-sm font-bold text-orange-600 mb-2 text-center">
         ✨ Muhurat
       </h2>
@@ -565,7 +566,7 @@ const ShubhMuhuratCalendar = () => {
 
       {/* Compact Selected Date Muhurat Details */}
       {selectedMuhurat ? (
-        <div className="mt-2 p-2 bg-green-50 rounded border border-green-300">
+        <div className="mt-2 p-2 rounded border border-green-300">
           <h3 className="text-[10px] font-semibold text-green-700 mb-1">
             <span className="text-lg mr-2"></span>
             {monthNames[selectedDate.getMonth()].slice(0, 3)}{" "}
@@ -574,7 +575,7 @@ const ShubhMuhuratCalendar = () => {
 
           <div className="space-y-1 text-[10px]">
             {selectedMuhurat.morning && (
-              <div className="bg-[#faf7f2] p-1 rounded border-l border-orange-400">
+          <div className="calendar-card p-2 rounded border-l border-orange-400">
                 <p className="text-[9px] text-gray-500">Morning</p>
                 <p className="text-orange-600 font-medium">
                   {selectedMuhurat.morning}
@@ -583,7 +584,7 @@ const ShubhMuhuratCalendar = () => {
             )}
 
             {selectedMuhurat.afternoon && (
-              <div className="bg-[#faf7f2] p-1 rounded border-l border-orange-400">
+              <div className="calendar-card p-1 rounded border-l border-orange-400">
                 <p className="text-[9px] text-gray-500">Afternoon</p>
                 <p className="text-orange-600 font-medium">
                   {selectedMuhurat.afternoon}
@@ -592,7 +593,7 @@ const ShubhMuhuratCalendar = () => {
             )}
 
             {selectedMuhurat.evening && (
-              <div className="bg-[#faf7f2] p-1 rounded border-l border-orange-400">
+              <div className="calendar-card p-1 rounded border-l border-orange-400">
                 <p className="text-[9px] text-gray-500">Evening</p>
                 <p className="text-orange-600 font-medium">
                   {selectedMuhurat.evening}
@@ -602,7 +603,7 @@ const ShubhMuhuratCalendar = () => {
           </div>
         </div>
       ) : (
-        <div className="mt-2 p-2 bg-gray-50 rounded text-center text-[10px]">
+        <div className="mt-2 p-2 rounded text-center text-[10px]">
           <p className="text-gray-600">No Muhurat</p>
         </div>
       )}
@@ -690,9 +691,9 @@ const CalendarWidget = () => {
   const selectedTithiData = getTithiAndPaksha(selectedPhase);
 
   return (
-    <div className="rounded-xl shadow-md bg-[#faf7f2] p-4">
+    <div className="rounded-xl shadow-md calendar-card p-4">
       {/* Compact Header */}
-      <div className="mb-4 text-center bg-orange-600 text-white py-2 px-4 rounded-lg">
+      <div className="mb-4 text-center text-white py-2 px-4 rounded-lg">
         <h2 className="text-xl font-bold">
           {selectedDate.getDate()} {monthNames[selectedDate.getMonth()]}{" "}
           {selectedDate.getFullYear()}
@@ -706,7 +707,7 @@ const CalendarWidget = () => {
       <div className="flex justify-between items-center mb-3">
         <button
           onClick={handlePrevMonth}
-          className="bg-orange-500 text-white px-3 py-1 text-sm rounded-lg hover:bg-orange-600 transition"
+          className="text-white px-3 py-1 text-sm rounded-lg transition"
         >
           ← Prev
         </button>
@@ -764,7 +765,7 @@ const CalendarWidget = () => {
                     ? "bg-orange-300 border-2 border-orange-500"
                     : hasFestival
                       ? "bg-orange-100 border border-red-400"
-                      : "bg-[#faf7f2] hover:bg-gray-50 border border-gray-200"
+                      : "calendar-card hover:bg-gray-50 border border-gray-200"
               }`}
               style={{ minHeight: "60px" }}
             >
@@ -796,7 +797,7 @@ const CalendarWidget = () => {
         </h3>
 
         {selectedFestival && (
-          <div className="bg-[#faf7f2] p-2 rounded mb-2 border-l-2 border-orange-500">
+          <div className="calendar-card p-2 rounded mb-2 border-l-2 border-orange-500">
             <p className="text-sm font-medium text-orange-600">
               {selectedFestival.name}
             </p>
@@ -804,19 +805,19 @@ const CalendarWidget = () => {
         )}
 
         <div className="grid grid-cols-3 gap-2 text-xs">
-          <div className="bg-[#faf7f2] p-2 rounded">
+          <div className="calendar-card p-2 rounded">
             <p className="text-xs text-gray-500">Nakshatra</p>
             <p className="font-bold text-orange-600">
               {getNakshatraForDate(selectedDate)}
             </p>
           </div>
-          <div className="bg-[#faf7f2] p-3 rounded-lg">
+          <div className="calendar-card p-3 rounded-lg">
             <p className="text-xs text-gray-600">Yoga</p>
             <p className="text-xs font-semibold text-orange-600">
               {getYogaForDate(selectedDate)}
             </p>
           </div>
-          <div className="bg-[#faf7f2] p-2 rounded">
+          <div className="calendar-card p-2 rounded">
             <p className="text-xs text-gray-500">Karana</p>
             <p className="text-xs font-semibold text-orange-600">
               {getKaranaForDate(selectedDate)}
@@ -852,9 +853,9 @@ export default function Calendar() {
       <Navbar />
       <div
         className="min-h-screen p-4 md:p-6"
-        style={{
-          background: `linear-gradient(to right, rgba(239, 246, 255, 0.95), rgba(238, 242, 255, 0.95))`,
-        }}
+        // style={{
+        //   background: `linear-gradient(to right, rgba(239, 246, 255, 0.95), rgba(238, 242, 255, 0.95))`,
+        // }}
       >
         <h1 className="text-3xl md:text-4xl font-bold text-center text-orange-600 mb-6">
           Hindu Calendar 2026
@@ -869,7 +870,7 @@ export default function Calendar() {
               <h2 className="text-lg text-orange-600 mb-3 flex items-center gap-2">
                 Hindu Time
               </h2>
-              <div className="bg-[#faf7f2] rounded-lg p-3 mb-3">
+              <div className="calendar-card rounded-lg p-3 mb-3">
                 <div className="text-2xl text-orange-700 text-center">
                   <HinduTimeClock />
                 </div>
@@ -890,19 +891,19 @@ export default function Calendar() {
                 Today's Panchang
               </h2>
               <div className="grid grid-cols-2 gap-2 text-sm">
-                <div className="bg-[#faf7f2] rounded p-2">
+                <div className="calendar-card rounded p-2">
                   <div className="text-xs text-gray-500">Tithi</div>
                   <div className="font-semibold text-orange-700">Panchami</div>
                 </div>
-                <div className="bg-[#faf7f2] rounded p-2">
+                <div className="calendar-card rounded p-2">
                   <div className="text-xs text-gray-500">Paksha</div>
                   <div className="font-semibold">Shukla</div>
                 </div>
-                <div className="bg-[#faf7f2] rounded p-2">
+                <div className="calendar-card rounded p-2">
                   <div className="text-xs text-gray-500">Sunrise</div>
                   <div className="font-semibold">07:21 AM</div>
                 </div>
-                <div className="bg-[#faf7f2] rounded p-2">
+                <div className="calendar-card rounded p-2">
                   <div className="text-xs text-gray-500">Sunset</div>
                   <div className="">18:21 PM</div>
                 </div>
@@ -920,7 +921,7 @@ export default function Calendar() {
             {/* Right Column - Stacked Cards */}
             <div className="space-y-4">
               {/* Upcoming Festivals - Compact */}
-              <div className="bg-[#faf7f2] rounded-xl shadow-md p-4">
+              <div className="calendar-card rounded-xl shadow-md p-4">
                 <h2 className="text-lg text-orange-600 mb-3">Festivals</h2>
                 <div className="space-y-2 max-h-60 overflow-y-auto text-sm">
                   {Object.entries(FESTIVALS)
@@ -948,7 +949,7 @@ export default function Calendar() {
               </div>
 
               {/* Panchang Info - Compact */}
-              <div className="bg-[#faf7f2] rounded-xl shadow-md p-4">
+              <div className="calendar-card rounded-xl shadow-md p-4">
                 <h2 className="text-lg font-bold text-orange-600 mb-2">
                   Panchang
                 </h2>

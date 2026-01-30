@@ -1,13 +1,6 @@
-/* ==============================================
-   BIRTH CHART ANALYSIS PAGE STYLES
-   Scholarly, Editorial, Authority-Driven Design
-   ============================================== */
-
-/* ============ BASE LAYOUT ============ */
 
 .chart-layout {
   min-height: 100vh;
-  background: #faf8f3;
   color: #654e12;
 }
 
