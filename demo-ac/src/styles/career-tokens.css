@@ -34,7 +34,8 @@
 
   /* Font Families */
   --career-font-serif: "Yatra One", "Playfair Display", "Georgia", serif;
-  --career-font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", sans-serif;
+  --career-font-sans:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", sans-serif;
   --career-font-display: "Yatra One", serif;
 
   /* Font Sizes - Editorial scale */
@@ -112,16 +113,16 @@
     --career-parchment: #1a1612;
     --career-paper: #211e1a;
     --career-paper-hover: #252118;
-    
+
     --career-ink: #d4c9a8;
     --career-ink-muted: #b8a082;
     --career-ink-subtle: #9d8969;
     --career-ink-light: #756652;
-    
+
     --career-border: #3a352b;
     --career-border-medium: #4a433a;
     --career-border-strong: #5a5148;
-    
+
     --career-accent: #d4a574;
     --career-accent-hover: #e0b285;
     --career-accent-subtle: #2a231c;

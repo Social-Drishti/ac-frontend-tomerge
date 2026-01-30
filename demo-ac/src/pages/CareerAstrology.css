@@ -315,23 +315,23 @@
   .career-container {
     padding: 0 var(--career-space-4);
   }
-  
+
   .career-hero-title {
     font-size: var(--career-text-4xl);
   }
-  
+
   .career-hero-subtitle {
     font-size: var(--career-text-lg);
   }
-  
+
   .career-section-title {
     font-size: var(--career-text-2xl);
   }
-  
+
   .career-subsection-title {
     font-size: var(--career-text-xl);
   }
-  
+
   .career-space-adjustments {
     --career-section-gap: var(--career-space-16);
     --career-heading-gap: var(--career-space-8);
@@ -342,11 +342,11 @@
   .career-hero-title {
     font-size: var(--career-text-3xl);
   }
-  
+
   .career-section-title {
     font-size: var(--career-text-xl);
   }
-  
+
   .career-card,
   .career-insight-card {
     padding: var(--career-space-6);
@@ -386,14 +386,14 @@
     background: white;
     color: black;
   }
-  
+
   .career-card,
   .career-insight-card {
     border: 1px solid #ccc;
     background: white;
     box-shadow: none;
   }
-  
+
   .career-section-break {
     background: #ccc;
   }

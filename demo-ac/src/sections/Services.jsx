@@ -13,10 +13,10 @@ export default function ServicesCarousel() {
       img: "/services-image/Muhurta.png",
       link: "/reading/muhurta",
     },
-    {
-      img: "/services-image/remedial-astrology.png",
-      link: "/reading/remedial",
-    },
+    // {
+    //   img: "/services-image/remedial-astrology.png",
+    //   link: "/reading/remedial",
+    // },
     {
       img: "/services-image/Horary.png",
       link: "/reading/horary",
