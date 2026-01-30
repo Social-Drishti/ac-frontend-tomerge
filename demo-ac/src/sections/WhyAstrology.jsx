@@ -2,7 +2,7 @@ import "./WhyAstrology.css";
 
 export default function WhyAstrology() {
   return (
-    <section className="py-20">
+    <section className="py-2">
       <div className="mx-auto max-w-5xl px-6 text-center lg:px-8">
         <h2 className="text-4xl font-bold tracking-tight md:text-5xl">
           Why astrology matters

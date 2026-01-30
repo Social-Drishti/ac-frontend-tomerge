@@ -1,91 +1,112 @@
-import { useRef } from "react"
+import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 export default function ServicesCarousel() {
-  const carouselRef = useRef(null)
+  const carouselRef = useRef(null);
 
   const services = [
     {
-      title: "Natal Chart",
-      img: "https://img.icons8.com/?size=100&id=15342&format=png&color=000000:",
+      img: "/services-image/Transit-Reading.png",
+      link: "/reading/transits",
     },
     {
-      title: "Compatibility",
-      img: "https://img.icons8.com/color/96/like--v1.png",
+      img: "/services-image/Muhurta.png",
+      link: "/reading/muhurta",
     },
     {
-      title: "Career Astrology",
-      img: "https://img.icons8.com/color/96/briefcase.png",
+      img: "/services-image/remedial-astrology.png",
+      link: "/reading/remedial",
     },
     {
-      title: "Transit Reading",
-      img: "https://img.icons8.com/color/96/full-moon.png",
+      img: "/services-image/Horary.png",
+      link: "/reading/horary",
     },
     {
-      title: "Muhurta",
-      img: "https://img.icons8.com/color/96/calendar--v1.png",
+      img: "/services-image/lab-kitab.png",
+      link: "/reading/lal-kitab",
     },
     {
-      title: "Remedial Astrology",
-      img: "https://img.icons8.com/color/96/healing.png",
+      img: "/services-image/Career-astrology.png",
+      link: "/reading/career-astrology",
     },
     {
-      title: "Horary (Prashna)",
-      img: "https://img.icons8.com/color/96/help.png",
+      img: "/services-image/Compatibility.png",
+      link: "/reading/compatibility",
     },
     {
-      title: "Lal Kitab",
-      img: "https://img.icons8.com/color/96/book.png",
+      img: "/services-image/Natal-chart.png",
+      link: "/reading/natal-chart",
     },
-  ]
+  ];
 
   const scroll = (direction) => {
-    if (!carouselRef.current) return
-    const scrollAmount = 320
+    if (!carouselRef.current) return;
+    const scrollAmount = 320;
 
     carouselRef.current.scrollBy({
       left: direction === "left" ? -scrollAmount : scrollAmount,
       behavior: "smooth",
-    })
-  }
+    });
+  };
 
   return (
     <section className="py-20">
       <div className="mx-auto max-w-6xl px-6 relative">
         <button
           onClick={() => scroll("left")}
-          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-gray-900 text-white flex items-center justify-center shadow hover:bg-gray-800"
+          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-transparent border-0 p-0 hover:shadow-none"
         >
+          <img
+            src="/buttons/left-arrow.png"
+            alt="Previous"
+            className="h-6 w-auto"
+          />
         </button>
         <button
           onClick={() => scroll("right")}
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-gray-900 text-white flex items-center justify-center shadow hover:bg-gray-800"
+          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-transparent border-0 p-0 hover:bg-transparent hover:transform-none hover:shadow-none"
         >
+          <img
+            src="/buttons/right-arrow.png"
+            alt="Next"
+            className="h-6 w-auto"
+          />
         </button>
         <div
           ref={carouselRef}
-          className="flex gap-12 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar px-14"
+          className="flex gap-10 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar px-14"
         >
           {services.map((service, i) => (
-            <div
+            <Link
+              to={service.link}
               key={i}
-              className="min-w-[160px] snap-center text-center group cursor-pointer"
+              className="min-w-[180px] snap-center text-center group no-underline"
             >
-              <div className="mx-auto h-24 w-24 rounded-full bg-gray-900 flex items-center justify-center shadow-md transition duration-300 group-hover:scale-110">
+              <div className="mx-auto h-36 w-36 transition duration-300 group-hover:scale-110">
                 <img
                   src={service.img}
                   alt={service.title}
-                  className="h-12 w-12"
+                  className="h-full w-full object-cover drop-shadow-[0_8px_12px_rgba(0,0,0,0.4)]"
+                  style={{
+                    filter:
+                      "drop-shadow(2px 4px 6px rgba(0,0,0,0.5)) drop-shadow(-1px -2px 4px rgba(255,255,255,0.3))",
+                  }}
                   loading="lazy"
                 />
               </div>
-              <p className="mt-4 font-semibold text-gray-800">
+              <p
+                className="mt-4 font-semibold text-gray-800 group-hover:text-[#5f6b3a] transition-colors"
+                style={{
+                  textShadow:
+                    "1px 1px 1px rgba(255,255,255,0.8), -1px -1px 1px rgba(0,0,0,0.2)",
+                }}
+              >
                 {service.title}
               </p>
-            </div>
+            </Link>
           ))}
         </div>
-
       </div>
     </section>
-  )
+  );
 }

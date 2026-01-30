@@ -11,6 +11,8 @@
   padding: 1rem 2rem;
   font-size: 0.875rem;
   gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .navbar-left {
@@ -28,10 +30,12 @@
 }
 
 .navbar-auth-container {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
   display: flex;
   gap: 1rem;
   align-items: center;
-  margin-left: 2rem;
 }
 
 /* Responsive adjustments */
@@ -75,8 +79,10 @@
   }
 
   .navbar-auth-container {
+    position: absolute;
+    top: 0.25rem;
+    right: 0.5rem;
     justify-content: center;
-    margin-left: 0;
   }
 }
 
@@ -273,6 +279,20 @@
 
 .navbar-auth-signup:hover {
   background: rgba(101, 78, 18, 0.08);
+  border-color: rgba(101, 78, 18, 0.3);
+  text-shadow:
+    2px 2px 3px rgba(255, 255, 255, 0.9),
+    -1px -1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-auth-login {
+  color: #654e12;
+  background: rgba(101, 78, 18, 0.08);
+  border: 1px solid rgba(101, 78, 18, 0.2);
+}
+
+.navbar-auth-login:hover {
+  background: rgba(101, 78, 18, 0.15);
   border-color: rgba(101, 78, 18, 0.3);
   text-shadow:
     2px 2px 3px rgba(255, 255, 255, 0.9),

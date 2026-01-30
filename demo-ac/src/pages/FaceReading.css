@@ -420,7 +420,7 @@
 /* ============ PRINT STYLES ============ */
 @media print {
   .face-reading-page {
-    background: white;
+    background: #faf7f2;
   }
 
   .face-hero {

@@ -414,7 +414,7 @@ export default function Vastu() {
                     <div
                       key={idx}
                       style={{
-                        background: "white",
+                        background: "#faf7f2",
                         display: "flex",
                         flexDirection: "column",
                         alignItems: "center",

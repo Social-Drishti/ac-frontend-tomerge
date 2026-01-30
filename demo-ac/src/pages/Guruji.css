@@ -223,7 +223,7 @@
 .wisdom-quote {
   margin: 3rem 0;
   padding: 2rem;
-  background: rgba(255, 255, 255, 0.6);
+  /* background: rgba(255, 255, 255, 0.6); */
   border-left: 4px solid #8b6f47;
   font-family: "Playfair Display", serif;
   font-size: 1.3rem;
@@ -269,10 +269,6 @@
   line-height: 1.6;
 }
 
-/* ===== CHAPTER 3: TODAY ===== */
-.chapter-today {
-  background: #ffffff;
-}
 
 .today-principles {
   display: grid;
@@ -375,12 +371,6 @@
   line-height: 1.6;
 }
 
-/* ===== SERVICES SECTION ===== */
-.guruji-services {
-  padding: 8rem 2rem;
-  background: #ffffff;
-}
-
 .services-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -439,11 +429,6 @@
 }
 
 /* ===== TESTIMONIALS ===== */
-.guruji-testimonials {
-  padding: 8rem 2rem;
-  background: rgba(250, 248, 243, 0.8);
-}
-
 .testimonials-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -487,7 +472,6 @@
 /* ===== CLOSING SECTION ===== */
 .guruji-closing {
   padding: 10rem 2rem;
-  background: rgba(250, 248, 243, 0.8);
   text-align: center;
 }
 
@@ -815,5 +799,3 @@
     right: 0.75rem;
   }
 }
-
-

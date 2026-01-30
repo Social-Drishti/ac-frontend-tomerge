@@ -3,12 +3,12 @@
    ============================================ */
 
 :root {
-  --calendar-gradient-start: #ffffff;
-  --calendar-gradient-end: #ffffff;
+  --calendar-gradient-start: #faf7f2;
+  --calendar-gradient-end: #faf7f2;
 }
 
 .calendar-card {
-  background: #ffffff;
+  background: #faf7f2;
 }
 
 .calendar-min-height-28 {
@@ -18,8 +18,3 @@
 .calendar-min-height-60 {
   min-height: 60px;
 }
-
-
-
-
-

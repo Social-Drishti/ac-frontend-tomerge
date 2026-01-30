@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useAuth } from "../../context/AuthContext";
 import "./Navbar.css";
 
 export default function Navbar() {
   const [isResourcesOpen, setIsResourcesOpen] = useState(false);
+  const { isAuthenticated, isLoading } = useAuth();
 
   return (
     <nav className="main-navbar">
@@ -20,7 +22,7 @@ export default function Navbar() {
 
         <div className="navbar-right">
           <div>
-          <a href="/Blogs">Blogs</a>
+            <a href="/Blogs">Blogs</a>
           </div>
           <div className="accordion">
             <div
@@ -37,12 +39,30 @@ export default function Navbar() {
             )}
           </div>
           <div className="navbar-auth-container">
-            <a href="/login" className="navbar-auth-link">
-              Login
-            </a>
-            <a href="/signup" className="navbar-auth-link navbar-auth-signup">
-              Register
-            </a>
+            {!isLoading && (
+              <>
+                {isAuthenticated ? (
+                  <>
+                    <a href="/dashboard" className="navbar-auth-link">
+                      Dashboard
+                    </a>
+                    <a
+                      href="/logout"
+                      className="navbar-auth-link navbar-auth-signup"
+                    >
+                      Logout
+                    </a>
+                  </>
+                ) : (
+                  <a
+                    href="/login"
+                    className="navbar-auth-link navbar-auth-login"
+                  >
+                    Login
+                  </a>
+                )}
+              </>
+            )}
           </div>
         </div>
       </div>

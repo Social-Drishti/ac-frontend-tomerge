@@ -763,19 +763,35 @@ export default function Astrology() {
             </section>
 
             {/* CTA Section */}
-            <div className="astro-cta">
-              <h3 className="astro-cta-title">
-                Discover Your Cosmic Blueprint
-              </h3>
-              <p className="astro-cta-text">
-                Ready to explore your birth chart? Our experienced Jyotish
-                practitioners offer personalized consultations grounded in
-                classical wisdom and compassionate guidance.
-              </p>
-              <a href="/reading" className="astro-cta-button">
-                Book a Reading
-                <span>→</span>
-              </a>
+            <div
+              className="astro-cta"
+              style={{
+                backgroundImage: 'url("/cta-background.png")',
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                position: "relative",
+              }}
+            >
+              <div className="absolute inset-0 bg-black/50 rounded-lg"></div>
+              <div className="relative z-10">
+                <h3 className="astro-cta-title text-white drop-shadow-lg">
+                  Discover Your Cosmic Blueprint
+                </h3>
+                <p className="astro-cta-text text-white/90 drop-shadow-md">
+                  Ready to explore your birth chart? Our experienced Jyotish
+                  practitioners offer personalized consultations grounded in
+                  classical wisdom and compassionate guidance.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
+                  <button className="px-8 py-3 bg-[#5f6b3a] text-white rounded-lg font-semibold transition hover:bg-[#4a5530] transform hover:scale-105 shadow-lg">
+                    Free Consultation
+                  </button>
+                  <button className="px-8 py-3 bg-[#8B4513] text-white rounded-lg font-semibold transition hover:bg-[#723810] transform hover:scale-105 shadow-lg">
+                    Call Now
+                  </button>
+                </div>
+              </div>
             </div>
           </article>
         </div>

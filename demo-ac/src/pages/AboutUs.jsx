@@ -327,13 +327,27 @@ const AboutUs = () => {
                 </div>
               </div>
             </div>
-            <div className="aboutus-contact-cta">
-              <button className="aboutus-cta-button">
-                Book a Consultation
-              </button>
-              <button className="aboutus-cta-button-secondary">
-                View Our Services
-              </button>
+            <div
+              className="aboutus-contact-cta"
+              style={{
+                backgroundImage: 'url("/cta-background.png")',
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                position: "relative",
+                borderRadius: "12px",
+                padding: "2rem",
+              }}
+            >
+              <div className="absolute inset-0 bg-black/50 rounded-xl"></div>
+              <div className="relative z-10">
+                <button className="aboutus-cta-button bg-[#5f6b3a] hover:bg-[#4a5530] text-white transform hover:scale-105 transition-all">
+                  Free Consultation
+                </button>
+                <button className="aboutus-cta-button-secondary bg-[#8B4513] hover:bg-[#723810] text-white border-none transform hover:scale-105 transition-all">
+                  Call Now
+                </button>
+              </div>
             </div>
           </div>
         </section>

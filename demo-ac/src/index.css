@@ -24,9 +24,7 @@ a {
   color: var(--color-primary);
   text-decoration: inherit;
 }
-a:hover {
-  color: var(--color-primary-hover);
-}
+
 
 body {
   margin: 0;
@@ -43,47 +41,28 @@ h1 {
 }
 
 button {
-  border-radius: var(--border-radius-sm);
-  border: var(--border-width) solid var(--color-primary);
   padding: var(--button-padding);
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-medium);
-  background: linear-gradient(
-    135deg,
-    var(--color-background-light) 0%,
-    var(--color-background) 100%
-  );
   color: var(--color-text-dark);
   cursor: pointer;
   transition: var(--transition-all);
-  box-shadow: 0 2px 4px rgba(61, 47, 31, 0.08);
 }
 button:hover {
-  background: linear-gradient(
-    135deg,
-    var(--color-primary) 0%,
-    var(--color-primary-light) 100%
-  );
   color: var(--color-white);
-  box-shadow: 0 4px 8px rgba(61, 47, 31, 0.15);
   transform: translateY(-1px);
 }
 button:focus,
 button:focus-visible {
-  outline: 2px solid var(--color-gold);
   outline-offset: 2px;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     color: var(--color-primary);
-    background-color: var(--color-background);
   }
   a:hover {
     color: var(--color-accent-peach);
-  }
-  button {
-    background-color: var(--color-background-light);
   }
 }
 

@@ -26,7 +26,7 @@ export default function Guidance() {
   ];
 
   return (
-    <section className="py-20">
+    <section className="py-2">
       <div className="mx-auto max-w-6xl px-6 lg:px-8 text-center">
         <div className="mt-16 grid md:grid-cols-3 gap-8">
           {cards.map((card, i) => (

@@ -5,10 +5,10 @@
 
 /* ============ BASE LAYOUT ============ */
 
-.blogs-page {
+/* .blogs-page {
   min-height: 100vh;
   background-color: var(--blogs-bg);
-}
+} */
 
 .blogs-container {
   max-width: var(--blogs-container-max);

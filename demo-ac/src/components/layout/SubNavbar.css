@@ -21,7 +21,6 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-left: 6rem;
 
   /* Horizontal scroll on mobile */
   overflow-x: auto;
@@ -38,37 +37,43 @@
 .sub-navbar-link {
   font-family: "Yatra One", cursive;
   font-size: 0.875rem;
-  font-weight: 400;
+  font-weight: 500;
   color: #654e12;
-  text-decoration: none;
+  text-decoration: none !important;
   padding: 0.5rem 0.75rem;
   border-radius: 4px;
   white-space: nowrap;
   transition: all 0.25s ease;
   position: relative;
-  /* Emboss effect - outer shadow */
+  /* Emboss effect - raised/engraved look */
   text-shadow:
-    1px 1px 1px rgba(255, 255, 255, 0.8),
-    -1px -1px 1px rgba(0, 0, 0, 0.15);
+    1px 1px 0px rgba(255, 255, 255, 0.9),
+    -1px -1px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.05);
+  letter-spacing: 0.5px;
 }
 
 .sub-navbar-link:hover {
-  color: #654e12;
-  /* Enhanced emboss effect on hover */
+  color: #4a3a0d;
+  text-decoration: none !important;
+  /* Stronger emboss effect on hover - more pronounced depth */
   text-shadow:
-    2px 2px 2px rgba(255, 255, 255, 0.9),
-    -1px -1px 2px rgba(0, 0, 0, 0.2);
+    2px 2px 0px rgba(255, 255, 255, 1),
+    -1px -1px 0px rgba(0, 0, 0, 0.15),
+    0px 2px 3px rgba(0, 0, 0, 0.1);
   transform: translateY(-1px);
 }
 
 /* Active state */
 .sub-navbar-link.active {
-  color: #654e12;
-  font-weight: 500;
-  /* Strong emboss effect for active */
+  color: #3d2f0a;
+  font-weight: 600;
+  text-decoration: none !important;
+  /* Deep emboss effect for active state */
   text-shadow:
-    2px 2px 2px rgba(255, 255, 255, 0.9),
-    -1px -1px 2px rgba(0, 0, 0, 0.25);
+    2px 2px 0px rgba(255, 255, 255, 1),
+    -1px -1px 0px rgba(0, 0, 0, 0.2),
+    0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* ===========================================
@@ -78,7 +83,6 @@
 @media (max-width: 1200px) {
   .sub-navbar-scroll {
     gap: 1.5rem;
-    margin-left: 4rem;
   }
 }
 
@@ -87,7 +91,6 @@
     gap: 1.25rem;
     justify-content: flex-start;
     padding-bottom: 0.5rem;
-    margin-left: 2rem;
   }
 
   .sub-navbar-link {

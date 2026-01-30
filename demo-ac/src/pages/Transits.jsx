@@ -286,7 +286,7 @@ export default function Transits() {
           </div>
 
           {/* Date Selector */}
-          <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
+          <div className="bg-[#faf7f2] rounded-xl shadow-lg p-6 mb-8">
             <div className="flex flex-wrap items-center justify-between gap-4">
               <div className="flex items-center gap-4">
                 <label className="text-sm font-medium text-gray-700">
@@ -309,7 +309,7 @@ export default function Transits() {
           </div>
 
           {/* Events Calendar */}
-          <div className="bg-white rounded-xl shadow-lg p-6">
+          <div className="bg-[#faf7f2] rounded-xl shadow-lg p-6">
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-2xl font-bold text-gray-900">
                 {selectedMonth} Planetary Events

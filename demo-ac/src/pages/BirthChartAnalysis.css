@@ -1,0 +1,499 @@
+/* ==============================================
+   BIRTH CHART ANALYSIS PAGE STYLES
+   Scholarly, Editorial, Authority-Driven Design
+   ============================================== */
+
+/* ============ BASE LAYOUT ============ */
+
+.chart-layout {
+  min-height: 100vh;
+  background: #faf8f3;
+  color: #654e12;
+}
+
+.chart-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ============ SKIP LINK ============ */
+
+.chart-skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: #654e12;
+  color: #faf8f3;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  z-index: 1000;
+  transition: top 0.2s ease;
+}
+
+.chart-skip-link:focus {
+  top: 6px;
+}
+
+/* ============ HEADER ============ */
+
+.chart-header {
+  padding: 4rem 0 3rem;
+  text-align: center;
+  border-bottom: 1px solid #e5dcc9;
+}
+
+.chart-hero-title {
+  font-family: "Yatra One", Georgia, serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #654e12;
+  margin: 0 0 1rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.chart-hero-subtitle {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.125rem;
+  color: #8b7355;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ============ TWO-COLUMN GRID ============ */
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 3rem;
+  margin-top: 3rem;
+  align-items: start;
+}
+
+/* ============ MAIN CONTENT ============ */
+
+.chart-main-content {
+  max-width: none;
+}
+
+.chart-section {
+  margin-bottom: 2rem;
+  scroll-margin-top: 100px;
+}
+
+/* ============ CARDS ============ */
+
+.chart-card {
+  background: #faf8f3;
+  border: 1px solid #e5dcc9;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.chart-card:hover {
+  border-color: #d4c7a8;
+  box-shadow: 0 2px 8px rgba(101, 78, 18, 0.08);
+}
+
+.chart-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #faf8f3 0%, #f5f2ea 100%);
+}
+
+.chart-icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.chart-card-header h2 {
+  font-family: "Yatra One", Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #654e12;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.chart-divider {
+  margin: 0;
+  border: none;
+  height: 1px;
+  background: #e5dcc9;
+}
+
+.chart-card-content {
+  padding: 1.5rem;
+  line-height: 1.7;
+}
+
+.chart-card-content p {
+  margin: 0 0 1rem;
+  color: #654e12;
+  font-size: 1rem;
+}
+
+.chart-card-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* ============ LISTS ============ */
+
+.chart-list {
+  margin: 1rem 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.chart-list li {
+  margin: 0.75rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.chart-list li::before {
+  content: "•";
+  color: #8b4513;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* ============ CONCEPT GRIDS ============ */
+
+.chart-concept-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.chart-concept {
+  padding: 1.25rem;
+  border: 1px solid #e5dcc9;
+  border-radius: 6px;
+  background: #f9f7f2;
+}
+
+.chart-concept h3 {
+  font-family: "Yatra One", Georgia, serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #654e12;
+  margin: 0 0 0.75rem;
+}
+
+.chart-concept p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #8b7355;
+  line-height: 1.5;
+}
+
+/* ============ SPECIFIC GRIDS ============ */
+
+.chart-rashi-grid,
+.chart-house-overview,
+.chart-planet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.chart-rashi-group,
+.chart-house-group,
+.chart-planet {
+  padding: 1rem;
+  border: 1px solid #e5dcc9;
+  border-radius: 4px;
+  background: #f9f7f2;
+}
+
+.chart-rashi-group h3,
+.chart-house-group h3,
+.chart-planet h3 {
+  font-family: "Yatra One", Georgia, serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #654e12;
+  margin: 0 0 0.5rem;
+}
+
+.chart-rashi-group p,
+.chart-house-group p,
+.chart-planet p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #8b7355;
+  line-height: 1.5;
+}
+
+/* ============ HOUSE MEANINGS GRID ============ */
+
+.chart-house-meanings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.chart-house-meaning {
+  padding: 1rem;
+  border: 1px solid #e5dcc9;
+  border-radius: 4px;
+  background: #f9f7f2;
+  transition: all 0.2s ease;
+}
+
+.chart-house-meaning:hover {
+  border-color: #d4c7a8;
+  box-shadow: 0 1px 4px rgba(101, 78, 18, 0.08);
+}
+
+.chart-house-meaning h3 {
+  font-family: "Yatra One", Georgia, serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #654e12;
+  margin: 0 0 0.5rem;
+}
+
+.chart-house-meaning p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #8b7355;
+  line-height: 1.5;
+}
+
+/* ============ FAQ SECTION ============ */
+
+.chart-faq {
+  margin: 1.5rem 0;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e5dcc9;
+}
+
+.chart-faq:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.chart-faq h3 {
+  font-family: "Yatra One", Georgia, serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #654e12;
+  margin: 0 0 0.75rem;
+}
+
+.chart-faq p {
+  margin: 0;
+  color: #8b7355;
+  line-height: 1.6;
+}
+
+/* ============ SIDEBAR NAVIGATION ============ */
+
+.chart-sidebar {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+
+.chart-nav {
+  background: #faf8f3;
+  border: 1px solid #e5dcc9;
+  border-radius: 8px;
+  padding: 0;
+  font-size: 0.875rem;
+}
+
+.chart-nav-header {
+  padding: 1.25rem 1.5rem;
+  background: linear-gradient(135deg, #faf8f3 0%, #f5f2ea 100%);
+  border-bottom: 1px solid #e5dcc9;
+}
+
+.chart-nav-header h3 {
+  font-family: "Yatra One", Georgia, serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #654e12;
+  margin: 0;
+}
+
+.chart-nav-category {
+  border-bottom: 1px solid #e5dcc9;
+}
+
+.chart-nav-category:last-child {
+  border-bottom: none;
+}
+
+.chart-nav-category-title {
+  font-family: "Yatra One", Georgia, serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #654e12;
+  margin: 0;
+  padding: 1rem 1.5rem 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.chart-nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+.chart-nav-links li {
+  margin: 0;
+}
+
+.chart-nav-link {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  background: none;
+  border: none;
+  text-align: left;
+  color: #8b7355;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.chart-nav-link:hover {
+  background: #f5f2ea;
+  color: #654e12;
+}
+
+.chart-nav-link.active {
+  background: #654e12;
+  color: #faf8f3;
+  font-weight: 500;
+}
+
+.chart-nav-link:focus {
+  outline: 2px solid #8b4513;
+  outline-offset: -2px;
+  background: #f5f2ea;
+}
+
+/* ============ RESPONSIVE DESIGN ============ */
+
+@media (max-width: 1024px) {
+  .chart-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .chart-sidebar {
+    position: relative;
+    top: 0;
+    max-height: none;
+    order: -1;
+  }
+
+  .chart-nav {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    padding: 0 1rem;
+  }
+
+  .chart-header {
+    padding: 2rem 0;
+  }
+
+  .chart-hero-title {
+    font-size: 2.25rem;
+  }
+
+  .chart-hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .chart-grid {
+    margin-top: 2rem;
+    gap: 1.5rem;
+  }
+
+  .chart-card-header,
+  .chart-card-content {
+    padding: 1.25rem;
+  }
+
+  .chart-concept-grid,
+  .chart-rashi-grid,
+  .chart-house-overview,
+  .chart-planet-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .chart-hero-title {
+    font-size: 1.875rem;
+  }
+
+  .chart-card-header,
+  .chart-card-content {
+    padding: 1rem;
+  }
+
+  .chart-card-header h2 {
+    font-size: 1.25rem;
+  }
+}
+
+/* ============ ACCESSIBILITY ============ */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* Focus visible for better keyboard navigation */
+.chart-nav-link:focus-visible {
+  outline: 2px solid #8b4513;
+  outline-offset: 2px;
+}
+
+/* Improve contrast for better readability */
+@media (prefers-contrast: high) {
+  .chart-card {
+    border-color: #654e12;
+  }
+
+  .chart-divider {
+    background: #654e12;
+  }
+
+  .chart-nav-link {
+    color: #654e12;
+  }
+}

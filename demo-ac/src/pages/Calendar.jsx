@@ -59,7 +59,7 @@ const HinduTimeWidget = () => {
         </h2>
 
         {/* Hindu Time Display */}
-        <div className="bg-white rounded-lg p-6 mb-4 text-center">
+        <div className="bg-[#faf7f2] rounded-lg p-6 mb-4 text-center">
           <div className="text-4xl text-orange-700 mb-2">
             {String(hinduTime.ghati).padStart(2, "0")} :{" "}
             {String(hinduTime.pala).padStart(2, "0")} :{" "}
@@ -96,13 +96,13 @@ const HinduTimeWidget = () => {
 
         <div className="space-y-3">
           {/* Date */}
-          <div className="bg-white rounded-lg p-4">
+          <div className="bg-[#faf7f2] rounded-lg p-4">
             <div className="text-sm text-gray-600">Date</div>
             <div className="text-xl text-gray-800">{panchangData.date}</div>
           </div>
 
           {/* Tithi */}
-          <div className="bg-white rounded-lg p-4">
+          <div className="bg-[#faf7f2] rounded-lg p-4">
             <div className="text-sm text-gray-600">Tithi</div>
             <div className="text-xl font-semibold text-orange-700">
               {panchangData.tithi}
@@ -111,13 +111,13 @@ const HinduTimeWidget = () => {
 
           {/* Paksha & Month */}
           <div className="grid grid-cols-2 gap-3">
-            <div className="bg-white rounded-lg p-4">
+            <div className="bg-[#faf7f2] rounded-lg p-4">
               <div className="text-xs text-gray-600">Paksha</div>
               <div className="text-sm font-semibold text-gray-800">
                 {panchangData.paksha}
               </div>
             </div>
-            <div className="bg-white rounded-lg p-4">
+            <div className="bg-[#faf7f2] rounded-lg p-4">
               <div className="text-xs text-gray-600">Vikram Samvat</div>
               <div className="text-sm font-semibold text-gray-800">
                 {panchangData.year}
@@ -267,7 +267,7 @@ const getTithiAndPaksha = (phase) => {
       tithi: tithiNumber,
       paksha: "Shukla Paksha",
     };
-  } else {                                                                                                                                                                                                                                                                 
+  } else {
     return {
       tithi: tithiNumber - 15,
       paksha: "Krishna Paksha",
@@ -480,7 +480,7 @@ const ShubhMuhuratCalendar = () => {
   const selectedMuhurat = SHUBH_MUHURAT_DATES[selectedDateKey];
 
   return (
-    <div className="rounded-xl shadow-md bg-white p-3">
+    <div className="rounded-xl shadow-md bg-[#faf7f2] p-3">
       <h2 className="text-sm font-bold text-orange-600 mb-2 text-center">
         ✨ Muhurat
       </h2>
@@ -574,7 +574,7 @@ const ShubhMuhuratCalendar = () => {
 
           <div className="space-y-1 text-[10px]">
             {selectedMuhurat.morning && (
-              <div className="bg-white p-1 rounded border-l border-orange-400">
+              <div className="bg-[#faf7f2] p-1 rounded border-l border-orange-400">
                 <p className="text-[9px] text-gray-500">Morning</p>
                 <p className="text-orange-600 font-medium">
                   {selectedMuhurat.morning}
@@ -583,7 +583,7 @@ const ShubhMuhuratCalendar = () => {
             )}
 
             {selectedMuhurat.afternoon && (
-              <div className="bg-white p-1 rounded border-l border-orange-400">
+              <div className="bg-[#faf7f2] p-1 rounded border-l border-orange-400">
                 <p className="text-[9px] text-gray-500">Afternoon</p>
                 <p className="text-orange-600 font-medium">
                   {selectedMuhurat.afternoon}
@@ -592,7 +592,7 @@ const ShubhMuhuratCalendar = () => {
             )}
 
             {selectedMuhurat.evening && (
-              <div className="bg-white p-1 rounded border-l border-orange-400">
+              <div className="bg-[#faf7f2] p-1 rounded border-l border-orange-400">
                 <p className="text-[9px] text-gray-500">Evening</p>
                 <p className="text-orange-600 font-medium">
                   {selectedMuhurat.evening}
@@ -690,7 +690,7 @@ const CalendarWidget = () => {
   const selectedTithiData = getTithiAndPaksha(selectedPhase);
 
   return (
-    <div className="rounded-xl shadow-md bg-white p-4">
+    <div className="rounded-xl shadow-md bg-[#faf7f2] p-4">
       {/* Compact Header */}
       <div className="mb-4 text-center bg-orange-600 text-white py-2 px-4 rounded-lg">
         <h2 className="text-xl font-bold">
@@ -764,7 +764,7 @@ const CalendarWidget = () => {
                     ? "bg-orange-300 border-2 border-orange-500"
                     : hasFestival
                       ? "bg-orange-100 border border-red-400"
-                      : "bg-white hover:bg-gray-50 border border-gray-200"
+                      : "bg-[#faf7f2] hover:bg-gray-50 border border-gray-200"
               }`}
               style={{ minHeight: "60px" }}
             >
@@ -796,7 +796,7 @@ const CalendarWidget = () => {
         </h3>
 
         {selectedFestival && (
-          <div className="bg-white p-2 rounded mb-2 border-l-2 border-orange-500">
+          <div className="bg-[#faf7f2] p-2 rounded mb-2 border-l-2 border-orange-500">
             <p className="text-sm font-medium text-orange-600">
               {selectedFestival.name}
             </p>
@@ -804,19 +804,19 @@ const CalendarWidget = () => {
         )}
 
         <div className="grid grid-cols-3 gap-2 text-xs">
-          <div className="bg-white p-2 rounded">
+          <div className="bg-[#faf7f2] p-2 rounded">
             <p className="text-xs text-gray-500">Nakshatra</p>
             <p className="font-bold text-orange-600">
               {getNakshatraForDate(selectedDate)}
             </p>
           </div>
-          <div className="bg-white p-3 rounded-lg">
+          <div className="bg-[#faf7f2] p-3 rounded-lg">
             <p className="text-xs text-gray-600">Yoga</p>
             <p className="text-xs font-semibold text-orange-600">
               {getYogaForDate(selectedDate)}
             </p>
           </div>
-          <div className="bg-white p-2 rounded">
+          <div className="bg-[#faf7f2] p-2 rounded">
             <p className="text-xs text-gray-500">Karana</p>
             <p className="text-xs font-semibold text-orange-600">
               {getKaranaForDate(selectedDate)}
@@ -869,7 +869,7 @@ export default function Calendar() {
               <h2 className="text-lg text-orange-600 mb-3 flex items-center gap-2">
                 Hindu Time
               </h2>
-              <div className="bg-white rounded-lg p-3 mb-3">
+              <div className="bg-[#faf7f2] rounded-lg p-3 mb-3">
                 <div className="text-2xl text-orange-700 text-center">
                   <HinduTimeClock />
                 </div>
@@ -890,19 +890,19 @@ export default function Calendar() {
                 Today's Panchang
               </h2>
               <div className="grid grid-cols-2 gap-2 text-sm">
-                <div className="bg-white rounded p-2">
+                <div className="bg-[#faf7f2] rounded p-2">
                   <div className="text-xs text-gray-500">Tithi</div>
                   <div className="font-semibold text-orange-700">Panchami</div>
                 </div>
-                <div className="bg-white rounded p-2">
+                <div className="bg-[#faf7f2] rounded p-2">
                   <div className="text-xs text-gray-500">Paksha</div>
                   <div className="font-semibold">Shukla</div>
                 </div>
-                <div className="bg-white rounded p-2">
+                <div className="bg-[#faf7f2] rounded p-2">
                   <div className="text-xs text-gray-500">Sunrise</div>
                   <div className="font-semibold">07:21 AM</div>
                 </div>
-                <div className="bg-white rounded p-2">
+                <div className="bg-[#faf7f2] rounded p-2">
                   <div className="text-xs text-gray-500">Sunset</div>
                   <div className="">18:21 PM</div>
                 </div>
@@ -920,7 +920,7 @@ export default function Calendar() {
             {/* Right Column - Stacked Cards */}
             <div className="space-y-4">
               {/* Upcoming Festivals - Compact */}
-              <div className="bg-white rounded-xl shadow-md p-4">
+              <div className="bg-[#faf7f2] rounded-xl shadow-md p-4">
                 <h2 className="text-lg text-orange-600 mb-3">Festivals</h2>
                 <div className="space-y-2 max-h-60 overflow-y-auto text-sm">
                   {Object.entries(FESTIVALS)
@@ -948,7 +948,7 @@ export default function Calendar() {
               </div>
 
               {/* Panchang Info - Compact */}
-              <div className="bg-white rounded-xl shadow-md p-4">
+              <div className="bg-[#faf7f2] rounded-xl shadow-md p-4">
                 <h2 className="text-lg font-bold text-orange-600 mb-2">
                   Panchang
                 </h2>

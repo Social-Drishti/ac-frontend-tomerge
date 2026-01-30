@@ -404,7 +404,26 @@ export default function Guruji() {
             simply understanding— perhaps this moment itself is part of your
             journey.
           </p>
-          <button className="closing-cta">Request a Consultation</button>
+          <div
+            className="mt-8 p-6 rounded-lg"
+            style={{
+              backgroundImage: 'url("/cta-background.png")',
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              position: "relative",
+            }}
+          >
+            <div className="absolute inset-0 bg-black/50 rounded-lg"></div>
+            <div className="relative z-10 flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="closing-cta bg-[#5f6b3a] hover:bg-[#4a5530] transform hover:scale-105 transition-all">
+                Free Consultation
+              </button>
+              <button className="closing-cta bg-[#8B4513] hover:bg-[#723810] transform hover:scale-105 transition-all">
+                Call Now
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 

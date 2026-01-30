@@ -382,13 +382,25 @@ export default function NatalChart() {
               </div>
 
               {/* Action Button */}
-              <div className="mt-6 text-center">
-                <button
-                  className="px-8 py-3 rounded-lg font-semibold transition-all hover:scale-105"
-                  style={{ background: "#800000", color: "#f5e6d3" }}
-                >
-                  Get Personalized Reading
-                </button>
+              <div
+                className="mt-6 text-center p-6 rounded-lg"
+                style={{
+                  backgroundImage: 'url("/cta-background.png")',
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                  position: "relative",
+                }}
+              >
+                <div className="absolute inset-0 bg-black/50 rounded-lg"></div>
+                <div className="relative z-10 flex flex-col sm:flex-row gap-4 justify-center">
+                  <button className="px-8 py-3 rounded-lg font-semibold transition-all hover:scale-105 bg-[#5f6b3a] hover:bg-[#4a5530] text-white shadow-lg">
+                    Free Consultation
+                  </button>
+                  <button className="px-8 py-3 rounded-lg font-semibold transition-all hover:scale-105 bg-[#8B4513] hover:bg-[#723810] text-white shadow-lg">
+                    Call Now
+                  </button>
+                </div>
               </div>
             </div>
           </div>

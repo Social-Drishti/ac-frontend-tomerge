@@ -1,0 +1,156 @@
+/* ==============================================
+   REMEDIES PAGE DESIGN TOKENS
+   Editorial, Calm, Ethical Authority Design
+   For Vedic Remedies (Upaya Shastra) Content
+   ============================================== */
+
+:root {
+  /* ============ BACKGROUND COLORS ============ */
+  /* Warm, calm parchment theme for ethical spiritual content */
+  --remedy-bg-primary: #faf7f2; /* Main page background - cream */
+  --remedy-bg-secondary: #f5f1ea; /* Section alternating background */
+  --remedy-bg-card: #faf7f2; /* Card/callout background */
+  --remedy-bg-highlight: #fdf9f3; /* Highlighted content areas */
+  --remedy-bg-warning: #fef7ed; /* Caution/warning callouts */
+  --remedy-bg-ethical: #f0f4e8; /* Ethical emphasis backgrounds */
+
+  /* ============ TEXT COLORS ============ */
+  /* Brown-olive ink for grounded, authoritative reading */
+  --remedy-text-primary: #3d3929; /* Main body text - dark olive */
+  --remedy-text-secondary: #5f5a4d; /* Secondary/muted text */
+  --remedy-text-tertiary: #7a7466; /* Subtle text, captions */
+  --remedy-text-heading: #2e2a20; /* Headings - deeper contrast */
+  --remedy-text-emphasis: #4a4538; /* Emphasized text */
+  --remedy-text-inverse: #faf7f2; /* Text on dark backgrounds */
+
+  /* ============ ACCENT COLORS ============ */
+  /* Earthy, grounded tones - no urgency or mystical drama */
+  --remedy-accent-primary: #6b5d3d; /* Primary accent - warm brown */
+  --remedy-accent-secondary: #8b7355; /* Secondary accent - lighter brown */
+  --remedy-accent-muted: #a69b82; /* Muted accent for subtle elements */
+  --remedy-accent-earth: #7a6b4e; /* Earthy brown for grounding */
+  --remedy-accent-sage: #6b7b5a; /* Sage green - balance, nature */
+  --remedy-accent-ethical: #5a6b4e; /* Ethical/caution emphasis */
+
+  /* ============ BORDER COLORS ============ */
+  --remedy-border-light: #e8e4dc; /* Light dividers */
+  --remedy-border-medium: #d4cfc3; /* Medium borders */
+  --remedy-border-dark: #b8b2a4; /* Darker borders for emphasis */
+  --remedy-border-accent: #8b7355; /* Accent borders */
+
+  /* ============ SEMANTIC COLORS ============ */
+  /* Calm, non-alarmist semantic indicators */
+  --remedy-caution-bg: #fef7ed; /* Caution background */
+  --remedy-caution-border: #d4a574; /* Caution border */
+  --remedy-caution-text: #7a5a32; /* Caution text */
+
+  --remedy-important-bg: #f5f0e8; /* Important note background */
+  --remedy-important-border: #a69b82; /* Important border */
+  --remedy-important-text: #5f5a4d; /* Important text */
+
+  --remedy-ethical-bg: #f0f4e8; /* Ethical callout background */
+  --remedy-ethical-border: #8b9b7a; /* Ethical border */
+  --remedy-ethical-text: #4a5a3e; /* Ethical text */
+
+  /* ============ TYPOGRAPHY ============ */
+
+  /* Font Families */
+  --remedy-font-heading: "Yatra One", Georgia, serif;
+  --remedy-font-body:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  --remedy-font-mono: "SF Mono", Monaco, "Cascadia Code", monospace;
+
+  /* Font Sizes - Larger for long-form reading */
+  --remedy-text-xs: 0.75rem; /* 12px - fine print */
+  --remedy-text-sm: 0.875rem; /* 14px - captions */
+  --remedy-text-base: 1.0625rem; /* 17px - body text (slightly larger) */
+  --remedy-text-lg: 1.1875rem; /* 19px - lead text */
+  --remedy-text-xl: 1.375rem; /* 22px - section intros */
+  --remedy-text-2xl: 1.625rem; /* 26px - H3 */
+  --remedy-text-3xl: 2rem; /* 32px - H2 */
+  --remedy-text-4xl: 2.5rem; /* 40px - H1 sections */
+  --remedy-text-5xl: 3.25rem; /* 52px - Page title */
+
+  /* Font Weights */
+  --remedy-weight-regular: 400;
+  --remedy-weight-medium: 500;
+  --remedy-weight-semibold: 600;
+  --remedy-weight-bold: 700;
+
+  /* Line Heights - Optimized for long reading */
+  --remedy-leading-tight: 1.2; /* Headings */
+  --remedy-leading-snug: 1.35; /* Subheadings */
+  --remedy-leading-normal: 1.6; /* Body text */
+  --remedy-leading-relaxed: 1.75; /* Long-form paragraphs */
+  --remedy-leading-loose: 1.9; /* Extra spacious reading */
+
+  /* Letter Spacing */
+  --remedy-tracking-tight: -0.025em; /* Headings */
+  --remedy-tracking-normal: 0; /* Body */
+  --remedy-tracking-wide: 0.025em; /* Small caps, labels */
+  --remedy-tracking-wider: 0.05em; /* Overlines */
+
+  /* ============ SPACING ============ */
+  /* Generous spacing for calm, unhurried reading */
+  --remedy-space-1: 0.25rem; /* 4px */
+  --remedy-space-2: 0.5rem; /* 8px */
+  --remedy-space-3: 0.75rem; /* 12px */
+  --remedy-space-4: 1rem; /* 16px */
+  --remedy-space-5: 1.25rem; /* 20px */
+  --remedy-space-6: 1.5rem; /* 24px */
+  --remedy-space-8: 2rem; /* 32px */
+  --remedy-space-10: 2.5rem; /* 40px */
+  --remedy-space-12: 3rem; /* 48px */
+  --remedy-space-16: 4rem; /* 64px */
+  --remedy-space-20: 5rem; /* 80px */
+  --remedy-space-24: 6rem; /* 96px */
+  --remedy-space-32: 8rem; /* 128px */
+
+  /* ============ LAYOUT ============ */
+  --remedy-container-max: 780px; /* Optimal reading width */
+  --remedy-container-wide: 1000px; /* Wider sections */
+  --remedy-container-padding: 1.5rem; /* Side padding */
+  --remedy-section-gap: 4rem; /* Between major sections */
+  --remedy-paragraph-gap: 1.5rem; /* Between paragraphs */
+
+  /* ============ BORDERS & RADIUS ============ */
+  --remedy-border-width: 1px;
+  --remedy-border-width-thick: 2px;
+  --remedy-radius-sm: 0.25rem; /* 4px */
+  --remedy-radius-md: 0.5rem; /* 8px */
+  --remedy-radius-lg: 0.75rem; /* 12px */
+
+  /* ============ TRANSITIONS ============ */
+  --remedy-transition-fast: 150ms ease;
+  --remedy-transition-base: 250ms ease;
+  --remedy-transition-slow: 400ms ease;
+
+  /* ============ SHADOWS ============ */
+  /* Subtle, minimal shadows for calm aesthetic */
+  --remedy-shadow-sm: 0 1px 2px rgba(46, 42, 32, 0.04);
+  --remedy-shadow-md: 0 2px 8px rgba(46, 42, 32, 0.06);
+  --remedy-shadow-lg: 0 4px 16px rgba(46, 42, 32, 0.08);
+}
+
+/* ============ DARK MODE SUPPORT ============ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --remedy-bg-primary: #1a1915;
+    --remedy-bg-secondary: #222018;
+    --remedy-bg-card: #2a2720;
+    --remedy-bg-highlight: #2e2b24;
+    --remedy-bg-warning: #2d2618;
+    --remedy-bg-ethical: #232820;
+
+    --remedy-text-primary: #e8e4dc;
+    --remedy-text-secondary: #c4bfb2;
+    --remedy-text-tertiary: #9a9588;
+    --remedy-text-heading: #f0ede6;
+    --remedy-text-emphasis: #d4cfc3;
+
+    --remedy-border-light: #3a3730;
+    --remedy-border-medium: #4a4740;
+    --remedy-border-dark: #5a574f;
+  }
+}

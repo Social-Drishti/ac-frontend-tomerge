@@ -1,0 +1,166 @@
+/* ==============================================
+   NUMEROLOGY (ANKA SHASTRA) - DESIGN TOKENS
+   Pure White Background | Vedic Scholarly Aesthetic
+   Timeless, Restrained, Educational Design
+   ============================================== */
+
+:root {
+  /* ============ NUMEROLOGY COLOR PALETTE ============ */
+
+  /* Backgrounds - Cream Foundation */
+  --num-bg-primary: #faf7f2; /* Main background - cream */
+  --num-bg-secondary: #f5f2ed; /* Subtle section alternation */
+  --num-bg-sidebar: #f8f5f0; /* Sidebar background */
+  --num-bg-card: #faf7f2; /* Card backgrounds */
+  --num-bg-highlight: #f8f6f3; /* Subtle highlight areas */
+  --num-bg-table: #fdfcfb; /* Table row alternation */
+
+  /* Text Colors - Deep Scholarly Tones */
+  --num-ink-primary: #1a1a1a; /* Primary text - near black */
+  --num-ink-heading: #0d0d0d; /* Headings - deep black */
+  --num-ink-secondary: #3d3d3d; /* Secondary text */
+  --num-ink-body: #4a4a4a; /* Body text - readable */
+  --num-ink-muted: #6b6b6b; /* Muted text */
+  --num-ink-subtle: #999999; /* Labels, captions */
+  --num-ink-placeholder: #b3b3b3; /* Placeholder text */
+
+  /* Accent Colors - Vedic Saffron & Earth */
+  --num-accent-saffron: #c45a1b; /* Primary accent - vedic saffron */
+  --num-accent-saffron-hover: #a34a15; /* Hover state */
+  --num-accent-saffron-light: #e8cdbf; /* Light saffron for borders */
+  --num-accent-saffron-subtle: #faf5f2; /* Very light saffron bg */
+  --num-accent-maroon: #6b2d2d; /* Deep maroon for emphasis */
+  --num-accent-earth: #5a4a3a; /* Earth brown */
+  --num-accent-gold: #9a7b4f; /* Subtle gold for numbers */
+
+  /* Number Colors - For planetary associations */
+  --num-planet-sun: #d4760a; /* 1 - Sun (Surya) */
+  --num-planet-moon: #5a7a8a; /* 2 - Moon (Chandra) */
+  --num-planet-jupiter: #b8860b; /* 3 - Jupiter (Guru) */
+  --num-planet-rahu: #4a5568; /* 4 - Rahu */
+  --num-planet-mercury: #2e7d32; /* 5 - Mercury (Budha) */
+  --num-planet-venus: #9c7c9c; /* 6 - Venus (Shukra) */
+  --num-planet-ketu: #6b4423; /* 7 - Ketu */
+  --num-planet-saturn: #3a3a4a; /* 8 - Saturn (Shani) */
+  --num-planet-mars: #8b3a3a; /* 9 - Mars (Mangal) */
+
+  /* Borders & Dividers - Minimal, Refined */
+  --num-border-light: #e8e8e8; /* Light border */
+  --num-border-default: #d4d4d4; /* Default border */
+  --num-border-dark: #b8b8b8; /* Darker border for emphasis */
+  --num-border-accent: #c45a1b; /* Accent border */
+  --num-divider: #e0e0e0; /* Section dividers */
+  --num-divider-subtle: #f0f0f0; /* Subtle dividers */
+
+  /* Semantic Colors */
+  --num-info: #4a6fa5;
+  --num-info-bg: #f5f8fc;
+  --num-note: #7a6f5a;
+  --num-note-bg: #faf8f5;
+  --num-warning: #8a6d3b;
+  --num-warning-bg: #fcf8f3;
+
+  /* ============ TYPOGRAPHY ============ */
+
+  /* Font Families */
+  --num-font-heading: "Yatra One", "Noto Serif Devanagari", Georgia, serif;
+  --num-font-body:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  --num-font-mono: "SF Mono", Monaco, "Cascadia Code", monospace;
+  --num-font-sanskrit: "Noto Serif Devanagari", "Yatra One", serif;
+
+  /* Font Sizes - Classical Modular Scale */
+  --num-text-xs: 0.75rem; /* 12px - labels */
+  --num-text-sm: 0.875rem; /* 14px - small text */
+  --num-text-base: 1rem; /* 16px - body */
+  --num-text-lg: 1.125rem; /* 18px - lead text */
+  --num-text-xl: 1.25rem; /* 20px - subheadings */
+  --num-text-2xl: 1.5rem; /* 24px - h3 */
+  --num-text-3xl: 1.875rem; /* 30px - h2 */
+  --num-text-4xl: 2.25rem; /* 36px - section titles */
+  --num-text-5xl: 3rem; /* 48px - page title */
+  --num-text-6xl: 3.75rem; /* 60px - hero display */
+
+  /* Font Weights */
+  --num-weight-light: 300;
+  --num-weight-regular: 400;
+  --num-weight-medium: 500;
+  --num-weight-semibold: 600;
+  --num-weight-bold: 700;
+
+  /* Line Heights */
+  --num-leading-tight: 1.2; /* Headings */
+  --num-leading-snug: 1.35; /* Subheadings */
+  --num-leading-normal: 1.5; /* UI text */
+  --num-leading-relaxed: 1.65; /* Body text */
+  --num-leading-loose: 1.8; /* Editorial reading */
+  --num-leading-editorial: 1.9; /* Long-form study */
+
+  /* Letter Spacing */
+  --num-tracking-tight: -0.02em;
+  --num-tracking-normal: 0;
+  --num-tracking-wide: 0.025em;
+  --num-tracking-wider: 0.05em;
+  --num-tracking-widest: 0.12em;
+
+  /* ============ SPACING SCALE ============ */
+  --num-space-0: 0;
+  --num-space-1: 0.25rem; /* 4px */
+  --num-space-2: 0.5rem; /* 8px */
+  --num-space-3: 0.75rem; /* 12px */
+  --num-space-4: 1rem; /* 16px */
+  --num-space-5: 1.25rem; /* 20px */
+  --num-space-6: 1.5rem; /* 24px */
+  --num-space-8: 2rem; /* 32px */
+  --num-space-10: 2.5rem; /* 40px */
+  --num-space-12: 3rem; /* 48px */
+  --num-space-16: 4rem; /* 64px */
+  --num-space-20: 5rem; /* 80px */
+  --num-space-24: 6rem; /* 96px */
+  --num-space-32: 8rem; /* 128px */
+
+  /* ============ BORDERS & RADIUS ============ */
+  --num-border-width: 1px;
+  --num-border-width-2: 2px;
+  --num-radius-none: 0;
+  --num-radius-sm: 3px;
+  --num-radius-md: 4px;
+  --num-radius-lg: 6px;
+  --num-radius-xl: 8px;
+
+  /* ============ SHADOWS - Minimal ============ */
+  --num-shadow-none: none;
+  --num-shadow-subtle: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --num-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.06);
+  --num-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.08);
+
+  /* ============ TRANSITIONS ============ */
+  --num-transition-fast: 100ms ease;
+  --num-transition-base: 200ms ease;
+  --num-transition-smooth: 300ms ease-out;
+
+  /* ============ LAYOUT ============ */
+  --num-container-max: 1200px;
+  --num-container-padding: 1.5rem;
+  --num-content-max: 680px; /* Optimal reading width */
+  --num-sidebar-width: 240px; /* Right nav width */
+  --num-section-gap: 4rem;
+  --num-paragraph-gap: 1.5rem;
+
+  /* ============ Z-INDEX SCALE ============ */
+  --num-z-base: 1;
+  --num-z-sidebar: 50;
+  --num-z-sticky: 100;
+  --num-z-nav: 500;
+}
+
+/* ============ PRINT STYLES ============ */
+@media print {
+  :root {
+    --num-bg-primary: #ffffff;
+    --num-bg-secondary: #ffffff;
+    --num-ink-primary: #000000;
+    --num-border-default: #cccccc;
+  }
+}

@@ -1,31 +1,52 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
+import SocialLogins from "../components/auth/SocialLogins";
+import { useAuth } from "../context/AuthContext";
 import "./Auth.css";
 
 export default function Login() {
   const [form, setForm] = useState({ email: "", password: "" });
   const [showModal, setShowModal] = useState(false);
   const [error, setError] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const navigate = useNavigate();
+  const { login, isAuthenticated } = useAuth();
+
+  // Redirect if already authenticated
+  useEffect(() => {
+    if (isAuthenticated) {
+      navigate("/dashboard");
+    }
+  }, [isAuthenticated, navigate]);
 
   function handleChange(e) {
     setForm({ ...form, [e.target.name]: e.target.value });
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
 
-    if (form.email && form.password) {
+    if (!form.email || !form.password) {
+      setError("Please fill in all fields.");
+      return;
+    }
+
+    setIsSubmitting(true);
+    setError("");
+
+    try {
+      await login({ email: form.email, password: form.password });
       setShowModal(true);
-      setError("");
       setTimeout(() => {
         setShowModal(false);
-        navigate("/");
+        navigate("/dashboard");
       }, 1500);
-    } else {
-      setError("Please fill in all fields.");
+    } catch (err) {
+      setError(err.message || "Login failed. Please check your credentials.");
+    } finally {
+      setIsSubmitting(false);
     }
   }
 
@@ -36,6 +57,10 @@ export default function Login() {
         <form className="auth-form" onSubmit={handleSubmit}>
           <h2 className="auth-title">Login</h2>
           {error && <div className="auth-error">{error}</div>}
+
+          {/* Social Login Options */}
+          <SocialLogins />
+
           <div className="auth-field">
             <label className="auth-label">Email</label>
             <input
@@ -58,8 +83,8 @@ export default function Login() {
               className="auth-input"
             />
           </div>
-          <button type="submit" className="auth-submit">
-            Login
+          <button type="submit" className="auth-submit" disabled={isSubmitting}>
+            {isSubmitting ? "Logging in..." : "Login"}
           </button>
           <p className="auth-link-text">
             Don't have an account?{" "}

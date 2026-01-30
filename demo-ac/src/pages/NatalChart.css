@@ -1,13 +1,12 @@
-
 :root {
   --natal-primary: #800000;
-  --natal-bg-light: #ffffff;
-  --natal-accent: #ffffff;
+  --natal-bg-light: #faf7f2;
+  --natal-accent: #faf7f2;
 }
 
 .natal-page-container {
   min-height: 100vh;
-  background: #ffffff;
+  background: #faf7f2;
   background-attachment: fixed;
 }
 
@@ -25,7 +24,6 @@
 }
 
 .natal-zodiac-card {
-  background: var(--natal-bg-light);
   border-radius: 16px;
   border: 2px solid var(--natal-primary);
   padding: 24px;
@@ -59,7 +57,7 @@
 }
 
 .natal-house-card {
-  background: #ffffff;
+  background: #faf7f2;
 }
 
 .natal-house-number {
@@ -75,7 +73,7 @@
 }
 
 .natal-reading-container {
-  background: #ffffff;
+  background: #faf7f2;
 }
 
 .natal-reading-title {
@@ -155,8 +153,3 @@
   background: var(--natal-primary);
   color: var(--natal-bg-light);
 }
-
-
-
-
-

@@ -1,0 +1,853 @@
+/* ==============================================
+   NUMEROLOGY (ANKA SHASTRA) PAGE STYLES
+   Pure White | Vedic Scholarly | Timeless
+   ============================================== */
+
+/* ============ BASE PAGE LAYOUT ============ */
+
+.numerology-page {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+/* Skip Link for Accessibility */
+.numerology-skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--num-ink-primary);
+  color: var(--num-bg-primary);
+  padding: var(--num-space-3) var(--num-space-4);
+  z-index: 1000;
+  transition: top var(--num-transition-base);
+}
+
+.numerology-skip-link:focus {
+  top: 0;
+}
+
+/* ============ PAGE HEADER / HERO ============ */
+
+.numerology-hero {
+  padding: var(--num-space-20) var(--num-space-6) var(--num-space-12);
+  text-align: center;
+}
+
+.numerology-hero-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.numerology-hero-label {
+  display: inline-block;
+  font-family: var(--num-font-body);
+  font-size: var(--num-text-xs);
+  font-weight: var(--num-weight-medium);
+  color: var(--num-ink-muted);
+  text-transform: uppercase;
+  letter-spacing: var(--num-tracking-widest);
+  margin-bottom: var(--num-space-4);
+}
+
+.numerology-hero-title {
+  font-family: var(--num-font-heading);
+  font-size: var(--num-text-5xl);
+  font-weight: var(--num-weight-regular);
+  color: var(--num-ink-heading);
+  margin: 0 0 var(--num-space-4);
+  line-height: var(--num-leading-tight);
+  letter-spacing: var(--num-tracking-tight);
+}
+
+.numerology-hero-sanskrit {
+  font-family: var(--num-font-sanskrit);
+  font-size: var(--num-text-xl);
+  color: var(--num-ink-muted);
+  margin: 0 0 var(--num-space-6);
+  font-style: normal;
+}
+
+.numerology-hero-subtitle {
+  font-family: var(--num-font-body);
+  font-size: var(--num-text-lg);
+  color: var(--num-ink-body);
+  margin: 0;
+  line-height: var(--num-leading-relaxed);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============ MAIN TWO-COLUMN LAYOUT ============ */
+
+.numerology-main-wrapper {
+  max-width: var(--num-container-max);
+  margin: 0 auto;
+  padding: var(--num-space-12) var(--num-container-padding);
+  display: grid;
+  grid-template-columns: 1fr var(--num-sidebar-width);
+  gap: var(--num-space-16);
+}
+
+.numerology-content {
+  max-width: var(--num-content-max);
+}
+
+/* ============ RIGHT SIDEBAR NAVIGATION ============ */
+
+.numerology-sidebar {
+  position: relative;
+}
+
+.numerology-toc {
+  position: sticky;
+  top: 100px;
+  max-height: calc(100vh - 140px);
+  overflow-y: auto;
+  padding: var(--num-space-6);
+  background: var(--num-bg-sidebar);
+  border: 1px solid var(--num-border-light);
+  border-radius: var(--num-radius-lg);
+}
+
+.numerology-toc::-webkit-scrollbar {
+  width: 3px;
+}
+
+.numerology-toc::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.numerology-toc::-webkit-scrollbar-thumb {
+  background: var(--num-border-default);
+  border-radius: 3px;
+}
+
+.numerology-toc-title {
+  font-family: var(--num-font-body);
+  font-size: var(--num-text-xs);
+  font-weight: var(--num-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: var(--num-tracking-widest);
+  color: var(--num-ink-muted);
+  margin: 0 0 var(--num-space-4);
+  padding-bottom: var(--num-space-3);
+  border-bottom: 1px solid var(--num-divider-subtle);
+}
+
+.numerology-toc-group {
+  margin-bottom: var(--num-space-4);
+}
+
+.numerology-toc-group-title {
+  font-family: var(--num-font-body);
+  font-size: 10px;
+  font-weight: var(--num-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: var(--num-tracking-wider);
+  color: var(--num-ink-subtle);
+  margin: var(--num-space-3) 0 var(--num-space-2);
+  padding-left: var(--num-space-3);
+}
+
+.numerology-toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.numerology-toc-link {
+  display: block;
+  padding: var(--num-space-2) var(--num-space-3);
+  font-family: var(--num-font-body);
+  font-size: var(--num-text-sm);
+  color: var(--num-ink-secondary);
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  transition: all var(--num-transition-base);
+  line-height: var(--num-leading-snug);
+}
+
+.numerology-toc-link:hover {
+  color: var(--num-ink-primary);
+  border-left-color: var(--num-border-dark);
+}
+
+.numerology-toc-link.active {
+  color: var(--num-accent-saffron);
+  font-weight: var(--num-weight-medium);
+  border-left-color: var(--num-accent-saffron);
+  background: var(--num-accent-saffron-subtle);
+}
+
+/* ============ CONTENT SECTIONS ============ */
+
+.numerology-section {
+  margin-bottom: var(--num-section-gap);
+  scroll-margin-top: var(--num-space-8);
+}
+
+.numerology-section-header {
+  margin-bottom: var(--num-space-6);
+}
+
+.numerology-section-label {
+  display: block;
+  font-family: var(--num-font-body);
+  font-size: var(--num-text-xs);
+  font-weight: var(--num-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--num-tracking-widest);
+  color: var(--num-ink-subtle);
+  margin-bottom: var(--num-space-2);
+}
+
+.numerology-section-title {
+  font-family: var(--num-font-heading);
+  font-size: var(--num-text-3xl);
+  font-weight: var(--num-weight-regular);
+  color: var(--num-ink-heading);
+  margin: 0 0 var(--num-space-3);
+  line-height: var(--num-leading-tight);
+}
+
+.numerology-section-divider {
+  border: none;
+  height: 1px;
+  background: var(--num-divider);
+  margin: var(--num-space-4) 0 0;
+  width: 60px;
+}
+
+/* ============ TYPOGRAPHY ============ */
+
+.numerology-content p {
+  font-family: var(--num-font-body);
+  font-size: var(--num-text-base);
+  color: var(--num-ink-body);
+  line-height: var(--num-leading-editorial);
+  margin: 0 0 var(--num-paragraph-gap);
+}
+
+.numerology-content p.lead {
+  font-size: var(--num-text-lg);
+  color: var(--num-ink-secondary);
+  line-height: var(--num-leading-loose);
+  margin-bottom: var(--num-space-6);
+}
+
+.numerology-content h3 {
+  font-family: var(--num-font-heading);
+  font-size: var(--num-text-xl);
+  font-weight: var(--num-weight-regular);
+  color: var(--num-ink-heading);
+  margin: var(--num-space-8) 0 var(--num-space-4);
+  line-height: var(--num-leading-tight);
+}
+
+.numerology-content h4 {
+  font-family: var(--num-font-body);
+  font-size: var(--num-text-base);
+  font-weight: var(--num-weight-semibold);
+  color: var(--num-ink-primary);
+  margin: var(--num-space-6) 0 var(--num-space-3);
+  letter-spacing: var(--num-tracking-wide);
+}
+
+.numerology-content strong {
+  font-weight: var(--num-weight-semibold);
+  color: var(--num-ink-primary);
+}
+
+.numerology-content em {
+  font-style: italic;
+}
+
+/* Sanskrit Terms Styling */
+.numerology-sanskrit {
+  font-family: var(--num-font-sanskrit);
+  font-style: normal;
+  color: var(--num-accent-maroon);
+}
+
+/* ============ NUMBER DISPLAY ============ */
+
+.numerology-number-display {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  font-family: var(--num-font-heading);
+  font-size: var(--num-text-2xl);
+  font-weight: var(--num-weight-bold);
+  color: var(--num-accent-gold);
+  background: var(--num-bg-highlight);
+  border: 1px solid var(--num-border-light);
+  border-radius: var(--num-radius-md);
+}
+
+.numerology-number-inline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  font-family: var(--num-font-heading);
+  font-size: var(--num-text-base);
+  font-weight: var(--num-weight-semibold);
+  color: var(--num-accent-saffron);
+  background: var(--num-accent-saffron-subtle);
+  border-radius: var(--num-radius-sm);
+  margin: 0 var(--num-space-1);
+  vertical-align: middle;
+}
+
+/* ============ INFO BOX ============ */
+
+.numerology-info-box {
+  display: flex;
+  gap: var(--num-space-4);
+  padding: var(--num-space-5);
+  background: var(--num-note-bg);
+  border-left: 3px solid var(--num-note);
+  margin: var(--num-space-6) 0;
+  border-radius: 0 var(--num-radius-md) var(--num-radius-md) 0;
+}
+
+.numerology-info-box--vedic {
+  background: var(--num-accent-saffron-subtle);
+  border-left-color: var(--num-accent-saffron);
+}
+
+.numerology-info-box--warning {
+  background: var(--num-warning-bg);
+  border-left-color: var(--num-warning);
+}
+
+.numerology-info-icon {
+  font-size: var(--num-text-lg);
+  flex-shrink: 0;
+}
+
+.numerology-info-content {
+  flex: 1;
+}
+
+.numerology-info-title {
+  font-family: var(--num-font-body);
+  font-size: var(--num-text-sm);
+  font-weight: var(--num-weight-semibold);
+  color: var(--num-ink-primary);
+  margin: 0 0 var(--num-space-2);
+}
+
+.numerology-info-text {
+  font-family: var(--num-font-body);
+  font-size: var(--num-text-sm);
+  color: var(--num-ink-body);
+  line-height: var(--num-leading-relaxed);
+  margin: 0;
+}
+
+/* ============ NUMBER-PLANET TABLE ============ */
+
+.numerology-planet-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--num-space-6) 0;
+  font-family: var(--num-font-body);
+  font-size: var(--num-text-sm);
+}
+
+.numerology-planet-table thead {
+  background: var(--num-bg-secondary);
+}
+
+.numerology-planet-table th {
+  padding: var(--num-space-3) var(--num-space-4);
+  text-align: left;
+  font-weight: var(--num-weight-semibold);
+  color: var(--num-ink-primary);
+  border-bottom: 2px solid var(--num-border-default);
+  font-size: var(--num-text-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--num-tracking-wider);
+}
+
+.numerology-planet-table td {
+  padding: var(--num-space-3) var(--num-space-4);
+  border-bottom: 1px solid var(--num-divider-subtle);
+  color: var(--num-ink-body);
+  vertical-align: top;
+}
+
+.numerology-planet-table tbody tr:hover {
+  background: var(--num-bg-table);
+}
+
+.numerology-planet-table .number-cell {
+  font-family: var(--num-font-heading);
+  font-size: var(--num-text-lg);
+  font-weight: var(--num-weight-bold);
+  text-align: center;
+  width: 50px;
+}
+
+.numerology-planet-table .planet-cell {
+  font-weight: var(--num-weight-medium);
+}
+
+.numerology-planet-table .sanskrit-cell {
+  font-family: var(--num-font-sanskrit);
+  color: var(--num-ink-muted);
+}
+
+/* ============ NUMBER CARDS GRID ============ */
+
+.numerology-number-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--num-space-4);
+  margin: var(--num-space-6) 0;
+}
+
+.numerology-number-card {
+  padding: var(--num-space-5);
+  background: var(--num-bg-primary);
+  border: 1px solid var(--num-border-light);
+  border-radius: var(--num-radius-md);
+  text-align: center;
+  transition: border-color var(--num-transition-base);
+}
+
+.numerology-number-card:hover {
+  border-color: var(--num-border-default);
+}
+
+.numerology-number-card-digit {
+  font-family: var(--num-font-heading);
+  font-size: var(--num-text-4xl);
+  color: var(--num-accent-gold);
+  line-height: 1;
+  margin-bottom: var(--num-space-2);
+}
+
+.numerology-number-card-name {
+  font-family: var(--num-font-body);
+  font-size: var(--num-text-sm);
+  font-weight: var(--num-weight-semibold);
+  color: var(--num-ink-primary);
+  margin-bottom: var(--num-space-1);
+}
+
+.numerology-number-card-planet {
+  font-family: var(--num-font-body);
+  font-size: var(--num-text-xs);
+  color: var(--num-ink-muted);
+}
+
+/* ============ DEFINITION LIST ============ */
+
+.numerology-definitions {
+  margin: var(--num-space-6) 0;
+}
+
+.numerology-definition-item {
+  padding: var(--num-space-4) 0;
+  border-bottom: 1px solid var(--num-divider-subtle);
+}
+
+.numerology-definition-item:last-child {
+  border-bottom: none;
+}
+
+.numerology-definition-term {
+  font-family: var(--num-font-body);
+  font-size: var(--num-text-base);
+  font-weight: var(--num-weight-semibold);
+  color: var(--num-ink-primary);
+  margin-bottom: var(--num-space-2);
+  display: flex;
+  align-items: center;
+  gap: var(--num-space-2);
+}
+
+.numerology-definition-desc {
+  font-family: var(--num-font-body);
+  font-size: var(--num-text-sm);
+  color: var(--num-ink-body);
+  line-height: var(--num-leading-relaxed);
+  margin: 0;
+  padding-left: var(--num-space-8);
+}
+
+/* ============ SUBSECTION ============ */
+
+.numerology-subsection {
+  margin: var(--num-space-8) 0;
+  padding-left: var(--num-space-5);
+  border-left: 2px solid var(--num-divider-subtle);
+}
+
+.numerology-subsection-title {
+  font-family: var(--num-font-body);
+  font-size: var(--num-text-base);
+  font-weight: var(--num-weight-semibold);
+  color: var(--num-ink-primary);
+  margin: 0 0 var(--num-space-3);
+}
+
+/* ============ FORMULA BOX ============ */
+
+.numerology-formula {
+  padding: var(--num-space-5);
+  background: var(--num-bg-secondary);
+  border: 1px solid var(--num-border-light);
+  border-radius: var(--num-radius-md);
+  margin: var(--num-space-6) 0;
+  font-family: var(--num-font-mono);
+  font-size: var(--num-text-sm);
+  text-align: center;
+}
+
+.numerology-formula-label {
+  font-family: var(--num-font-body);
+  font-size: var(--num-text-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--num-tracking-wider);
+  color: var(--num-ink-muted);
+  margin-bottom: var(--num-space-2);
+}
+
+.numerology-formula-example {
+  font-family: var(--num-font-mono);
+  font-size: var(--num-text-base);
+  color: var(--num-ink-primary);
+  margin: var(--num-space-3) 0;
+}
+
+/* ============ FAQ ACCORDION ============ */
+
+.numerology-faq-list {
+  margin: var(--num-space-6) 0;
+}
+
+.numerology-faq-item {
+  border-bottom: 1px solid var(--num-divider-subtle);
+}
+
+.numerology-faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--num-space-4) 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--num-font-body);
+  font-size: var(--num-text-base);
+  font-weight: var(--num-weight-medium);
+  color: var(--num-ink-primary);
+  transition: color var(--num-transition-base);
+}
+
+.numerology-faq-question:hover {
+  color: var(--num-accent-saffron);
+}
+
+.numerology-faq-icon {
+  font-size: var(--num-text-sm);
+  color: var(--num-ink-muted);
+  transition: transform var(--num-transition-base);
+}
+
+.numerology-faq-item.expanded .numerology-faq-icon {
+  transform: rotate(180deg);
+}
+
+.numerology-faq-answer {
+  padding: 0 0 var(--num-space-4);
+  font-family: var(--num-font-body);
+  font-size: var(--num-text-sm);
+  color: var(--num-ink-body);
+  line-height: var(--num-leading-relaxed);
+}
+
+/* ============ COMPARISON TABLE ============ */
+
+.numerology-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--num-space-6);
+  margin: var(--num-space-6) 0;
+}
+
+.numerology-comparison-column {
+  padding: var(--num-space-5);
+  background: var(--num-bg-primary);
+  border: 1px solid var(--num-border-light);
+  border-radius: var(--num-radius-md);
+}
+
+.numerology-comparison-title {
+  font-family: var(--num-font-body);
+  font-size: var(--num-text-sm);
+  font-weight: var(--num-weight-semibold);
+  color: var(--num-ink-primary);
+  margin-bottom: var(--num-space-4);
+  padding-bottom: var(--num-space-2);
+  border-bottom: 1px solid var(--num-divider-subtle);
+}
+
+.numerology-comparison-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.numerology-comparison-item {
+  padding: var(--num-space-2) 0;
+  font-family: var(--num-font-body);
+  font-size: var(--num-text-sm);
+  color: var(--num-ink-body);
+  line-height: var(--num-leading-normal);
+}
+
+.numerology-comparison-item::before {
+  content: "•";
+  color: var(--num-ink-muted);
+  margin-right: var(--num-space-2);
+}
+
+/* ============ FOOTER ============ */
+
+.numerology-footer {
+  margin-top: var(--num-space-24);
+  padding: var(--num-space-12) var(--num-container-padding);
+  background: var(--num-bg-secondary);
+  border-top: 1px solid var(--num-divider);
+}
+
+.numerology-footer-content {
+  max-width: var(--num-container-max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: var(--num-space-8);
+}
+
+.numerology-footer-brand {
+  max-width: 280px;
+}
+
+.numerology-footer-logo {
+  height: 32px;
+  margin-bottom: var(--num-space-4);
+}
+
+.numerology-footer-tagline {
+  font-family: var(--num-font-body);
+  font-size: var(--num-text-sm);
+  color: var(--num-ink-muted);
+  line-height: var(--num-leading-relaxed);
+  margin: 0;
+}
+
+.numerology-footer-column-title {
+  font-family: var(--num-font-body);
+  font-size: var(--num-text-xs);
+  font-weight: var(--num-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: var(--num-tracking-wider);
+  color: var(--num-ink-secondary);
+  margin: 0 0 var(--num-space-4);
+}
+
+.numerology-footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.numerology-footer-links li {
+  margin-bottom: var(--num-space-2);
+}
+
+.numerology-footer-links a {
+  font-family: var(--num-font-body);
+  font-size: var(--num-text-sm);
+  color: var(--num-ink-muted);
+  text-decoration: none;
+  transition: color var(--num-transition-base);
+}
+
+.numerology-footer-links a:hover {
+  color: var(--num-ink-primary);
+}
+
+.numerology-footer-bottom {
+  max-width: var(--num-container-max);
+  margin: var(--num-space-8) auto 0;
+  padding-top: var(--num-space-6);
+  border-top: 1px solid var(--num-divider-subtle);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.numerology-footer-disclaimer {
+  font-family: var(--num-font-body);
+  font-size: var(--num-text-xs);
+  color: var(--num-ink-subtle);
+  line-height: var(--num-leading-relaxed);
+  max-width: 600px;
+}
+
+.numerology-footer-copyright {
+  font-family: var(--num-font-body);
+  font-size: var(--num-text-xs);
+  color: var(--num-ink-subtle);
+}
+
+/* ============ RESPONSIVE STYLES ============ */
+
+@media (max-width: 1024px) {
+  .numerology-main-wrapper {
+    grid-template-columns: 1fr;
+    gap: var(--num-space-8);
+  }
+
+  .numerology-sidebar {
+    display: none;
+  }
+
+  .numerology-content {
+    max-width: 100%;
+  }
+
+  .numerology-number-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .numerology-comparison {
+    grid-template-columns: 1fr;
+  }
+
+  .numerology-footer-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .numerology-hero {
+    padding: var(--num-space-12) var(--num-space-4) var(--num-space-8);
+  }
+
+  .numerology-hero-title {
+    font-size: var(--num-text-4xl);
+  }
+
+  .numerology-section-title {
+    font-size: var(--num-text-2xl);
+  }
+
+  .numerology-main-wrapper {
+    padding: var(--num-space-8) var(--num-space-4);
+  }
+
+  .numerology-number-grid {
+    grid-template-columns: 1fr;
+    gap: var(--num-space-3);
+  }
+
+  .numerology-planet-table {
+    font-size: var(--num-text-xs);
+  }
+
+  .numerology-planet-table th,
+  .numerology-planet-table td {
+    padding: var(--num-space-2);
+  }
+
+  .numerology-footer-content {
+    grid-template-columns: 1fr;
+    gap: var(--num-space-6);
+  }
+
+  .numerology-footer-bottom {
+    flex-direction: column;
+    gap: var(--num-space-4);
+    text-align: center;
+  }
+}
+
+/* ============ MOBILE NAVIGATION (Optional) ============ */
+
+.numerology-mobile-nav {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--num-bg-primary);
+  border-top: 1px solid var(--num-border-light);
+  padding: var(--num-space-2) var(--num-space-4);
+  z-index: var(--num-z-sticky);
+}
+
+@media (max-width: 1024px) {
+  .numerology-mobile-nav {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.numerology-mobile-nav-toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--num-space-2);
+  padding: var(--num-space-3) var(--num-space-4);
+  background: var(--num-bg-secondary);
+  border: 1px solid var(--num-border-light);
+  border-radius: var(--num-radius-md);
+  font-family: var(--num-font-body);
+  font-size: var(--num-text-sm);
+  color: var(--num-ink-secondary);
+  cursor: pointer;
+}
+
+/* ============ ACCESSIBILITY ============ */
+
+@media (prefers-reduced-motion: reduce) {
+  .numerology-page * {
+    transition: none !important;
+  }
+}
+
+.numerology-content a:focus,
+.numerology-toc-link:focus,
+.numerology-faq-question:focus {
+  outline: 2px solid var(--num-accent-saffron);
+  outline-offset: 2px;
+}
+
+/* ============ PRINT STYLES ============ */
+
+@media print {
+  .numerology-sidebar,
+  .numerology-mobile-nav {
+    display: none;
+  }
+
+  .numerology-main-wrapper {
+    display: block;
+    max-width: 100%;
+  }
+
+  .numerology-section {
+    page-break-inside: avoid;
+  }
+}

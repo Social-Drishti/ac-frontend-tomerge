@@ -1,0 +1,400 @@
+/* ============ CAREER ASTROLOGY PAGE STYLES ============ */
+
+.career-layout {
+  background-color: var(--career-parchment);
+  color: var(--career-ink);
+  min-height: 100vh;
+  font-family: var(--career-font-sans);
+  line-height: var(--career-leading-normal);
+}
+
+/* Skip Link for Accessibility */
+.career-skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--career-accent);
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: var(--career-radius-md);
+  font-weight: var(--career-weight-medium);
+  transition: var(--career-transition-fast);
+  z-index: 1000;
+}
+
+.career-skip-link:focus {
+  top: 6px;
+  outline: var(--career-focus-ring);
+  outline-offset: var(--career-focus-offset);
+}
+
+/* ============ HEADER SECTION ============ */
+
+.career-header {
+  padding: var(--career-space-20) 0 var(--career-space-16);
+  background: linear-gradient(
+    to bottom,
+    var(--career-parchment) 0%,
+    var(--career-accent-light) 100%
+  );
+  border-bottom: var(--career-border-width) solid var(--career-border);
+  text-align: center;
+}
+
+.career-hero-title {
+  font-family: var(--career-font-display);
+  font-size: var(--career-text-5xl);
+  font-weight: var(--career-weight-bold);
+  line-height: var(--career-leading-tight);
+  color: var(--career-ink);
+  margin-bottom: var(--career-space-6);
+  letter-spacing: -0.02em;
+}
+
+.career-hero-subtitle {
+  font-size: var(--career-text-xl);
+  font-weight: var(--career-weight-regular);
+  color: var(--career-ink-muted);
+  line-height: var(--career-leading-relaxed);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ============ CONTAINER & LAYOUT ============ */
+
+.career-container {
+  max-width: var(--career-container-max);
+  margin: 0 auto;
+  padding: 0 var(--career-container-padding);
+}
+
+.career-main-content {
+  padding: var(--career-space-16) 0 var(--career-space-24);
+}
+
+/* ============ SECTION STYLING ============ */
+
+.career-section {
+  margin-bottom: var(--career-section-gap);
+}
+
+.career-section:last-child {
+  margin-bottom: 0;
+}
+
+.career-section-intro {
+  margin-bottom: var(--career-space-16);
+  padding-bottom: var(--career-space-12);
+  border-bottom: var(--career-border-width) solid var(--career-border);
+}
+
+/* ============ TYPOGRAPHY HIERARCHY ============ */
+
+.career-section-title {
+  font-family: var(--career-font-display);
+  font-size: var(--career-text-3xl);
+  font-weight: var(--career-weight-bold);
+  color: var(--career-ink);
+  line-height: var(--career-leading-tight);
+  margin-bottom: var(--career-space-8);
+  margin-top: var(--career-space-16);
+  letter-spacing: -0.01em;
+}
+
+.career-section-title:first-child {
+  margin-top: 0;
+}
+
+.career-subsection-title {
+  font-family: var(--career-font-display);
+  font-size: var(--career-text-2xl);
+  font-weight: var(--career-weight-semibold);
+  color: var(--career-ink);
+  line-height: var(--career-leading-snug);
+  margin: var(--career-space-12) 0 var(--career-space-6);
+}
+
+.career-topic-title {
+  font-size: var(--career-text-xl);
+  font-weight: var(--career-weight-medium);
+  color: var(--career-accent);
+  margin: var(--career-space-10) 0 var(--career-space-4);
+  line-height: var(--career-leading-snug);
+}
+
+/* ============ BODY TEXT ============ */
+
+.career-paragraph {
+  margin-bottom: var(--career-paragraph-gap);
+  font-size: var(--career-text-base);
+  line-height: var(--career-leading-relaxed);
+  color: var(--career-ink);
+}
+
+.career-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.career-intro-text {
+  font-size: var(--career-text-lg);
+  color: var(--career-ink-muted);
+  line-height: var(--career-leading-relaxed);
+  margin-bottom: var(--career-space-8);
+}
+
+.career-emphasis {
+  font-weight: var(--career-weight-medium);
+  color: var(--career-accent);
+}
+
+.career-subtle {
+  color: var(--career-ink-subtle);
+  font-style: italic;
+}
+
+/* ============ LISTS ============ */
+
+.career-list {
+  margin: var(--career-space-6) 0;
+  padding-left: var(--career-space-8);
+}
+
+.career-list li {
+  margin-bottom: var(--career-space-3);
+  line-height: var(--career-leading-relaxed);
+  color: var(--career-ink);
+}
+
+.career-list li:last-child {
+  margin-bottom: 0;
+}
+
+.career-list-clean {
+  list-style: none;
+  padding-left: 0;
+}
+
+.career-list-clean li {
+  position: relative;
+  padding-left: var(--career-space-6);
+}
+
+.career-list-clean li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--career-accent);
+  font-weight: var(--career-weight-bold);
+}
+
+/* ============ DIVIDERS ============ */
+
+.career-divider {
+  border: none;
+  height: var(--career-border-width);
+  background-color: var(--career-border);
+  margin: var(--career-space-16) 0;
+}
+
+.career-divider-subtle {
+  border: none;
+  height: var(--career-border-width);
+  background-color: var(--career-border);
+  margin: var(--career-space-12) 0;
+  opacity: 0.5;
+}
+
+.career-section-break {
+  margin: var(--career-space-20) 0;
+  border: none;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    var(--career-border-medium) 50%,
+    transparent 100%
+  );
+}
+
+/* ============ CARDS & CALLOUTS ============ */
+
+.career-card {
+  background: var(--career-paper);
+  border: var(--career-border-width) solid var(--career-border);
+  border-radius: var(--career-radius-lg);
+  padding: var(--career-space-8);
+  margin: var(--career-space-8) 0;
+  transition: var(--career-transition-base);
+}
+
+.career-card:hover {
+  background: var(--career-paper-hover);
+  box-shadow: var(--career-shadow-soft);
+}
+
+.career-insight-card {
+  background: var(--career-accent-subtle);
+  border: var(--career-border-width) solid var(--career-border);
+  border-left: 4px solid var(--career-accent);
+  padding: var(--career-space-6) var(--career-space-8);
+  margin: var(--career-space-8) 0;
+  border-radius: var(--career-radius-md);
+}
+
+.career-insight-card .career-paragraph {
+  margin-bottom: var(--career-space-4);
+}
+
+.career-insight-card .career-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+/* ============ QUOTE BLOCKS ============ */
+
+.career-quote {
+  border-left: 3px solid var(--career-accent);
+  padding-left: var(--career-space-6);
+  margin: var(--career-space-8) 0;
+  font-style: italic;
+  color: var(--career-ink-muted);
+  font-size: var(--career-text-lg);
+  line-height: var(--career-leading-relaxed);
+}
+
+/* ============ FAQ SECTION ============ */
+
+.career-faq-item {
+  margin-bottom: var(--career-space-8);
+  border-bottom: var(--career-border-width) solid var(--career-border);
+  padding-bottom: var(--career-space-6);
+}
+
+.career-faq-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.career-faq-question {
+  font-size: var(--career-text-lg);
+  font-weight: var(--career-weight-medium);
+  color: var(--career-accent);
+  margin-bottom: var(--career-space-4);
+  line-height: var(--career-leading-snug);
+}
+
+.career-faq-answer {
+  color: var(--career-ink);
+  line-height: var(--career-leading-relaxed);
+}
+
+/* ============ FOOTER SECTION ============ */
+
+.career-footer-disclaimer {
+  background: var(--career-accent-light);
+  border: var(--career-border-width) solid var(--career-border);
+  border-radius: var(--career-radius-lg);
+  padding: var(--career-space-8);
+  margin: var(--career-space-16) 0 var(--career-space-8);
+  text-align: center;
+}
+
+.career-footer-disclaimer .career-paragraph {
+  font-size: var(--career-text-sm);
+  color: var(--career-ink-subtle);
+  margin-bottom: var(--career-space-4);
+}
+
+.career-footer-disclaimer .career-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+/* ============ RESPONSIVE DESIGN ============ */
+
+@media (max-width: 768px) {
+  .career-container {
+    padding: 0 var(--career-space-4);
+  }
+  
+  .career-hero-title {
+    font-size: var(--career-text-4xl);
+  }
+  
+  .career-hero-subtitle {
+    font-size: var(--career-text-lg);
+  }
+  
+  .career-section-title {
+    font-size: var(--career-text-2xl);
+  }
+  
+  .career-subsection-title {
+    font-size: var(--career-text-xl);
+  }
+  
+  .career-space-adjustments {
+    --career-section-gap: var(--career-space-16);
+    --career-heading-gap: var(--career-space-8);
+  }
+}
+
+@media (max-width: 480px) {
+  .career-hero-title {
+    font-size: var(--career-text-3xl);
+  }
+  
+  .career-section-title {
+    font-size: var(--career-text-xl);
+  }
+  
+  .career-card,
+  .career-insight-card {
+    padding: var(--career-space-6);
+  }
+}
+
+/* ============ ACCESSIBILITY ENHANCEMENTS ============ */
+
+/* Focus states for keyboard navigation */
+.career-layout a:focus,
+.career-layout button:focus {
+  outline: var(--career-focus-ring);
+  outline-offset: var(--career-focus-offset);
+  border-radius: var(--career-radius-sm);
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .career-layout {
+    --career-border: #000;
+    --career-ink: #000;
+    --career-accent: #8b4513;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .career-card {
+    transition: none;
+  }
+}
+
+/* ============ PRINT STYLES ============ */
+
+@media print {
+  .career-layout {
+    background: white;
+    color: black;
+  }
+  
+  .career-card,
+  .career-insight-card {
+    border: 1px solid #ccc;
+    background: white;
+    box-shadow: none;
+  }
+  
+  .career-section-break {
+    background: #ccc;
+  }
+}

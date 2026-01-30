@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <!-- Outer decorative frame with curved corners -->
+  <path d="M50 20 Q20 20 20 50 L20 175 Q20 180 25 185 L25 215 Q20 220 20 225 L20 350 Q20 380 50 380 L175 380 Q180 380 185 375 L215 375 Q220 380 225 380 L350 380 Q380 380 380 350 L380 225 Q380 220 375 215 L375 185 Q380 180 380 175 L380 50 Q380 20 350 20 L225 20 Q220 20 215 25 L185 25 Q180 20 175 20 Z" 
+        stroke="#8B4513" stroke-width="3" fill="none" opacity="1"/>
+  
+  <!-- Second outer frame -->
+  <path d="M55 25 Q25 25 25 55 L25 170 Q25 175 30 180 L30 220 Q25 225 25 230 L25 345 Q25 375 55 375 L170 375 Q175 375 180 370 L220 370 Q225 375 230 375 L345 375 Q375 375 375 345 L375 230 Q375 225 370 220 L370 180 Q375 175 375 170 L375 55 Q375 25 345 25 L230 25 Q225 25 220 30 L180 30 Q175 25 170 25 Z" 
+        stroke="#8B4513" stroke-width="2.5" fill="none" opacity="0.9"/>
+
+  <!-- Main outer square -->
+  <rect x="60" y="60" width="280" height="280" stroke="#8B4513" stroke-width="2.5" fill="none" opacity="0.9"/>
+  
+  <!-- Center diamond (rotated square) -->
+  <rect x="130" y="130" width="140" height="140" stroke="#8B4513" stroke-width="2.5" fill="none" opacity="0.9" transform="rotate(45 200 200)"/>
+  
+  <!-- Inner diamond -->
+  <rect x="165" y="165" width="70" height="70" stroke="#8B4513" stroke-width="2" fill="none" opacity="0.85" transform="rotate(45 200 200)"/>
+  
+  <!-- Diagonal lines from corners to center diamond -->
+  <!-- Top-left to center -->
+  <line x1="60" y1="60" x2="200" y2="200" stroke="#8B4513" stroke-width="2" opacity="0.9"/>
+  <!-- Top-right to center -->
+  <line x1="340" y1="60" x2="200" y2="200" stroke="#8B4513" stroke-width="2" opacity="0.9"/>
+  <!-- Bottom-left to center -->
+  <line x1="60" y1="340" x2="200" y2="200" stroke="#8B4513" stroke-width="2" opacity="0.9"/>
+  <!-- Bottom-right to center -->
+  <line x1="340" y1="340" x2="200" y2="200" stroke="#8B4513" stroke-width="2" opacity="0.9"/>
+  
+  <!-- Lines from mid-points of outer square to diamond vertices -->
+  <!-- Top mid to diamond top -->
+  <line x1="200" y1="60" x2="200" y2="101" stroke="#8B4513" stroke-width="2" opacity="0.9"/>
+  <!-- Bottom mid to diamond bottom -->
+  <line x1="200" y1="340" x2="200" y2="299" stroke="#8B4513" stroke-width="2" opacity="0.9"/>
+  <!-- Left mid to diamond left -->
+  <line x1="60" y1="200" x2="101" y2="200" stroke="#8B4513" stroke-width="2" opacity="0.9"/>
+  <!-- Right mid to diamond right -->
+  <line x1="340" y1="200" x2="299" y2="200" stroke="#8B4513" stroke-width="2" opacity="0.9"/>
+  
+  <!-- Corner decorative curves - Top left -->
+  <path d="M60 60 Q40 60 40 80" stroke="#8B4513" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M60 60 Q60 40 80 40" stroke="#8B4513" stroke-width="2" fill="none" opacity="0.8"/>
+  
+  <!-- Corner decorative curves - Top right -->
+  <path d="M340 60 Q360 60 360 80" stroke="#8B4513" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M340 60 Q340 40 320 40" stroke="#8B4513" stroke-width="2" fill="none" opacity="0.8"/>
+  
+  <!-- Corner decorative curves - Bottom left -->
+  <path d="M60 340 Q40 340 40 320" stroke="#8B4513" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M60 340 Q60 360 80 360" stroke="#8B4513" stroke-width="2" fill="none" opacity="0.8"/>
+  
+  <!-- Corner decorative curves - Bottom right -->
+  <path d="M340 340 Q360 340 360 320" stroke="#8B4513" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M340 340 Q340 360 320 360" stroke="#8B4513" stroke-width="2" fill="none" opacity="0.8"/>
+</svg>

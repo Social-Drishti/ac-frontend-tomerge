@@ -16,7 +16,7 @@
   /* Background - Warm Parchment */
   --blogs-bg: #faf8f3;
   --blogs-bg-subtle: #f5f2eb;
-  --blogs-bg-card: #ffffff;
+  --blogs-bg-card: #faf7f2;
   --blogs-bg-featured: rgba(95, 107, 58, 0.04);
 
   /* Text Colors */
@@ -33,18 +33,19 @@
 
   /* Font Families */
   --blogs-font-display: "Yatra One", cursive;
-  --blogs-font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --blogs-font-body:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
   /* Font Sizes - Editorial Scale */
-  --blogs-text-xs: 0.75rem;      /* 12px */
-  --blogs-text-sm: 0.875rem;     /* 14px */
-  --blogs-text-base: 1rem;       /* 16px */
-  --blogs-text-lg: 1.125rem;     /* 18px */
-  --blogs-text-xl: 1.25rem;      /* 20px */
-  --blogs-text-2xl: 1.5rem;      /* 24px */
-  --blogs-text-3xl: 1.875rem;    /* 30px */
-  --blogs-text-4xl: 2.25rem;     /* 36px */
-  --blogs-text-5xl: 3rem;        /* 48px */
+  --blogs-text-xs: 0.75rem; /* 12px */
+  --blogs-text-sm: 0.875rem; /* 14px */
+  --blogs-text-base: 1rem; /* 16px */
+  --blogs-text-lg: 1.125rem; /* 18px */
+  --blogs-text-xl: 1.25rem; /* 20px */
+  --blogs-text-2xl: 1.5rem; /* 24px */
+  --blogs-text-3xl: 1.875rem; /* 30px */
+  --blogs-text-4xl: 2.25rem; /* 36px */
+  --blogs-text-5xl: 3rem; /* 48px */
 
   /* Font Weights */
   --blogs-weight-normal: 400;
@@ -66,18 +67,18 @@
 
   /* ============ SPACING ============ */
 
-  --blogs-space-1: 0.25rem;    /* 4px */
-  --blogs-space-2: 0.5rem;     /* 8px */
-  --blogs-space-3: 0.75rem;    /* 12px */
-  --blogs-space-4: 1rem;       /* 16px */
-  --blogs-space-5: 1.25rem;    /* 20px */
-  --blogs-space-6: 1.5rem;     /* 24px */
-  --blogs-space-8: 2rem;       /* 32px */
-  --blogs-space-10: 2.5rem;    /* 40px */
-  --blogs-space-12: 3rem;      /* 48px */
-  --blogs-space-16: 4rem;      /* 64px */
-  --blogs-space-20: 5rem;      /* 80px */
-  --blogs-space-24: 6rem;      /* 96px */
+  --blogs-space-1: 0.25rem; /* 4px */
+  --blogs-space-2: 0.5rem; /* 8px */
+  --blogs-space-3: 0.75rem; /* 12px */
+  --blogs-space-4: 1rem; /* 16px */
+  --blogs-space-5: 1.25rem; /* 20px */
+  --blogs-space-6: 1.5rem; /* 24px */
+  --blogs-space-8: 2rem; /* 32px */
+  --blogs-space-10: 2.5rem; /* 40px */
+  --blogs-space-12: 3rem; /* 48px */
+  --blogs-space-16: 4rem; /* 64px */
+  --blogs-space-20: 5rem; /* 80px */
+  --blogs-space-24: 6rem; /* 96px */
 
   /* ============ LAYOUT ============ */
 

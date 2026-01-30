@@ -3,7 +3,6 @@ export default function Clarity() {
     <section className="py-20 ">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid gap-14 md:grid-cols-2 items-center">
-
           {/* LEFT CONTENT */}
           <div>
             <h2 className="text-4xl font-bold tracking-tight text-gray-900 md:text-5xl">
@@ -28,23 +27,37 @@ export default function Clarity() {
 
           {/* RIGHT – CALCULATOR CARD */}
           <div className="flex justify-center">
-            <div className="w-full max-w-lg rounded-2xl border border-gray-200 bg-white p-8 shadow-lg">
+            <div className="relative w-full max-w-md rounded-2xl border border-amber-200 bg-amber-50/50 p-10 shadow-lg overflow-hidden aspect-square flex flex-col justify-center">
+              {/* Transparent Kundli Chart Background */}
+              <img
+                src="/kundli-chart.svg"
+                alt=""
+                aria-hidden="true"
+                className="absolute pointer-events-none"
+                style={{
+                  width: "90%",
+                  height: "90%",
+                  top: "50%",
+                  left: "50%",
+                  transform: "translate(-50%, -50%)",
+                  opacity: 0.2,
+                }}
+              />
 
-              <h3 className="text-2xl font-semibold text-gray-800 text-center">
+              <h3 className="relative z-10 text-xl font-semibold text-gray-800 text-center mb-6">
                 Get Your Free Janam Kundali
               </h3>
 
-              <div className="mt-8 space-y-6">
-
+              <div className="relative z-10 space-y-4">
                 {/* Name + Gender */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 gap-3">
                   <input
                     type="text"
                     placeholder="Your Name"
-                    className="w-full rounded-md border border-gray-300 px-4 py-2 text-sm focus:ring-1 focus:ring-red-500 outline-none"
+                    className="w-full rounded-md border border-gray-300 bg-[#faf7f2]/80 px-3 py-2 text-sm focus:ring-1 focus:ring-red-500 outline-none"
                   />
 
-                  <select className="w-full rounded-md border border-gray-300 px-4 py-2 text-sm focus:ring-1 focus:ring-red-500 outline-none">
+                  <select className="w-full rounded-md border border-gray-300 bg-[#faf7f2]/80 px-3 py-2 text-sm focus:ring-1 focus:ring-red-500 outline-none">
                     <option>Gender</option>
                     <option>Male</option>
                     <option>Female</option>
@@ -54,25 +67,37 @@ export default function Clarity() {
 
                 {/* Birth Date */}
                 <div>
-                  <label className="mb-2 block text-sm font-medium text-gray-700">
+                  <label className="mb-1 block text-xs font-medium text-gray-700">
                     Birth Date
                   </label>
-                  <div className="grid grid-cols-3 gap-3">
-                    <select className="input">Day</select>
-                    <select className="input">Month</select>
-                    <select className="input">Year</select>
+                  <div className="grid grid-cols-3 gap-2">
+                    <select className="w-full rounded-md border border-gray-300 bg-[#faf7f2]/80 px-2 py-2 text-sm outline-none">
+                      <option>Day</option>
+                    </select>
+                    <select className="w-full rounded-md border border-gray-300 bg-[#faf7f2]/80 px-2 py-2 text-sm outline-none">
+                      <option>Month</option>
+                    </select>
+                    <select className="w-full rounded-md border border-gray-300 bg-[#faf7f2]/80 px-2 py-2 text-sm outline-none">
+                      <option>Year</option>
+                    </select>
                   </div>
                 </div>
 
                 {/* Birth Time */}
                 <div>
-                  <label className="mb-2 block text-sm font-medium text-gray-700">
+                  <label className="mb-1 block text-xs font-medium text-gray-700">
                     Birth Time
                   </label>
-                  <div className="grid grid-cols-3 gap-3">
-                    <select className="input">Hour</select>
-                    <select className="input">Minute</select>
-                    <select className="input">AM / PM</select>
+                  <div className="grid grid-cols-3 gap-2">
+                    <select className="w-full rounded-md border border-gray-300 bg-[#faf7f2]/80 px-2 py-2 text-sm outline-none">
+                      <option>Hour</option>
+                    </select>
+                    <select className="w-full rounded-md border border-gray-300 bg-[#faf7f2]/80 px-2 py-2 text-sm outline-none">
+                      <option>Min</option>
+                    </select>
+                    <select className="w-full rounded-md border border-gray-300 bg-[#faf7f2]/80 px-2 py-2 text-sm outline-none">
+                      <option>AM/PM</option>
+                    </select>
                   </div>
                 </div>
 
@@ -80,18 +105,16 @@ export default function Clarity() {
                 <input
                   type="text"
                   placeholder="Place of Birth"
-                  className="w-full rounded-md border border-gray-300 px-4 py-2 text-sm focus:ring-1 focus:ring-red-500 outline-none"
+                  className="w-full rounded-md border border-gray-300 bg-[#faf7f2]/80 px-3 py-2 text-sm focus:ring-1 focus:ring-red-500 outline-none"
                 />
 
                 {/* CTA */}
-                <button className="w-full rounded-full bg-red-600 py-3 text-sm font-semibold text-white hover:bg-red-700 transition">
+                <button className="w-full rounded-full bg-red-600 py-2.5 text-sm font-semibold text-white hover:bg-red-700 transition">
                   Get Your Kundali Now
                 </button>
-
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
