@@ -5,6 +5,41 @@ import "./Calculator.css";
 
 export default function Calculator() {
   const [selectedCalculator, setSelectedCalculator] = useState(null);
+  const [moonData, setMoonData] = useState({
+    name: "",
+    date: "",
+    time: "",
+    place: "",
+  });
+  function calculateMoonSign(date) {
+    if (!date) return "Unknown";
+    const d = new Date(date);
+    const day = d.getDate();
+    const signs = [
+      "Aries",
+      "Taurus",
+      "Gemini",
+      "Cancer",
+      "Leo",
+      "Virgo",
+      "Libra",
+      "Scorpio",
+      "Sagittarius",
+      "Capricorn",
+      "Aquarius",
+      "Pisces",
+    ];
+    return signs[day % 12];
+  }
+  const handleMoonSubmit = (e) => {
+    e.preventDefault();
+    const moonSign = calculateMoonSign(moonData.date);
+    setResult({
+      type: "moon",
+      moonSign,
+      message: `Moon Sign for ${moonData.name}: ${moonSign}`,
+    });
+  };
   const [kundliData, setKundliData] = useState({
     name: "",
     date: "",
@@ -50,20 +85,19 @@ export default function Calculator() {
           <p className="calculator-subtitle text-center mb-12">
             Calculate your Kundli or check compatibility with your partner
           </p>
-
-          {/* Calculator Cards */}
           {!selectedCalculator && (
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
-              {/* Kundli Calculator Card */}
+            <div className="grid md:grid-cols-3 gap-8 mb-8">
               <div
                 className="calculator-card"
                 onClick={() => setSelectedCalculator("kundli")}
               >
                 <div className="text-center">
-                  <div className="text-6xl mb-4">📜</div>
-                  <h2 className="calculator-card-title text-2xl font-bold mb-3">
-                    Kundli Calculator
-                  </h2>
+                  <img
+                    src="/calculator-images/kundli-calcultor.png"
+                    alt="Kundli Calculator"
+                    className="mx-auto mb-4 h-40 w-40 object-contain drop-shadow-2xl"
+                    loading="lazy"
+                  />
                   <p className="calculator-card-text">
                     Generate your personalized birth chart (Kundli) based on
                     your birth details. Discover planetary positions and their
@@ -74,6 +108,110 @@ export default function Calculator() {
                   </button>
                 </div>
               </div>
+              <div
+                className="calculator-card"
+                onClick={() => setSelectedCalculator("moon")}
+              >
+                <div className="text-center">
+                  <img
+                    src="/calculator-images/moon-sign-calculator.png"
+                    className="mx-auto mb-4 h-40 w-40 object-contain drop-shadow-2xl"
+                    loading="lazy"
+                  />
+                  <p className="calculator-card-text">
+                    Find your Vedic Moon Sign (Rashi) using your birth details.
+                    Moon sign reveals your emotions and inner self.
+                  </p>
+                  <button className="calculator-card-button mt-6 px-6 py-3 rounded-lg font-semibold transition-all">
+                    Find Moon Sign
+                  </button>
+                </div>
+              </div>
+              {/* Moon Sign Form */}
+              {selectedCalculator === "moon" && (
+                <div className="calculator-form-container">
+                  <button
+                    onClick={() => {
+                      setSelectedCalculator(null);
+                      setResult(null);
+                    }}
+                    className="calculator-back-button mb-4 px-4 py-2 rounded"
+                  >
+                    ← Back
+                  </button>
+                  <h2 className="calculator-form-heading text-3xl font-bold mb-6 text-center">
+                    Moon Sign Calculator
+                  </h2>
+                  <form onSubmit={handleMoonSubmit}>
+                    <div className="grid md:grid-cols-2 gap-4 mb-6">
+                      <div>
+                        <label className="calculator-label block mb-2 font-medium">
+                          Full Name
+                        </label>
+                        <input
+                          type="text"
+                          required
+                          value={moonData.name}
+                          onChange={(e) =>
+                            setMoonData({ ...moonData, name: e.target.value })
+                          }
+                          className="calculator-input w-full p-3 rounded-lg border"
+                          placeholder="Enter your name"
+                        />
+                      </div>
+                      <div>
+                        <label className="calculator-label block mb-2 font-medium">
+                          Date of Birth
+                        </label>
+                        <input
+                          type="date"
+                          required
+                          value={moonData.date}
+                          onChange={(e) =>
+                            setMoonData({ ...moonData, date: e.target.value })
+                          }
+                          className="calculator-input w-full p-3 rounded-lg border"
+                        />
+                      </div>
+                      <div>
+                        <label className="calculator-label block mb-2 font-medium">
+                          Time of Birth
+                        </label>
+                        <input
+                          type="time"
+                          required
+                          value={moonData.time}
+                          onChange={(e) =>
+                            setMoonData({ ...moonData, time: e.target.value })
+                          }
+                          className="calculator-input w-full p-3 rounded-lg border"
+                        />
+                      </div>
+                      <div>
+                        <label className="calculator-label block mb-2 font-medium">
+                          Place of Birth
+                        </label>
+                        <input
+                          type="text"
+                          required
+                          value={moonData.place}
+                          onChange={(e) =>
+                            setMoonData({ ...moonData, place: e.target.value })
+                          }
+                          className="calculator-input w-full p-3 rounded-lg border"
+                          placeholder="City, Country"
+                        />
+                      </div>
+                    </div>
+                    <button
+                      type="submit"
+                      className="calculator-submit-button w-full py-3 rounded-lg font-bold text-lg transition-all"
+                    >
+                      Find Moon Sign
+                    </button>
+                  </form>
+                </div>
+              )}
 
               {/* Match Making Calculator Card */}
               <div
@@ -81,10 +219,12 @@ export default function Calculator() {
                 onClick={() => setSelectedCalculator("match")}
               >
                 <div className="text-center">
-                  <div className="text-6xl mb-4">💑</div>
-                  <h2 className="calculator-card-title text-2xl font-bold mb-3">
-                    Match Making Calculator
-                  </h2>
+                  <img
+                    src="/calculator-images/match-making.png"
+                    alt="Match Making Calculator"
+                    className="mx-auto mb-4 h-40 w-40 object-contain drop-shadow-2xl"
+                    loading="lazy"
+                  />
                   <p className="calculator-card-text">
                     Check compatibility between two individuals based on their
                     birth charts. Get a detailed Guna Milan score (out of 36
@@ -339,7 +479,9 @@ export default function Calculator() {
               <h3 className="calculator-results-title text-2xl font-bold mb-4 text-center">
                 {result.type === "kundli"
                   ? "Kundli Generated ✨"
-                  : "Compatibility Results 💫"}
+                  : result.type === "moon"
+                    ? "Your Moon Sign 🌙"
+                    : "Compatibility Results 💫"}
               </h3>
               {result.type === "match" && (
                 <div className="text-center mb-4">
@@ -363,6 +505,14 @@ export default function Calculator() {
                           ? "Fair Match 🤔"
                           : "Needs Consideration ⚠️"}
                   </p>
+                </div>
+              )}
+              {result.type === "moon" && (
+                <div className="text-center mb-4">
+                  <div className="text-6xl font-bold text-blue-700 mb-2">
+                    {result.moonSign}
+                  </div>
+                  <p className="text-lg">Your Vedic Moon Sign (Rashi)</p>
                 </div>
               )}
               <p className="calculator-results-message text-center text-lg">

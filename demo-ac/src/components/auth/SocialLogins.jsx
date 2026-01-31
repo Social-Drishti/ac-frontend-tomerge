@@ -10,7 +10,6 @@ export default function SocialLogins() {
 
       <div className="social-buttons">
         <GoogleLoginButton />
-        <AppleLoginButton />
       </div>
 
       <style jsx>{`

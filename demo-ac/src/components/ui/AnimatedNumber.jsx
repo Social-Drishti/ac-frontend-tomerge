@@ -3,42 +3,34 @@ import { useEffect, useRef, useState } from "react";
 export default function AnimatedNumber({ value, className = "" }) {
   const ref = useRef(null);
   const [display, setDisplay] = useState("0");
+  const prevValueRef = useRef(value);
 
   useEffect(() => {
-    const element = ref.current;
-    if (!element) return;
-    
-    const number = parseInt(value.replace(/\D/g, ""), 10);
-    const suffix = value.replace(/[0-9]/g, "");
+    const parseNumber = (val) => parseInt(val.replace(/\D/g, ""), 10) || 0;
+    const getSuffix = (val) => val.replace(/[0-9]/g, "");
 
-    let startTime = null;
+    const newNumber = parseNumber(value);
+    const prevNumber = parseNumber(prevValueRef.current);
+    const suffix = getSuffix(value);
     const duration = 1500;
+    let startTime = null;
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry.isIntersecting) return;
-
-        const animate = (time) => {
-          if (!startTime) startTime = time;
-          const progress = Math.min((time - startTime) / duration, 1);
-          const eased = progress * (2 - progress);
-          const current = Math.floor(eased * number);
-
-          setDisplay(current.toLocaleString() + suffix);
-
-          if (progress < 1) {
-            requestAnimationFrame(animate);
-          }
-        };
-
+    // Animate from prevNumber to newNumber
+    const animate = (time) => {
+      if (!startTime) startTime = time;
+      const progress = Math.min((time - startTime) / duration, 1);
+      const eased = progress * (2 - progress);
+      const current = Math.round(prevNumber + (newNumber - prevNumber) * eased);
+      setDisplay(current.toLocaleString() + suffix);
+      if (progress < 1) {
         requestAnimationFrame(animate);
-        observer.disconnect();
-      },
-      { threshold: 0.4 }
-    );
+      } else {
+        setDisplay(newNumber.toLocaleString() + suffix);
+      }
+    };
 
-    observer.observe(element);
-    return () => observer.disconnect();
+    requestAnimationFrame(animate);
+    prevValueRef.current = value;
   }, [value]);
 
   return (

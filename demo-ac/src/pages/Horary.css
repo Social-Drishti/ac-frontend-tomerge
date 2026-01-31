@@ -1,0 +1,266 @@
+/* Horary Astrology Page Styles */
+
+/* Skip Link for Accessibility */
+.horary-skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  z-index: 10000;
+}
+
+.horary-skip-link:focus {
+  top: 6px;
+}
+
+/* Layout Container */
+.horary-layout {
+  min-height: 100vh;
+  background-color: #fafafa;
+  color: #2d3748;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, sans-serif;
+  line-height: 1.6;
+}
+
+.horary-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header Styles */
+.horary-header {
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  border-bottom: 1px solid #e2e8f0;
+  padding: 4rem 0 3rem 0;
+  margin-bottom: 3rem;
+}
+
+.horary-hero-title {
+  font-family: "Yatra One", cursive;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #2d3748;
+  text-align: center;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.02em;
+}
+
+.horary-hero-subtitle {
+  font-size: 1.125rem;
+  color: #4a5568;
+  text-align: center;
+  margin: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Main Content Layout */
+.horary-main-content {
+  max-width: 100%;
+  margin-bottom: 4rem;
+}
+
+/* Section Styles */
+.horary-section {
+  margin-bottom: 4rem;
+}
+
+.horary-section-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.horary-section-header h2 {
+  font-family: "Yatra One", cursive;
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #2d3748;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+/* Card Styles */
+.horary-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+}
+
+.horary-card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.horary-card-header {
+  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+}
+
+.horary-card-header h2 {
+  font-family: "Yatra One", cursive;
+  font-size: 1.875rem;
+  font-weight: 400;
+  color: #2d3748;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.horary-card-header h3 {
+  font-family: "Yatra One", cursive;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #2d3748;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.horary-card-header h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0;
+}
+
+.horary-divider {
+  height: 1px;
+  border: none;
+  background: #e2e8f0;
+  margin: 0.5rem 1.5rem 1rem 1.5rem;
+}
+
+.horary-card-content {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.horary-card-content p {
+  font-size: 1rem;
+  color: #4a5568;
+  margin: 0 0 1rem 0;
+  text-align: justify;
+}
+
+.horary-card-content p:last-child {
+  margin-bottom: 0;
+}
+
+.horary-card-content ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  color: #4a5568;
+}
+
+.horary-card-content li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.horary-card-content strong {
+  color: #2d3748;
+  font-weight: 600;
+}
+
+/* FAQ Specific Styles */
+.horary-faq-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f7fafc;
+}
+
+.horary-faq-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.horary-faq-item h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0 0 0.5rem 0;
+}
+
+.horary-faq-item p {
+  margin: 0;
+  color: #4a5568;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .horary-container {
+    padding: 0 0.75rem;
+  }
+
+  .horary-header {
+    padding: 3rem 0 2rem 0;
+    margin-bottom: 2rem;
+  }
+
+  .horary-hero-title {
+    font-size: 2.25rem;
+  }
+
+  .horary-hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .horary-section-header h2 {
+    font-size: 1.875rem;
+  }
+
+  .horary-card-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .horary-card-header h3 {
+    font-size: 1.25rem;
+  }
+
+  .horary-card-header,
+  .horary-card-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .horary-divider {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .horary-card-content ul {
+    padding-left: 1rem;
+  }
+}
+
+/* Focus States for Accessibility */
+.horary-card:focus-within {
+  outline: 2px solid #4299e1;
+  outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+  .horary-layout {
+    background: white;
+  }
+
+  .horary-card {
+    border: 1px solid #ccc;
+    box-shadow: none;
+    break-inside: avoid;
+    margin-bottom: 1rem;
+  }
+
+  .horary-section {
+    break-inside: avoid;
+  }
+}

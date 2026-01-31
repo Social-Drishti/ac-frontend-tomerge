@@ -14,7 +14,7 @@ export default function SubNavbar() {
     { path: "/face-reading", label: "Face Reading" },
     { path: "/thumb-reading", label: "Thumb Reading" },
     { path: "/numerology", label: "Numerology" },
-    { path: "/remedies", label: "Remedies" },
+    // { path: "/remedies", label: "Remedies" },
   ];
 
   return (

@@ -40,9 +40,9 @@ export default function Logout() {
   return (
     <div>
       <Navbar />
-      <div className="min-h-screen flex items-center justify-center bg-[#faf7f2]">
+      <div className="min-h-screen flex items-center justify-center ">
         <form
-          className="bg-[#faf7f2] p-8 rounded-lg shadow-md w-full max-w-md border border-[#654e12]/20"
+          className="p-8 rounded-lg shadow-md w-full max-w-md border border-[#654e12]/20"
           onSubmit={handleLogout}
         >
           <h2 className="text-2xl font-bold mb-6 text-center">Logout</h2>
@@ -56,7 +56,7 @@ export default function Logout() {
         </form>
         {showModal && (
           <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-40 z-50">
-            <div className="bg-[#faf7f2] p-6 rounded shadow text-center">
+            <div className="p-6 rounded shadow text-center">
               <div className="text-green-600 font-bold mb-2">
                 You have been logged out.
               </div>

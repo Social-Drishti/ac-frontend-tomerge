@@ -2,7 +2,6 @@
 .dashboard-container {
   min-height: 100vh;
   padding: 2rem;
-  background-color: #faf7f2;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -23,8 +22,6 @@
 }
 
 .dashboard-error {
-  background-color: #fee2e2;
-  border: 1px solid #ef4444;
   color: #b91c1c;
   padding: 1rem;
   border-radius: 8px;
@@ -47,7 +44,6 @@
 
 /* Dashboard Sections */
 .dashboard-section {
-  background: #faf7f2;
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -59,7 +55,6 @@
   color: #5f6b3a;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid #e5e7eb;
 }
 
 /* Profile Section */
@@ -73,7 +68,6 @@
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 0;
-  border-bottom: 1px solid #f3f4f6;
 }
 
 .dashboard-profile-item:last-child {
@@ -100,7 +94,6 @@
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 0;
-  border-bottom: 1px solid #f3f4f6;
 }
 
 .dashboard-kundli-item:last-child {

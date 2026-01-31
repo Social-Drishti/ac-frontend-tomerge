@@ -1,11 +1,7 @@
-/* ============================================
-   CALCULATOR PAGE STYLES
-   ============================================ */
-
+/* Embossed effect for calculator images */
 .calculator-page-container {
   min-height: 100vh;
   padding: 2rem;
-  background: #faf7f2;
   background-attachment: fixed;
 }
 

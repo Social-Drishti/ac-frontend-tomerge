@@ -5,42 +5,6 @@
 html,
 body {
   color: #654e12;
-  background-color: rgba(250, 248, 243, 0.8);
-  /* background-image:
-    repeating-linear-gradient(
-      90deg,
-      #e8d4c4 0px,
-      #e8d4c4 2px,
-      #d4b5a0 2px,
-      #d4b5a0 8px,
-      #c9a890 8px,
-      #c9a890 10px,
-      #d4b5a0 10px,
-      #d4b5a0 18px,
-      #e8d4c4 18px,
-      #e8d4c4 20px,
-      #c9a890 20px,
-      #c9a890 25px,
-      #d4b5a0 25px,
-      #d4b5a0 40px
-    ), */
-  /* repeating-linear-gradient(
-      0deg,
-      transparent 0px,
-      transparent 1px,
-      rgba(0, 0, 0, 0.03) 1px,
-      rgba(0, 0, 0, 0.03) 2px,
-      transparent 2px,
-      transparent 4px,
-      rgba(139, 69, 19, 0.02) 4px,
-      rgba(139, 69, 19, 0.02) 6px
-    ),
-    linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.02) 0%,
-      rgba(0, 0, 0, 0.05) 50%,
-      rgba(0, 0, 0, 0.02) 100%
-    ); */
   margin: 0;
   padding: 0;
 }
@@ -70,15 +34,13 @@ a {
 }
 
 a:hover {
-  color: #600000;
+  color: #654e12;
   text-decoration: underline;
 }
 
 /* Buttons */
 button {
   color: #654e12;
-  background-color: transparent;
-  border: 2px solid #654e12;
   padding: 10px 20px;
   border-radius: 8px;
   cursor: pointer;
@@ -87,10 +49,8 @@ button {
 }
 
 button:hover {
-  background-color: #654e12;
   color: #faf7f2;
   transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(101, 78, 18, 0.2);
 }
 
 button:active {
@@ -112,7 +72,6 @@ input,
 textarea,
 select {
   color: #654e12;
-  background-color: rgba(250, 248, 243, 0.8);
   padding: 10px;
   border-radius: 8px;
   transition: all 0.3s ease;
@@ -122,16 +81,9 @@ input:focus,
 textarea:focus,
 select:focus {
   outline: none;
-  border-color: #600000;
   box-shadow: 0 0 5px rgba(128, 0, 0, 0.3);
-  background-color: rgba(250, 248, 243, 0.8);
 }
 
-/* input::placeholder {
-  color: #800000;
-} */
-
-/* Section titles and headings */
 h1 {
   font-size: 2.5em;
   text-align: center;
@@ -165,20 +117,12 @@ h6 {
   font-size: 1.1em;
 }
 
-/* .accordion-header:hover,
-[class*="accordion-header"]:hover,
-[class*="expand-header"]:hover {
-  background-color: #efd8bf;
-} */
-
 .accordion-content,
 [class*="accordion-content"],
 [class*="expand-content"] {
   color: #654e12;
 }
 
-
-/* Tables */
 table {
   border-collapse: collapse;
   width: 100%;
@@ -197,8 +141,6 @@ th {
   font-weight: bold;
 }
 
-
-/* Lists */
 ul,
 ol {
   color: #654e12;
@@ -213,7 +155,6 @@ li {
 [class*="badge"],
 [class*="tag"],
 [class*="label"] {
-  background-color: #800000;
   color: #f5e6d3;
   padding: 4px 12px;
   border-radius: 20px;

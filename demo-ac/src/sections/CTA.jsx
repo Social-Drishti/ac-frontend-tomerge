@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function CTA() {
   return (
     <section
@@ -25,16 +26,20 @@ export default function CTA() {
 
         {/* CTA Buttons */}
         <div className="mt-12 flex flex-col sm:flex-row gap-5 justify-center">
-          <button className="rounded-xl px-10 py-4 text-base font-semibold text-white shadow-lg transition hover:bg-[#4a5530] transform hover:scale-105">
+          <button className="rounded-xl px-10 py-4 text-base font-semibold text-white shadow-lg transition transform hover:scale-105">
             Free Consultation
           </button>
 
-          <button className="rounded-xl bg-[#8B4513] px-10 py-4 text-base font-semibold text-white shadow-lg transition hover:bg-[#723810] transform hover:scale-105">
+          <button className="rounded-xl px-10 py-4 text-base font-semibold text-white shadow-lg transition transform hover:scale-105">
             Call Now
           </button>
+          <Link
+            to="/consultation"
+            className="rounded-xl px-10 py-4 text-base font-semibold text-white shadow-lg transition transform hover:scale-105"
+          >
+            Know More
+          </Link>
         </div>
-
-  
       </div>
     </section>
   );

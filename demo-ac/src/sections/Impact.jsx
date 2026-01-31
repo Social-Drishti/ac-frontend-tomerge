@@ -26,7 +26,7 @@ export default function Impact() {
             <div key={i} className="text-center">
               <AnimatedNumber
                 value={stat.value}
-                className="text-5xl md:text-6xl font-bold text-indigo-600"
+                className="text-5xl md:text-6xl font-bold "
               />
               <p className="mt-4 text-lg text-gray-600">{stat.label}</p>
             </div>
@@ -34,10 +34,10 @@ export default function Impact() {
         </div>
 
         <div className="mt-12 flex justify-center gap-4">
-          <button className="rounded-lg border border-gray-300 px-8 py-3 hover:bg-gray-100">
+          <button className="px-8 py-3">
             View more
           </button>
-          <button className="rounded-lg bg-indigo-600 px-8 py-3 text-white hover:bg-indigo-700">
+          <button className="px-8 py-3 text-white">
             Learn →
           </button>
         </div>

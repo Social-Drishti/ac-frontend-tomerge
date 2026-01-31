@@ -23,7 +23,7 @@ export default function FAQ() {
   ];
 
   return (
-    <section className="py-20 md:py-28 bg-[#faf7f2] border-t border-gray-100">
+    <section className="py-20 md:py-28 border-t border-gray-100">
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
         <h2 className="text-4xl font-bold tracking-tight text-center md:text-5xl">
           FAQs

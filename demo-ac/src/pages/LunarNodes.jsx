@@ -9,7 +9,7 @@ export default function LunarNodes() {
       <Navbar />
       <div className="reading-page-container">
         <h1>Lunar Nodes</h1>
-        <p>Discover your cosmic identity.</p>
+        <p>Discover your astroidentity.</p>
       </div>
       <Footer />
     </>

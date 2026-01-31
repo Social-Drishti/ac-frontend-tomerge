@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
 
+import Consultation from "./pages/Consultation";
 import Home from "./pages/home";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
@@ -32,6 +33,9 @@ import BirthChartAnalysis from "./pages/BirthChartAnalysis";
 import SelfAwareness from "./pages/SelfAwareness";
 import Relationships from "./pages/Relationships";
 import LifeDirection from "./pages/LifeDirection";
+import Muhurta from "./pages/Muhurta";
+import Horary from "./pages/Horary";
+import LalKitab from "./pages/LalKitab";
 import OAuthCallback from "./pages/OAuthCallback";
 
 export default function AppRouter() {
@@ -70,10 +74,15 @@ export default function AppRouter() {
             path="/birth-chart-analysis"
             element={<BirthChartAnalysis />}
           />
+          <Route path="/natal-chart" element={<BirthChartAnalysis />} />
           <Route path="/self-awareness" element={<SelfAwareness />} />
           <Route path="/relationships" element={<Relationships />} />
           <Route path="/life-direction" element={<LifeDirection />} />
+          <Route path="/muhurta" element={<Muhurta />} />
+          <Route path="/horary" element={<Horary />} />
+          <Route path="/lab-kitab" element={<LalKitab />} />
           <Route path="/auth/callback" element={<OAuthCallback />} />
+          <Route path="/consultation" element={<Consultation />} />
         </Routes>
       </AuthProvider>
     </Router>

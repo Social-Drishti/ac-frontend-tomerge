@@ -54,10 +54,10 @@ export default function Clarity() {
                   <input
                     type="text"
                     placeholder="Your Name"
-                    className="w-full rounded-md border border-gray-300 bg-[#faf7f2]/80 px-3 py-2 text-sm focus:ring-1 focus:ring-red-500 outline-none"
+                    className="w-full px-3 py-2 text-sm focus:ring-1 focus:ring-red-500 outline-none"
                   />
 
-                  <select className="w-full rounded-md border border-gray-300 bg-[#faf7f2]/80 px-3 py-2 text-sm focus:ring-1 focus:ring-red-500 outline-none">
+                  <select className="w-full px-3 py-2 text-sm focus:ring-1 focus:ring-red-500 outline-none">
                     <option>Gender</option>
                     <option>Male</option>
                     <option>Female</option>

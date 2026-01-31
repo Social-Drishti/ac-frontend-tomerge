@@ -1,8 +1,13 @@
 import AppleSignin from "react-apple-signin-auth";
 import { useAuth } from "../../context/AuthContext";
+import { useMemo } from "react";
 
 export default function AppleLoginButton() {
   const { loginWithApple } = useAuth();
+
+  const nonce = useMemo(() => {
+    return "nonce-" + Math.random().toString(36).substr(2, 9);
+  }, []);
 
   const handleAppleSuccess = async (response) => {
     try {
@@ -24,7 +29,7 @@ export default function AppleLoginButton() {
           scope: "name email",
           redirectURI: import.meta.env.VITE_APPLE_REDIRECT_URI,
           state: "signin",
-          nonce: "nonce-" + Math.random().toString(36).substr(2, 9),
+          nonce,
           usePopup: true,
         }}
         onSuccess={handleAppleSuccess}

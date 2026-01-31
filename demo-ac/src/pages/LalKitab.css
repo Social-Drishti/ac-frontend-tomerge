@@ -1,0 +1,245 @@
+/* Lal Kitab Page Styles */
+@import url("https://fonts.googleapis.com/css2?family=Yatra+One:wght@400&display=swap");
+
+.lal-kitab-page {
+  min-height: 100vh;
+  color: #2d2d2d;
+}
+
+.lal-kitab-content {
+  padding-top: 0;
+  line-height: 1.7;
+}
+
+.lal-kitab-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Hero Section */
+.lal-kitab-hero {
+  text-align: center;
+  padding: 4rem 0 3rem 0;
+  margin-bottom: 2rem;
+}
+
+.lal-kitab-title {
+  font-family: "Yatra One", serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.lal-kitab-subtitle {
+  font-size: 1.25rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+/* Section Styles */
+.lal-kitab-section {
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+}
+
+.lal-kitab-section:not(:last-child) {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.lal-kitab-section h2 {
+  font-family: "Yatra One", serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+  margin-top: 0;
+  letter-spacing: -0.01em;
+}
+
+.lal-kitab-section h3 {
+  font-family: "Yatra One", serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #2d2d2d;
+  margin-bottom: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.lal-kitab-section h4 {
+  font-family: "Yatra One", serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.lal-kitab-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #444;
+  text-align: justify;
+}
+
+/* Comparison Grid */
+.lal-kitab-comparison {
+  display: grid;
+  gap: 2rem;
+  margin: 2.5rem 0;
+}
+
+.comparison-item {
+  padding: 1.5rem;
+  background: #fafafa;
+  border-left: 4px solid #5f6b3a;
+  border-radius: 0 8px 8px 0;
+}
+
+.comparison-item h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #5f6b3a;
+}
+
+.comparison-item p {
+  margin-bottom: 0;
+  font-size: 1rem;
+  text-align: left;
+}
+
+/* Application Areas Grid */
+.application-areas {
+  display: grid;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.application-item {
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.application-item h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #5f6b3a;
+  font-size: 1.5rem;
+}
+
+.application-item p {
+  margin-bottom: 0;
+  font-size: 1rem;
+  text-align: left;
+}
+
+/* FAQ Styles */
+.faq-item {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.faq-item h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #5f6b3a;
+  font-size: 1.1rem;
+}
+
+.faq-item p {
+  margin-bottom: 0;
+  font-size: 1rem;
+  text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .lal-kitab-container {
+    padding: 0 1rem;
+  }
+
+  .lal-kitab-title {
+    font-size: 2.5rem;
+  }
+
+  .lal-kitab-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .lal-kitab-section h2 {
+    font-size: 1.875rem;
+  }
+
+  .lal-kitab-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .lal-kitab-section p {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .comparison-item,
+  .application-item {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .lal-kitab-hero {
+    padding: 2rem 0;
+  }
+
+  .lal-kitab-title {
+    font-size: 2rem;
+  }
+
+  .lal-kitab-subtitle {
+    font-size: 1rem;
+  }
+
+  .lal-kitab-section {
+    margin-bottom: 3rem;
+  }
+
+  .lal-kitab-section h2 {
+    font-size: 1.625rem;
+  }
+
+  .lal-kitab-section h3 {
+    font-size: 1.375rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .lal-kitab-page {
+    background: white;
+  }
+
+  .lal-kitab-container {
+    max-width: none;
+    padding: 0;
+  }
+
+  .comparison-item,
+  .application-item {
+    background: white;
+    border: 1px solid #ddd;
+  }
+}

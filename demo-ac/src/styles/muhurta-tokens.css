@@ -1,0 +1,234 @@
+:root {
+  /* ============ COLOR SYSTEM ============ */
+
+  /* Background Colors - Warm Parchment */
+  --muhurta-bg-primary: #faf8f3; /* Main background - warm parchment */
+  --muhurta-bg-secondary: #f7f4ef; /* Card backgrounds */
+  --muhurta-bg-tertiary: #f3f0eb; /* Subtle contrast areas */
+  --muhurta-bg-hover: #ede9e4; /* Hover states */
+
+  /* Text Colors - Deep Saffron */
+  --muhurta-ink: #654e12; /* Primary text - deep saffron brown */
+  --muhurta-ink-muted: #8b6914; /* Secondary text - lighter saffron */
+  --muhurta-ink-subtle: #a6771a; /* Tertiary text - muted saffron */
+
+  /* Borders & Dividers */
+  --muhurta-border: #d4c4a8; /* Dividers and borders - warm beige */
+  --muhurta-border-hover: #c9b89c; /* Interactive borders */
+  --muhurta-border-focus: #654e12; /* Focus borders - saffron */
+
+  /* Accent Colors - Sacred Orange */
+  --muhurta-accent: #d2691e; /* Primary actions - sacred orange */
+  --muhurta-accent-hover: #bf5f1a; /* Hover state */
+  --muhurta-accent-subtle: #fff4e6; /* Accent backgrounds */
+  --muhurta-accent-light: #fef9f3; /* Very light accent */
+
+  /* Semantic Colors */
+  --muhurta-success: #8b5a2b; /* Success states - earthy brown */
+  --muhurta-success-bg: #f9f5f0; /* Success background */
+  --muhurta-warning: #cd853f; /* Warning states - peru */
+  --muhurta-warning-bg: #fdfbf7; /* Warning background */
+  --muhurta-error: #a0522d; /* Error states - sienna */
+  --muhurta-error-bg: #fcf8f5; /* Error background */
+  --muhurta-info: #6b4e3d; /* Info states - dark brown */
+  --muhurta-info-bg: #f8f6f3; /* Info background */
+
+  /* ============ TYPOGRAPHY ============ */
+
+  /* Font Families */
+  --muhurta-font-serif: "Playfair Display", "Times New Roman", serif;
+  --muhurta-font-sans:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --muhurta-font-mono: "JetBrains Mono", "Consolas", "Monaco", monospace;
+
+  /* Font Sizes */
+  --muhurta-text-xs: 0.75rem; /* 12px */
+  --muhurta-text-sm: 0.875rem; /* 14px */
+  --muhurta-text-base: 1rem; /* 16px */
+  --muhurta-text-lg: 1.125rem; /* 18px */
+  --muhurta-text-xl: 1.25rem; /* 20px */
+  --muhurta-text-2xl: 1.5rem; /* 24px */
+  --muhurta-text-3xl: 1.875rem; /* 30px */
+  --muhurta-text-4xl: 2.25rem; /* 36px */
+  --muhurta-text-5xl: 3rem; /* 48px */
+
+  /* Font Weights */
+  --muhurta-weight-regular: 400;
+  --muhurta-weight-medium: 500;
+  --muhurta-weight-semibold: 600;
+  --muhurta-weight-bold: 700;
+
+  /* Line Heights */
+  --muhurta-leading-tight: 1.25;
+  --muhurta-leading-snug: 1.375;
+  --muhurta-leading-normal: 1.5;
+  --muhurta-leading-relaxed: 1.625;
+  --muhurta-leading-loose: 2;
+
+  /* ============ SPACING ============ */
+
+  /* Standard Spacing Scale */
+  --muhurta-space-1: 0.25rem; /* 4px */
+  --muhurta-space-2: 0.5rem; /* 8px */
+  --muhurta-space-3: 0.75rem; /* 12px */
+  --muhurta-space-4: 1rem; /* 16px */
+  --muhurta-space-5: 1.25rem; /* 20px */
+  --muhurta-space-6: 1.5rem; /* 24px */
+  --muhurta-space-8: 2rem; /* 32px */
+  --muhurta-space-10: 2.5rem; /* 40px */
+  --muhurta-space-12: 3rem; /* 48px */
+  --muhurta-space-16: 4rem; /* 64px */
+  --muhurta-space-20: 5rem; /* 80px */
+  --muhurta-space-24: 6rem; /* 96px */
+
+  /* Component-Specific Spacing */
+  --muhurta-card-padding: var(--muhurta-space-6);
+  --muhurta-section-gap: var(--muhurta-space-8);
+  --muhurta-content-gap: var(--muhurta-space-4);
+
+  /* ============ LAYOUT ============ */
+
+  /* Container Widths */
+  --muhurta-container-sm: 640px;
+  --muhurta-container-md: 768px;
+  --muhurta-container-lg: 1024px;
+  --muhurta-container-xl: 1280px;
+  --muhurta-container-2xl: 1400px;
+
+  /* Grid Layout */
+  --muhurta-grid-cols: 12;
+  --muhurta-main-content: 70%;
+  --muhurta-sidebar: 30%;
+  --muhurta-gap: var(--muhurta-space-8);
+
+  /* ============ BORDERS & RADIUS ============ */
+
+  /* Border Widths */
+  --muhurta-border-width-0: 0;
+  --muhurta-border-width-1: 1px;
+  --muhurta-border-width-2: 2px;
+  --muhurta-border-width-4: 4px;
+
+  /* Border Radius */
+  --muhurta-radius-none: 0;
+  --muhurta-radius-sm: 0.125rem; /* 2px */
+  --muhurta-radius-base: 0.25rem; /* 4px */
+  --muhurta-radius-md: 0.375rem; /* 6px */
+  --muhurta-radius-lg: 0.5rem; /* 8px */
+  --muhurta-radius-xl: 0.75rem; /* 12px */
+  --muhurta-radius-2xl: 1rem; /* 16px */
+  --muhurta-radius-full: 9999px;
+
+  /* ============ SHADOWS ============ */
+
+  /* Editorial Shadow System */
+  --muhurta-shadow-sm: 0 1px 2px 0 rgba(101, 78, 18, 0.05);
+  --muhurta-shadow-base:
+    0 1px 3px 0 rgba(101, 78, 18, 0.1), 0 1px 2px 0 rgba(101, 78, 18, 0.06);
+  --muhurta-shadow-md:
+    0 4px 6px -1px rgba(101, 78, 18, 0.1),
+    0 2px 4px -1px rgba(101, 78, 18, 0.06);
+  --muhurta-shadow-lg:
+    0 10px 15px -3px rgba(101, 78, 18, 0.1),
+    0 4px 6px -2px rgba(101, 78, 18, 0.05);
+  --muhurta-shadow-xl:
+    0 20px 25px -5px rgba(101, 78, 18, 0.1),
+    0 10px 10px -5px rgba(101, 78, 18, 0.04);
+
+  /* Focus Shadow */
+  --muhurta-shadow-focus: 0 0 0 3px rgba(210, 105, 30, 0.2);
+
+  /* ============ TRANSITIONS ============ */
+
+  /* Timing Functions */
+  --muhurta-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --muhurta-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --muhurta-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Durations */
+  --muhurta-duration-75: 75ms;
+  --muhurta-duration-100: 100ms;
+  --muhurta-duration-150: 150ms;
+  --muhurta-duration-200: 200ms;
+  --muhurta-duration-300: 300ms;
+  --muhurta-duration-500: 500ms;
+
+  /* Common Transitions */
+  --muhurta-transition-colors:
+    color var(--muhurta-duration-150) var(--muhurta-ease-in-out),
+    background-color var(--muhurta-duration-150) var(--muhurta-ease-in-out),
+    border-color var(--muhurta-duration-150) var(--muhurta-ease-in-out);
+
+  --muhurta-transition-shadow: box-shadow var(--muhurta-duration-150)
+    var(--muhurta-ease-in-out);
+
+  --muhurta-transition-transform: transform var(--muhurta-duration-150)
+    var(--muhurta-ease-in-out);
+
+  /* ============ Z-INDEX SCALE ============ */
+
+  --muhurta-z-0: 0;
+  --muhurta-z-10: 10;
+  --muhurta-z-20: 20;
+  --muhurta-z-30: 30;
+  --muhurta-z-40: 40;
+  --muhurta-z-50: 50;
+
+  /* ============ BREAKPOINTS ============ */
+
+  /* Mobile-first breakpoints */
+  --muhurta-screen-sm: 640px;
+  --muhurta-screen-md: 768px;
+  --muhurta-screen-lg: 1024px;
+  --muhurta-screen-xl: 1280px;
+  --muhurta-screen-2xl: 1536px;
+}
+
+/* ============ DARK MODE SUPPORT ============ */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark Background Colors */
+    --muhurta-bg-primary: #1a1611;
+    --muhurta-bg-secondary: #211c17;
+    --muhurta-bg-tertiary: #28231e;
+    --muhurta-bg-hover: #2f2a25;
+
+    /* Dark Text Colors */
+    --muhurta-ink: #e6d3a3;
+    --muhurta-ink-muted: #d4c08e;
+    --muhurta-ink-subtle: #c2ad79;
+
+    /* Dark Borders */
+    --muhurta-border: #3d362b;
+    --muhurta-border-hover: #4a4237;
+    --muhurta-border-focus: #d2691e;
+
+    /* Dark Accent */
+    --muhurta-accent: #ff8c42;
+    --muhurta-accent-hover: #ff7a28;
+    --muhurta-accent-subtle: #2d1f0f;
+    --muhurta-accent-light: #261b0d;
+
+    /* Dark Semantic Colors */
+    --muhurta-success: #b8885f;
+    --muhurta-success-bg: #1f1c18;
+    --muhurta-warning: #e4a853;
+    --muhurta-warning-bg: #21201c;
+    --muhurta-error: #d4704f;
+    --muhurta-error-bg: #201a17;
+    --muhurta-info: #9b7c65;
+    --muhurta-info-bg: #1d1b18;
+
+    /* Dark Shadows */
+    --muhurta-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+    --muhurta-shadow-base:
+      0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+    --muhurta-shadow-md:
+      0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.12);
+    --muhurta-shadow-lg:
+      0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+    --muhurta-shadow-xl:
+      0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.08);
+  }
+}

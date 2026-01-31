@@ -8,34 +8,42 @@ export default function ServicesCarousel() {
     {
       img: "/services-image/Transit-Reading.png",
       link: "/transits",
+      title: "Transit Reading",
     },
     {
       img: "/services-image/Muhurta.png",
-      link: "/astrology",
+      link: "/muhurta",
+      title: "Muhurta",
     },
-    // {
-    //   img: "/services-image/remedial-astrology.png",
-    //   link: "/remedial",
-    // },
+    {
+      img: "/services-image/remedial-astrology.png",
+      link: "/remedial",
+      title: "Remedial Astrology",
+    },
     {
       img: "/services-image/Horary.png",
-      link: "/astrology",
+      link: "/horary",
+      title: "Horary",
     },
     {
       img: "/services-image/lab-kitab.png",
-      link: "/astrology",
+      link: "/lab-kitab",
+      title: "Lal Kitab",
     },
     {
       img: "/services-image/Career-astrology.png",
       link: "/career-astrology",
+      title: "Career Astrology",
     },
     {
       img: "/services-image/Compatibility.png",
       link: "/compatibility",
+      title: "Compatibility",
     },
     {
       img: "/services-image/Natal-chart.png",
-      link: "/birth-chart-analysis",
+      link: "/natal-chart",
+      title: "Natal Chart",
     },
   ];
 
