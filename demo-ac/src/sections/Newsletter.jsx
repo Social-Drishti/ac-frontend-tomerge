@@ -12,12 +12,12 @@ export default function Newsletter() {
         style={{ pointerEvents: "none" }}
       />
       {/* Bottom border image */}
-      <img
+      {/* <img
         src="/strip.png"
         alt="Newsletter frame bottom border"
         className="absolute bottom-0 left-0 w-full h-12 object-cover rotate-180"
         style={{ pointerEvents: "none" }}
-      />
+      /> */}
       <div
         className="relative z-10 w-full max-w-2xl mx-auto flex flex-col items-center justify-center"
         style={{
